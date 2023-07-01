@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="이연제약">
+<meta name="Author" content="이연제약">
+<meta name="Keywords" content="이연,이연제약, 전문의약품, 원료의약품,완제의약품, 황산염아르베카신, 테이코플라닌,세로나제">
+<meta name="Description" content="생명의 이치를 연구하는 제약기업으로 제 2의 도약을 꿈꾸는 이연제약 입니다.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="/ko/img/common/og_img.jpg" />
+<title>이연제약</title>
+<link rel="stylesheet" href="./ko/css/reset.css">
+<link rel="stylesheet" href="./ko/css/common.css">
+<link rel="stylesheet" href="./ko/css/media.css">
+<link rel="stylesheet" href="./ko/css/mCustomScrollbar.css">
+<link rel="stylesheet" href="./ko/js/fullpage/fullpage.css" />
+<link rel="stylesheet" href="./ko/css/slick.css">
+<link rel="stylesheet" href="./ko/css/slick-theme.css">
+<!-- <link rel="shortcut icon" href="/ko/img/common/favicon.ico" type="image/x-icon"> -->
+<script src="./ko/js/jquery-1.8.2.min.js"></script>
+<script src="./ko/js/jquery-ui.min.js"></script>
+<script src="./ko/js/plugin.js"></script>
+<script src="./ko/js/jquery.cookie.js"></script>
+<script src="./ko/js/design_common.js"></script>
+<script src="./ko/js/mCustomScrollbar.js"></script>
+<script src="./ko/js/fullpage/jquery.fullpage.js"></script>
+<script src="./ko/js/fullpage/scrolloverflow.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
+<style>
+	.pop-dim {overflow-y:scroll;position:fixed;top:0;left:0;bottom:0;right:0;box-sizing:border-box}
+	.pop-fwn {font-weight:300 !important}
+	.pop-fwb {font-weight:600 !important}
+	.pop-tac {text-align:center !important}
+	.pop-tal {text-align:left !important}
+	.popup {display:none;position:fixed;z-index:10;top:0;bottom:0;right:0;width:100%;height:100%;overflow:hidden;background-color:rgba(0,0,0,0.5);overflow-y:auto;font-family:'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;}
+	.popup.on {display:block}
+	.popup__wrap {position:absolute;z-index:10;top:50%;left:5%;right:0;transform:translateY(-50%)}
+	.popup__cont {width:650px;padding:25px;background-color: #fff;overflow-y:hidden}
+	.popup__inner {height:50vh;max-height:450px;padding-right:10px;overflow-y:auto}
+	.popup--mutli .popup__inner {display:none}
+	.popup--mutli .popup__inner.active {display:block}
+	.popup--mutli .popup__tab {width:650px}
+	.popup--mutli .popup__tab:after {content:'';display:block;clear:both}
+	.popup--mutli .popup__tab > a {float:left;display:inline-block;width:25%;height:45px;border-bottom:1px solid #ccc;border-right:1px solid #ccc;background-color:#fff;font-size:22px;line-height:45px;font-weight:bold;text-align:center;box-sizing:border-box}
+	.popup--mutli .popup__tab.len2 > a {width:50%;}
+	.popup--mutli .popup__tab > a:last-child {border-right:0 none}
+	.popup--mutli .popup__tab > a.active {color:#fff;border-bottom-color:#4555a5;background-color:#4555a5}
+	.popup__title {margin-bottom:20px; font-size:20px;font-weight:600;text-align:center}
+	.popup__subtitle {font-weight:600;font-size:16px}
+	.popup__desc {font-weight:300;text-align:center}
+	.popup__desclist {margin-left:20px;text-indent:-20px}
+	.popup__desclist > li {line-height:1.5;font-weight:600}
+	.popup__desctable {width:100%;margin:10px 0;border-spacing:0}
+	.popup__desctable th, .popup__desctable td {width:25%;padding:5px;font-weight:600;text-align:center;border:1px solid;text-indent:0}
+	.popup__desctable td {font-weight:300}
+	.popup__desctable td span {display:block;font-weight:600}
+	.popup__close {width:650px;padding:14px 20px;background-color:#fff;border-top:1px solid #ccc}
+	.popup__close::after {content:' ';display:block;clear:both}
+	.not-today {position:relative;float:left}
+	.not-today input[type="checkbox"] + label {position:relative;z-index:2;padding-left:25px;font-size:15px;color:#666;cursor:pointer}
+	.not-today input[type="checkbox"] + label::before {content:' ';position:absolute;left:0;top:0;width:15px;height:15px;border:1px solid #666}
+	.not-today input[type="checkbox"] + label:after {content:' ';opacity:0;position:absolute;top:1px;left:5px;width:5px;height:10px;border:2px solid #636363;border-left:0;border-top:0;transform:rotate(45deg)}
+	.not-today input[type="checkbox"]:checked + label:after {opacity:1}
+	.popup__close-btn {float:right}
+</style>
+</head>
+<body>
+<div class="wrap main" id="main">
+    <div id="fullpage">
+        <div class="section section01" style="height:980px">
+            <div class="header_par type_off" id="header">
+                <div class="header">
+                    <div class="header_wrap">
+                        <div class="logo">
+                            <a href=""><img src="./ko/img/common/logo.png" class="color" alt="이연" ><img src="./ko/img/common/logo_w.png" class="no_color" alt="이연"/></a>
+                        </div>
+                        <div class="gnb">
+                            <ul>
+                                <li>
+                                    <a href=''>기업</a>
+                                    <ul class="depth_02">
+                                        <li><a href=''>CEO인사말</a></li>
+                                        <li><a href=''>CEO인사말</a></li>
+                                        <li><a href=''>CEO인사말</a></li>
+                                        <li><a href=''>회사연혁</a></li>
+                                        <li><a href=''>회사연혁</a></li>
+                                        <li><a href=''>CEO인사말</a></li>
+                                        <li><a href=''>오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">제품</a>
+                                    <ul class="depth_02">
+                                        <li><a href="#">제품소식</a></li>
+                                        <li><a href="#">제품검색</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../rnd/rnd01.do">연구개발</a>
+                                    <ul class="depth_02">
+                                        <li><a href="../rnd/rnd01.do">연구개발 소개</a></li>
+                                        <li><a href="../rnd/rnd02.do">연구개발 분야</a></li>
+                                        <li><a href="../rnd/rnd03.do">파이프라인</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../ir/stock01.do">투자</a>
+                                    <ul class="depth_02">
+                                        <li><a href="../ir/stock01.do">주식정보</a></li>
+                                        <li><a href="../ir/ir01List.do">IR센터</a></li>
+                                        <li><a href="../ir/financial01.do">재무정보</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../pr/prNewsList.do">이연소식</a>
+                                    <ul class="depth_02">
+                                        <li><a href="../pr/prNewsList.do">이연소식</a></li>
+                                        <!--
+                                        <li><a href="../pr/prFilm.do">홍보영상</a></li>
+                                        <li><a href="../pr/prMaterial.do">홍보자료</a></li>
+                                        <li><a href="#">이연 역사관</a></li>
+                                        -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb_etc">
+                            <ul>
+                                <li>
+                                    <a href='#'>고객지원</a>
+                                    <ul>
+                                        <li><a href="../customer/faq.do">자주묻는질문</a></li>
+                                        <li><a href="../customer/inquiry.do">1:1문의</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://reyon.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a></li>
+                            </ul>
+                            <a class="eng_site" href="/en/main/main.do">ENG</a>
+                            <div class="gnb_all">
+                                <a href="#" class="blind">전체메뉴보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all_depth" style="height:0px;">
+                        <div class="depth_wrap">
+                            <ul class="depth_sub01">
+                                <li><a href='#'>CEO인사말</a></li>
+                                <li><a href='#'>기업소개</a></li>
+                                <li><a href='#'>CEO인사말</a></li>
+                                <li><a href='#'>CEO인사말</a></li>
+                                <li><a href='#'>공장소개</a></li>
+                                <li><a href='#'>CEO인사말</a></li>
+                                <li><a href='#'>윤리경영</a></li>
+                                <li><a href='#'>오시는길</a></li>
+                            </ul>
+                            <ul class="depth_sub02">
+                                <li><a href="../product/productNewsList.do">제품소식</a></li>
+                                <li><a href="../product/productList.do">제품검색</a></li>
+
+                            </ul>
+                            <ul class="depth_sub03">
+                                <li><a href="../rnd/rnd01.do">연구개발 소개</a></li>
+                                <li><a href="../rnd/rnd02.do">연구개발 분야</a></li>
+                                <li><a href="../rnd/rnd03.do">파이프라인</a></li>
+                            </ul>
+                            <ul class="depth_sub04">
+                                <li><a href="../ir/stock01.do">주가정보</a></li>
+                                <li><a href="../ir/ir01List.do">IR센터</a></li>
+                                <li><a href="../ir/financial01.do">재무정보</a></li>
+                            </ul>
+                            <ul class="depth_sub05">
+                                <li><a href="../pr/prNewsList.do">이연소식</a></li>
+                                <li><a href="../pr/prFilm.do">홍보영상</a></li>
+                                <li><a href="../pr/prMaterial.do">홍보자료</a></li>
+                                <li><a href="#">이연 역사관</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="all_menu"></div>
+                </div>
+            </div>
+            <div class="sec01_slide_wrap">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="https://www.reyonpharm.co.kr/webfile/banner/0/1/20221231112130_3_main_1231.mp4" type="video/mp4">
+                </video>
+                <div class="layer">
+                    <div class="section01_txt">
+                        <div class="txt01">理硏</div>
+                        <div class="txt02">생명의 이치를 연구하는 제약기업</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--section1-->
+
+        <div class="section section02">
+            <div class="section02_inbox">
+                <div class="tit">ABOUT US</div>
+                <div class="desc">
+                    인류의 건강과 생명을 위한 지속적인 R&D를 통해<br>초심을 잃지 않고 환자의 건강한 삶을 위해
+                    정진하겠습니다.
+                </div>
+                <div class="about_ul">
+                    <ul>
+                        <li class="">
+                            <a href="">
+                                <div class="img">
+                                    <img src="./ko/img/main/about_01.jpg" alt="회사소개"/>
+                                </div>
+                                <div class="desc">
+                                    <div class="tit">회사소개</div>
+                                    <div class="desc">글로벌 바이오&케미칼 전문 제약기업 도약위해 끊임없는 혁신과 도정ㄹ 이어나갑니다.</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img">
+                                    <img src="./ko/img/main/about_02.jpg" alt="회사소개"/>
+                                </div>
+                                <div class="desc">
+									<div class="tit">
+										연구개발
+									</div>
+									<div class="desc">생산 기술·기반 중심의 플랫폼을 구축하는 R&D 모델을 바탕으로대한민국을 넘어 세계시장으로 나아갑니다.</div>
+								</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img">
+                                    <img src="./ko/img/main/about_03.jpg" alt="회사소개">
+                                </div>
+                                <div class="desc">
+                                    <div class="tit">
+                                        투자정보
+                                    </div>
+                                    <div class="desc">안정적이고 투명한 재무구조, 지속성장의 기반이 됩니다.</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section03">
+            <div class="section03_inbox">
+                <div class="more_btn">
+                    <a href="">more</a>
+                </div>
+                <div class="tit">Business innovationsss</div>
+                <div class="desc">연구개발 역량과 생산 플랫폼을 기반으로 혁신적 미래를 만들어 나갑니다.</div>
+                <div class="desc">
+                    <div class="prev_slide">
+                        <div class="swiper-container swiper-container_p">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_02.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">진단제의약품</div>
+                                </div>
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_01.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">완제의약품</div>
+                                </div>
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_03.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">원료의약품</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pre_slide">
+                        <div class="s-button-prev s-btn"></div>
+                        <div class="swiper-container swiper-container_c">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="./ko/img/main/inno_01.jpg" alt=""/>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="clear">
+                                                <div class="fl">완제의약품</div>
+                                                <div class="fr">QOL과 고령화 사회에 부합하는 310여개의 품목허가를 보유하고 있으며, 자사 완전 생산 및 수탁 사업을 운영하고 있습니다. 특히, 우수한 품질을	바탕으로 베트남, 말레이시아, 몽골, 페루, 터키등 해외 파머징 시장에 완제의약품(주사제 등) 수출을 진행하고 있습니다.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <a href="">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_03.jpg" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="clear">
+                                            <div class="fl">원료의약품</div>
+                                            <div class="fr">자체 유기합성 및 발효 기술력을 기반으로 ABK(아르베카신황산염), SKD(스트렙토키나제, 도르나제) 등 40여 개의 고부가가치 원료의약품 품목허가를 보유하고 있습니다. 우수한 품질을 바탕으로 국내 및 해외에 공급하고 있으며, 주요 수출국으로는 일본과 인도가 있습니다.</div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <a href="">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_02.jpg" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="clear">
+                                            <div class="fl">진단제의약품</div>
+                                            <div class="fr">2000년 조영제 오리지널 의약품인 옵티레이 시리즈를 도입하여 진단·예방 의료분야에 진출, 높은 안전성을 바탕으로 평균 연간매출 300억을 달성하며 국내 조영제 분야의 선두기업으로 자리매김하고 있습니다. </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-button-next s-btn"></div>
+                    </div>
+
+                    <div class="next_slide">
+                        <div class="swiper-container swiper-container_n">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_03.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">원료의약품</div>
+                                </div>
+
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_02.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">진단제의약품</div>
+                                </div>
+                                <div class="swiper-slide swiper-no-swiping">
+                                    <div class="img">
+                                        <img src="./ko/img/main/inno_01.jpg" alt="" class="grayscale">
+                                    </div>
+                                    <div class="desc">완제의약품</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section04">
+            <div class="section03_inbox">
+                <div class="more_btn">
+                    <a href="#">more</a>
+                </div>
+                <div class="tit">REYON NEWS</div>
+                <div class="desc">고객과 늘 함께 같은 꿈을 꾸며 행복한 희망의 메시지를 전하겠습니다</div>
+                <div class="news_ul">
+                    <ul>
+                        <li>
+                            <a href="../pr/prNewsView.do?board_id=718">
+                                <div class="img">
+                                    <img src="https://www.reyonpharm.co.kr/webfile/board/0/718/20230503104843_1_20230503_%ED%81%AC%EB%A1%AD.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="news_tit">이연제약, 뉴라클제네틱스와 공동개발 중인 AAV 유전자치료제 캐나다 임상 1/2a상 승인</div>
+                                    <div class="news_desc">- 2020년, 습성노인성황반변성 유전자치료제(NG101) 공동개발 계약으로 전세계 원료 및 완제 독점 생산공급 권리 확보 - 2023년 3분기 임상개시 향후 미국으로 임상국가 확대 예정 이연제약(대표이사 정순옥, 유용환)은 파트너사인 바이오 벤처기업 ㈜뉴라클제네틱스(대표이사 김종묵)와 공동 개발중인 습성 노인성 황반변성 유전자치료제 NG101의 임상 1/2a상 시험을 캐나다 연방 보건부로부터 승인받았다고 2일 밝혔다. 아데노부속바이러스(Adeno-associated virus, AAV) 벡터 기반 유전자치료제 NG101은 습성 노인성 황반변성(wAMD)을 주요 타겟 적응증으로 하는 신약으로 양 사는 지난 2020년 공동개발 계약을 체결하였다. 이 계약에서 이연제약은 이 치료제의 원료 및 완제에 대한 전세계 독점 생산권 및 공급 권리를 확보하였으며, 향후 진행될 임상시료 생산에서부터 상용화 생산까지 충주 바이오 공장에서 진행할 계획이다. 2022년 발간된 Grand View Res...</div>
+                                    <div class="news_date">2023.05.02</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pr/prNewsView.do?board_id=717">
+                                <div class="img">
+                                    <img src="https://www.reyonpharm.co.kr/webfile/board/0/717/20230503104147_1_%EC%B2%A8%EB%B6%802.-%EC%96%91%EC%82%AC-%EB%8C%80%ED%91%9C%EC%9D%B4%EC%82%AC-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0%EC%8B%9D-%EC%82%AC%EC%A7%84_thumb_230503.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="news_tit">이연제약, 테라베스트와 NK세포치료제 공동개발계약 체결</div>
+                                    <div class="news_desc">- 고형암 타겟의 NK세포치료제 TB-100에 대한 공동개발 수행 - 세포치료제 생산을 위한 pDNA 독점공급 및 수익의 공유 확보 이연제약이 NK세포치료제 공동개발을 통해 바이오 사업 영역을 확대한다. (왼쪽부터 테라베스트 기평석 대표이사, 이연제약 유용환 대표이사) 이연제약(대표이사 정순옥, 유용환)은 테라베스트(대표이사 기평석)와 고형암 치료를 위한 NK세포치료제 공동개발계약을 체결했다고 11일 밝혔다. 이번 계약에서 양 사는 고형암 적응증 대상의 iPSC(유도만능줄기세포) 유래 NK세포치료제 TB-100에 대한 공동개발을 수행한다. 아울러 이연제약은 해당 세포치료제 생산 시 필요한 pDNA(플라스미드DNA)를 전 세계에 독점적으로 제조 및 공급할 수 있는 권리를 확보한다. 계약에 따라 이연제약은 테라베스트에 계약금에 더해 임상개발 단계별 마일스톤을 지급하며, 임상비용은 테라베스트와 공동으로 부담할 계획이다. 이를 통해 이연제약은 향후 제품화에 따른 수익은 물론, 개발 과정에...</div>
+                                    <div class="news_date">2023.04.11</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pr/prNewsView.do?board_id=706">
+                                <div class="img">
+                                    <img src="https://www.reyonpharm.co.kr/webfile/board/0/706/20221216152124_1_%EC%B2%A8%EB%B6%802.-%EC%96%91%EC%82%AC-%EB%8C%80%ED%91%9C%EC%9D%B4%EC%82%AC-MOU-%EC%B2%B4%EA%B2%B0%EC%8B%9D-%EC%82%AC%EC%A7%84_thumb.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="news_tit">이연제약, 코넥스트와 CDMO 사업을 위한 포괄적 업무협력 MOU 체결</div>
+                                    <div class="news_desc">이연제약이 코넥스트와의 업무협력을 통해 CDMO 사업 강화에 나선다. (왼쪽부터 코넥스트 이우종 대표이사, 이연제약 유용환 대표이사) 이연제약(대표이사 정순옥, 유용환)은 코넥스트(대표이사 이우종)와 바이오의약품 CDMO(위탁개발생산) 사업을 위한 포괄적 업무협력 양해각서(MOU)를 체결했다고 14일 밝혔다. 이번 양해각서를 통해 양사는 재조합단백질 생산시스템을 기반으로, 미생물 발효 기반 CDMO 사업 협력을 수행하게 된다. 이와 더불어 바이오의약품 CDMO 사업 운영에 대한 긴밀한 협력관계를 구축하고 지속적인 사업협력을 이어갈 계획이다. 구체적으로는 재조합단백질을 활용한 공정개발, 분석법 및 제형개발 등은 코넥스트가 담당하며, GMP 생산은 이연제약에서 진행하게 된다. 이와 더불어 제약사 및 바이오 벤처를 고객으로 유치하고 양사의 프로젝트를 연계하여 CDMO 사업을 적극적으로 확대해 나갈 계획이다. 코넥스트는 재조합 TLR5 agonist(작용제)와 재조합 collagenase...</div>
+                                    <div class="news_date">2022.12.14</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pr/prNewsView.do?board_id=704">
+                                <div class="img">
+                                    <img src="https://www.reyonpharm.co.kr/webfile/board/0/704/20221207140601_1_%EC%B2%A8%EB%B6%802.-%EC%96%91%EC%82%AC-%EB%8C%80%ED%91%9C%EC%9D%B4%EC%82%AC-MOU-%EC%B2%B4%EA%B2%B0%EC%8B%9D-%EC%82%AC%EC%A7%84_thumb.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="news_tit">이연제약, 프로티움사이언스와 CDMO 사업을 위한 포괄적 업무협력 MOU 체결</div>
+                                    <div class="news_desc">이연제약이 프로티움사이언스와의 업무협력을 통해 CDMO 사업 확장에 나선다. 이연제약(대표이사 정순옥, 유용환)은 프로티움사이언스(대표이사 김훈택)와 바이오의약품 CDMO(위탁개발생산) 사업을 위한 포괄적 업무협력 양해각서(MOU)를 체결했다고 6일 밝혔다. 이번 양해각서를 통해 양사는 바이오의약품 분야에서 축적된 기술 및 노하우, 연구개발 능력, 생산시설 등을 기반으로 CDMO 사업 운영에 대한 긴밀한 협력관계를 구축하고 지속적인 사업 협력을 이어갈 계획이다. 구체적으로는 CDO(위탁개발), CMO(위탁생산), CDMO(위탁개발생산) 등 바이오의약품의 전주기 개발과 생산에 대한 협력을 수행하게 된다. 이를 통해 제약사 또는 바이오 벤처를 고객으로 유치하고 양사의 프로젝트를 연계하여 CDMO 사업을 적극적으로 확대해 나갈 전망이다. 프로티움사이언스는 희귀난치질환 전문 신약개발기업인 티움바이오의 자회사로 바이오의약품 생산 세포주 개발부터 임상 1상에서 바이오의약품 품목허가까지의 모든...</div>
+                                    <div class="news_date">2022.12.07</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section05 fp-auto-height">
+            <div class="footer">
+                <div class="footer_in">
+                    <div class="f_logo">
+                        <a href="#"><img src="./ko/img/common/f_logo.png" alt="이연제약"></a>
+                    </div>
+                    <div class="f_desc">
+                        <ul>
+                            <li><a href='#'>개인정보처리방침</a></li>
+                            <li><a href='#'>이메일주소무단수집거부</a></li>
+                            <li><a href='#'>공시정보관리규정</a></li>
+                        </ul>
+                        <p>서울특별시 강남구 영동대로 416, 8층 ( 대치동 코스모타워 )</p>
+			            <p>Copyright©REYON PHARMACEUTICAL CO., LTD. All rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dimed_all_menu">
+            <div class="dimed_close"> <a href="#">close</a> </div>
+            <div class="dimed_all_menu_in">
+                <ul>
+                    <li><span>기업</span>
+                        <ul>
+                            <li><a href="../about/greeting01.do">CEO인사말</a></li>
+                            <li><a href="../about/vision.do">기업소개</a></li>
+                            <li><a href="../about/history.do">회사연혁</a></li>
+                            <!-- <li><a href="../about/business.do">사업분야</a></li> -->
+                            <li><a href="../about/ci.do">CI 소개</a></li>
+                            <li><a href="../about/factory.do">공장소개</a></li>
+                            <li><a href="../about/anticorruption01.do">윤리경영</a></li>
+                            <li><a href="../about/contact.do">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><span>제품</span>
+                        <ul>
+                            <li><a href="../product/productNewsList.do">제품소식</a></li>
+                            <li><a href="../product/productList.do">제품검색</a></li>
+                        </ul>
+                    </li>
+                    <li><span>연구개발</span>
+                        <ul>
+                            <li><a href="../rnd/rnd01.do">연구개발 소개</a></li>
+                            <li><a href="../rnd/rnd02.do">연구개발 분야</a></li>
+                            <li><a href="../rnd/rnd03.do">파이프라인</a></li>
+                        </ul>
+                    </li>
+                    <li><span>투자</span>
+                        <ul>
+                            <li><a href="../ir/stock01.do">주식정보</a></li>
+                            <li><a href="../ir/ir01List.do">IR센터</a></li>
+                            <li><a href="../ir/financial01.do">재무정보</a></li>
+                        </ul>
+                    </li>
+                    <li><span>이연소식</span>
+                        <ul>
+                            <li><a href="../pr/prNewsList.do">이연소식</a></li>
+                            <!--<li><a href="../pr/prFilm.do">홍보영상</a></li>
+                            <li><a href="../pr/prMaterial.do">홍보자료</a></li>
+                            -->
+                        </ul>
+                    </li>
+                    <li><span>고객센터</span>
+                        <ul>
+                            <li><a href="../customer/faq.do">자주 묻는 질문</a></li>
+                            <li><a href="../customer/inquiry.do">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="etc_menu">
+                    <ul>
+                        <!-- <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">공시정보관리규정</a></li> -->
+                        <li><a href="../etc/privacy.do">개인정보처리방침</a></li>
+                        <li><a href="../etc/email.do">이메일주소무단수집거부</a></li>
+                        <li><a href="../etc/disclosure.do">공시정보관리규정</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+
+    $(".btn--popup-close").on("click", function(){
+        var isToday = $("#chk_p").is(":checked");
+        //console.log("isToday : ", isToday);
+        if (isToday) {
+            setCookie("main_popup", "end", 24);
+        }
+        
+        // $('html, body').css('overflow','auto');
+        $(".popup").remove();
+        $('html, body').off('scroll touchmove mousewheel'); // 닫기 버튼 클릭시 스크롤 풀기
+    });
+            
+    var popupMustView = false;
+    if(popupMustView){
+        $(".popup").show();
+        // 팝업 보여질 때 스크롤 막기
+        $('html, body').on('scroll touchmove mousewheel', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(".btn--popup-close").on('click', function() {
+                    $('html, body').off('scroll touchmove mousewheel'); // 닫기 버튼 클릭시 스크롤 풀기
+                });
+                return false;
+        });
+    }else{
+        var cookieName = "main_popup";
+        var result = getCookie(cookieName);
+        result = "end";
+        //console.log(result);
+        if (result != 'end') {
+            $(".popup").show();
+            // 팝업 보여질 때 스크롤 막기
+            $('html, body').on('scroll touchmove mousewheel', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(".btn--popup-close").on('click', function() {
+                        $('html, body').off('scroll touchmove mousewheel'); // 닫기 버튼 클릭시 스크롤 풀기
+                    });
+                    return false;
+            });
+        } else { 
+            $(".popup").remove();
+            $('html, body').off('scroll touchmove mousewheel'); // 닫기 버튼 클릭시 스크롤 풀기
+        }
+    }
+    function setCookie(name, value, expiredays){
+        var todayDate = new Date();
+        todayDate.setDate(todayDate.getDate() + expiredays / 24);
+        console.log(todayDate.toGMTString())
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+    function removeCookie(name){
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+    function getCookie(name){
+        var nameStr = name + "=";
+        var nameLen = nameStr.length;
+        var cookieLen = document.cookie.length;  //쿠기값이 없을시 기본적으로 45이다.  document.cookie.length >= 45
+        var i = 0;
+        while (i < cookieLen) {
+            var j = i + nameLen;
+            if (document.cookie.substring(i, j) == nameStr) {
+                var end = document.cookie.indexOf(";", j); // ;의 위치  
+                if (end == -1) end = document.cookie.length;
+                return unescape(document.cookie.substring(j, end)); //쿠키값 반환
+            }
+            i = document.cookie.indexOf(" ", i) + 1;
+            if (i == 0) {
+                break;
+            }
+        }
+    }
+    var closeBtn = $('.btn--popup-close');
+    closeBtn.on('click', function() {
+        // couponClose();
+    });
+
+    // popup__tab
+    $('.popup__tab a').click(function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        var popupInner = $('.popup__inner');
+        var dataNum = $(this).attr('data-num');
+        popupInner.removeClass('active');
+        popupInner.eq(dataNum-1).addClass('active');
+    });
+});
+</script>
+<script>
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+            easingCss3 : 'cubic-bezier(0.785,0.135,0.15,0.86)',
+            autoScrolling: true,
+
+            scrollHorizontally:true,
+            css3:true,
+            scrollingSpeed : 1000,
+            navigation:true,
+            slidesNavigation:true,
+            responsiveHeight:330,
+            dragAndMove:true,
+            dragAndMoveKey : 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+            licenseKey : 'DABF666B-6823410F-A5659B0B-841B0320',
+            controlArrows : true,
+
+            afterLoad:function(){
+                if($('.section01').hasClass('active')){
+                    TweenMax.set('.sec01_slide01',{backgroundSize:'100% 100%'});
+                    TweenMax.to('.sec01_slide01',5.0,{backgroundSize: '130% 130%'});
+                }else{
+                    TweenMax.set(".sec01_slide01",{backgroundSize:'100% 100%'});
+                }
+            }
+        })
+    });
+</script>
+<script>
+	var swiper1 = new Swiper('.swiper-container_c', {
+		loop : true,
+		navigation : {
+			nextEl : '.s-button-next.s-btn',
+			prevEl : '.s-button-prev.s-btn',
+		},
+
+		noSwiping : true,
+
+	});
+	var swiper2 = new Swiper('.swiper-container_p', {
+		loop : true,
+		navigation : {
+			nextEl : '.s-button-next.s-btn',
+			prevEl : '.s-button-prev.s-btn',
+
+		},
+		noSwiping : true,
+	});
+	var swiper3 = new Swiper('.swiper-container_n', {
+		loop : true,
+		navigation : {
+			nextEl : '.s-button-next.s-btn',
+			prevEl : '.s-button-prev.s-btn',
+
+		},
+		noSwiping : true,
+	});
+</script>
+<style>
+    .section01{
+    overflow:hidden;}
+    #myVideo{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top:0;
+            width: 100%;
+            min-width:1920px;
+            
+            background-size: 100% 100%;
+             background-color: black; /* in case the video doesn't fit the whole page*/
+              background-image: /* our video */;
+              background-position: center center;
+              background-size: contain;
+               object-fit: cover; /*cover video background */
+               z-index:3;
+        }
+    .layer{
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            left: 0;
+            top: 43%;
+    
+            /*
+            * Preventing flicker on some browsers
+            * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+            */
+            -webkit-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+    </style>
+</body>
+</html>

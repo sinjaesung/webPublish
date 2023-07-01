@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마끼다</title>
+	<!-- 공통적용헤더정보 -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- //공통적용헤더정보 -->
+
+	<meta name="Description" content="전동공구 제조업체, 전문가용 전동공구, DIY전동공구, 아웃도어 전동공구 제품을 제조 및 취급">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="마끼다">
+	<meta property="og:description" content="전동공구 제조업체, 전문가용 전동공구, DIY전동공구, 아웃도어 전동공구 제품을 제조 및 취급">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="마끼다">
+	<meta name="Keywords" content="마끼다,makita,마끼다충전드릴,마키타,엘케이마끼다총판">
+	<meta name="Author" content="Bdot">
+	<meta name="robots" content="ALL">
+	<link rel="canonical" href="http://www.lkmakita.co.kr/" />
+	<link rel="stylesheet" href="./stylesheets/css/common.css?v=1.0">
+	<script type="text/javascript" src="./javascripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./javascripts/lib/TweenMax/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./javascripts/lib/TweenMax/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="./javascripts/common.js"></script>
+	<script type="text/javascript" src="./javascripts/main.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery.event.drag-1.5.min.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery.touchSlider.js"></script>
+	<script type="text/javascript" src="./javascripts/common_add.js"></script>
+    <script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function() {
+			$("#swipe_area").touchSlider({
+				flexible : true,
+				view : 4,
+				initComplete : function (e) {
+					$("#swipe_area_paging").html("");
+					var num = 1;
+					$("#swipe_area ul li").each(function (i, el) {
+                        console.log("touchswiperaera siwpe ul li :",i,el,i+1,e._view);//e_view는 view의개수와같음.
+						if((i+1) % e._view == 0) {
+							$("#swipe_area_paging").append('<button type="button" class="btn_page">page' + (num++) + '</button>');
+						}
+					});
+					$("#swipe_area_paging .btn_page").bind("click", function (e) {
+						var i = $(this).index();
+						$("#swipe_area").get(0).go_page(i);
+					});
+				},
+				counter : function (e) {
+                    console.log("counter 얘는 뭐야:",e,e.current-1)
+					$("#swipe_area_paging .btn_page").removeClass("on").eq(e.current-1).addClass("on");
+				},
+				btn_prev : $("#swipe_area").next().find(".btn_prev"),
+				btn_next : $("#swipe_area").next().find(".btn_next")
+			});
+
+			// 상단 검색
+			$("#topsearchForm").submit(function(){
+				if( !$("#TopSearchValue").val() ){ alert('제품코드 또는 제품명칭을 입력해주세요.'); $("#TopSearchValue").focus(); return false; }
+			});
+
+			// 뉴스레터 신청
+			$("#mailwriteForm").submit(function(){
+				if( (!$("#pop_email").val()) || $("#pop_email").val() == "이메일을 입력해주세요" ){ alert('이메일을 입력해 주세요.'); $("#pop_email").focus(); return false; }
+				if( !isCorrectEmail($("#pop_email").val()) ){ alert('이메일을 올바르게 입력해 주세요.'); $("#pop_email").focus(); return false; }
+			});
+		});
+		//]]>
+	</script>
+    <link rel="stylesheet" href="./stylesheets/css/bar_swiper.css">
+	<script type="text/javascript" src="./javascripts/bar_swiper.js"></script>
+    <script>
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )     
+		{
+		   var url = "/mobile/";    
+		   $(location).attr('href',url);
+
+		}
+	</script>
+</head>
+<body>
+<style>
+    #wrap{ overflow: hidden;}
+</style>   
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1 id="logo"><a href=""><img src='./images/logo.png' alt='markiata'></a></h1>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href='#' class='oneD'>마끼다</a>
+                        <ul class="twoD">
+                            <li><a href="https://www.lkmakita.co.kr/makita/brand.html">브랜드소개</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/makita/history.html">연혁</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/makita/contact.php">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/product/goods_all.html" class="oneD">
+                        제품정보</a>									
+                        <ul class="twoD">
+                            <li><a href="https://www.lkmakita.co.kr/product/goods_all.html">제품소개</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=4">제품소식</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/producttech/tech01.html">제품기술</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/product/goods_all.html" class="oneD">
+                        고객지원</a>									
+                        <ul class="twoD">
+                            <li><a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=2">자주하는 질문</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=3&mode=write">온라인 상담</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/cs/agency.html">대리점 안내</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/cs/service.html">서비스센터 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/product/goods_all.html" class="oneD">
+                        공지사항</a>									
+                        <ul class="twoD">
+                            <li><a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=1">공지사항</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/event/">이벤트</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/notice/card_menu_05.html">품질보증제도</a></li>
+                            <li><a href="https://www.lkmakita.co.kr/notice/card_menu_04.html">제품안전수칙</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <style>
+                .map_Bt{position:absolute;width:68px;height:47px;left:-180px;top:-5px;background:url(./images/icon/210825_icon_service.png) center center no-repeat;}
+                .map_Bt:hover{background-image:url(./images/icon/210825_icon_service_hover.png)}
+                #map_cc{display:none; background:#00909e; width:100%; position:fixed; top:94px; lefT:0;}
+                .mem_Bt{position:absolute;width:68px;height:47px;left:-240px;top:-5px;background:url(./images/icon/210825_icon_registration.png) center center no-repeat}
+                .mem_Bt:hover {background-image:url(./images/icon/210825_icon_registration_hover.png)}
+                .news_Bt_last{position:absolute;width:68px;height:47px;left:-110px;top:-5px;background:url(./images/icon/210825_icon_news.png) center center no-repeat}
+                .news_Bt_last:hover {background-image:url(./images/icon/210825_icon_news_hover.png)}
+                .gnb-banner {position:relative;max-width:980px;margin:30px auto 0;}
+                .gnb-banner__inner {position:absolute;top:58px;right:0;}
+                .gnb-banner a {display:block}
+            </style>
+            <div class="util_area">
+				<a target="_blank" href="http://member.lkmakita.co.kr" class="mem_Bt"></a>
+				<a class="map_Bt"></a>
+				<a href="#news_letter" class="popup_btn news_Bt_last"></a>
+				<button type="button" class="srch_Bt"><img src="./images/layout/gnb_srch_bt.png" alt="검색하기"></button>
+				<button type="button" class="site_Bt"><img src="./images/layout/gnb_site_bt.png" alt="사이트맵"></button>
+			</div>
+			<div class="gnb-banner">
+				<div class="gnb-banner__inner">
+					<a target="_blank" href="https://lkmakita.co.kr/e-book/include/catalistc.php">
+						<img src="./images/layout/gnb_banner_220525.png" alt="마끼다 E - 카탈로그">
+					</a>
+				</div>
+			</div>
+        </div>
+        <section class="twoDepth_util" >
+            <div class="btn_area">
+                <p clss="top_btn">
+                    <a href="http://salsdg" target='_blank'>웹 발주 시스템</a>
+                </p>
+                <p class="bot_btn">
+                    <a href="">이메일 무단 수집 거부</a>
+                    <a href="">개인정보처리방침</a>
+                </p>
+            </div>
+        </section>
+        <section id="map_cc" class="srch_page">
+            <div class="wrap">
+                <div style="text-align:center;background:url('./images/layout/makita_map.png') no-repeat;width:1152px;height:525px;margin:auto">
+                    <div style="width:340px;height:525px; float:right;">
+                        <div style="padding:110px 0px 110px 10px; text-align:left;">
+                            <div style="font-size:20px; font-weight:500;  font-family:'Noto Sans KR'; color:#fff;">찾아오시는길</div>
+                            <div style="padding:5px; width:105px; height:1px; border-bottom:2px solid #fff; ;"></div>
+                            <div style=" padding:25px 0 20px 5px;font-size:20px; font-weight:500; letter-spacing:-0.5px;    
+                                font-family:'Noto Sans KR'; color:#fff;">
+                                서울특별시 영등포구 선유로 151 LK사옥
+                            </div>
+                            <div style=" padding:35px 0 0 12px;font-size:15px; font-weight:700;   font-family:'Noto Sans KR'; color:#fff; ">
+                                <span style="font-size:12px; padding-right:5px;">■</span> 
+                                지하철 이용 시
+                            </div>
+                            <div style=" padding:15px 0 0 32px;font-size:15px; font-weight:300;   font-family:'Noto Sans KR'; color:#fff; ">- 2호선 영등포구청역 2번 하차 후 도보 7분 </div>
+                            <div style=" padding:10px 0 0 32px;font-size:15px; font-weight:300;   font-family:'Noto Sans KR'; color:#fff; ">- 5호선 양평역 1번 하차 후 도보 5분</div>
+                            <div style=" padding:25px 0 0 12px;font-size:15px; font-weight:700;   font-family:'Noto Sans KR'; color:#fff; ">
+                                <span style="font-size:12px; padding-right:5px;">■</span>
+                                 버스 이용 시
+                            </div>
+                            <div style=" padding:15px 0 0 32px;font-size:15px; font-weight:300;   font-family:'Noto Sans KR'; color:#fff; line-height:150%; ">- 7612, 05(마을B), 5(일반B)<br> <span style="padding-lefT:7px;">탑승 후 당중초등학교 하차 후 도보 1분</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="site_map">
+            <div class="wrap">
+                <ul>
+                    <li>
+                        <a href="">브랜드소개</a><a href="https://www.lkmakita.co.kr/makita/history.html">연혁</a><a href="https://www.lkmakita.co.kr/makita/contact.php">오시는길</a>					
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/product/goods_all.html">제품소개</a>
+                        <a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=4">제품소식</a>
+                        <a href="https://www.lkmakita.co.kr/producttech/tech01.html">제품기술</a>	
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=2">자주하는 질문</a>
+                        <a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=3&mode=write">온라인 상담</a>
+                        <a href="https://www.lkmakita.co.kr/cs/agency.html">대리점 안내</a>
+                        <a href="https://www.lkmakita.co.kr/cs/service.html">서비스센터 안내</a>	
+                    </li>
+                    <li>
+                        <a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=1">공지사항</a>
+                        <a href="https://www.lkmakita.co.kr/event/">이벤트</a>
+                        <a href="https://www.lkmakita.co.kr/notice/card_menu_05.html">품질보증제도</a>
+                        <a href="https://www.lkmakita.co.kr/notice/card_menu_04.html">제품안전수칙</a>				
+                    </li>
+                </ul>
+                <div class="gnb-banner__inner">
+                    <a target="_blank" href="">
+                        <img src="./images/layout/gnb_banner_220525.png" alt="마끼다 E카타가로로">
+                    </a>
+                </div>
+                <div class="btn_area">
+                    <p class="top_btn">
+                        <a href="" target="_blank">웹 발주 시스템</a>
+                    </p>
+                    <p class="bot_btn">
+                        <a href="">이메일 무단수집 거부</a>
+                        <a href="">개인정보처리방침</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section id="search">
+        <div class="wrap">
+            <p class="title"><span>SEARCH</span></p>
+            <form method="get" name="topsearchForm" id="topsearchForm" action="">
+                <div class="inputA">
+                    <span>
+                        <input type="text" name="TopSearchValue" id="TopSearchValue" maxLength="120" placeholder="제품코드 또는 제품명칭을 입력해주세요."/>
+                        <button type="submit">검색</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <style>
+        *{box-sizing:border-box;}
+        .video-background{
+            position:fixed; top:0;right:0;
+            bottom:0;left:0; z-index:-99
+        }
+        .video-foreground,.video-background iframe{
+            position:absolute;top:0;left:0;
+            width:100%; height:100%; pointer-events:none;
+        }
+        #vidtop-content{top:0; color:#fff}
+        .vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+        .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+        .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); 
+        transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+
+        @media (min-aspect-ratio: 16/9) {
+        .video-foreground { height: 300%; top: -100%; }
+        }
+        @media (max-aspect-ratio: 16/9) {
+        .video-foreground { width: 300%; left: -100%; }
+        }
+        @media all and (max-width: 600px) {
+        .vid-info { width: 50%; padding: .5rem; }
+        .vid-info h1 { margin-bottom: .2rem; }
+        }
+        @media all and (max-width: 500px) {
+        .vid-info .acronym { display: none; }
+        }
+        #footer{z-index:25;}
+    </style>
+    <script>
+        $(document).ready(function(){
+        
+            $(window).on("load",function(e){
+                $(this).on("resize",function(e){
+                    wmvW =$(this).width();
+                    wmvH =$(this).height();
+                    wmvWnn =$(this).width();
+        
+                 $("#video-container_mds").height(wmvH-174);
+                $(".video-background").css({"width": + wmvW + "px" })
+                $(".video-background").css({"height": + wmvH + "px" })
+        
+                });
+                $(this).trigger("resize");
+        
+        
+                    //$(".bar_wrap_swipe .swiper-button-next").css("display","block");
+                   // $(".bar_wrap_swipe .swiper-button-prev").css("display","block");
+        
+            });
+        
+        });
+    </script>
+    <link rel="stylesheet" href="./stylesheets/css/sli_add2.css">
+    <section id="container" class="main">
+        <section id="main_area">
+            <section class="fir_sec">
+                <article class="sli_" style="background:url(./images/main/img_main0601.jpg); background-size:auto;background-position:center;">
+                    <div class="sli_align">
+                        <div class="md_align">
+                            <div class="guide_ps">
+                                <div class="guide_txt">
+                                    <h1>한계를 뛰어넘다<br/>마끼다 사상 최대출력 40vmax </h1>
+                                    <P>
+                                        <img src="./images/main/img_main0602.png" alt="xgt">
+                                    </P>
+                                </div>
+                                <div class="sli_btn_ps">
+                                    <div class="sli_btn_grp">
+                                        <div class="sli_btn"><a href='#'><span>자세히보기</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="sli2" style="background:url(images/main/img_main0603.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>최다 전동공구 보유<br>마끼다 18V</h1>
+									<p>
+										<img src="images/main/img_main0604.png" alt="LXT">
+									</p>
+								</div>
+								<div class="sli_btn_ps">
+								
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://www.lkmakita.co.kr/product/goods_all.html?SearchVolt=18V"><span>자세히보기</span></a></div>
+									</div>
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli2" style="background:url(images/main/img_main0605.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>컴팩트하고 강하다.<br>완벽한 핸들링 12Vmax</h1>
+									<p>
+										<img src="images/main/img_main0606.png" alt="cxt">
+									</p>
+								</div>
+								<div class="sli_btn_ps">
+								
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://www.lkmakita.co.kr/product/goods_all.html?SearchVolt=12Vmax"><span>자세히보기</span></a></div>
+									</div>
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli3" style="background:url(images/main/01_img.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>마끼다 공구의 혁신<br>AWS 블루투스 무선 기술</h1>
+									<p>무선으로 공구와 연동집진기를 동시에 컨트롤 가능</p>
+								</div>
+								<div class="sli_btn_ps">
+								
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://lkmakita.co.kr/bbs/index.php?bm_sid=1&mode=view&sid=49&page=1&SearchCate=&SearchStatus=&SearchColumn=&SearchValue="><span>자세히보기</span></a></div>
+									</div>
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli_gj" style="background:url(images/main/img_popup0601.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>
+									강력한 파워로 빠르게! <br>
+									최신 기술로 편리하게!
+									</h1>
+									<p>
+										마끼다 배터리로 최다의 정원공구 사용 <br>
+										다양한 정원공구, 야외 작업을 마끼다!
+									</p>
+								</div>
+								<div class="sli_btn_ps">
+								
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://lkmakita.co.kr/product/goods.html?depth1=1200"><span>자세히보기</span></a></div>
+									</div>
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli7" style="background:url(images/main/aircirculator_w.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>브러쉬리스 모터로 강력하다!<br>마끼다 무선 송풍기</h1>
+									<p>노이즈 레벨 감소로 조용하고 가볍게 사용</p>
+								</div>
+								<div class="sli_btn_ps">
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://www.lkmakita.co.kr/product/goods_view.html?sid=1008&depth2=1204&page=1&depth1=1200&SearchLine=&SearchVolt=&SearchValue="><span>자세히보기</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli7" style="background:url(images/main/04_img.jpg); background-size: auto; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>마끼다 직영<br>A/S 서비스센터 운영</h1>
+									<p>구로, 안양, 인천, 평택, 광주, 대구, 부산<br>가까운 지점으로 방문해 주세요!</p>
+								</div>
+								<div class="sli_btn_ps">
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="https://www.lkmakita.co.kr/bbs/index.php?bm_sid=1&mode=view&sid=89&page=1"><span>자세히보기</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli8" style="background:url(images/main/05_img.jpg); background-size: auto ; background-position:center;">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>마끼다 쇼룸,<br>직접 체험해보세요</h1>
+									<p>다양한 마끼다 제품을 직접 체험해보세요.<br>제품상담부터 수리까지</p>
+								</div>
+								<div class="sli_btn_ps">
+									<div class="sli_btn_grp">
+									
+										<div class="sli_btn"><a href="http://lkmakita.co.kr/bbs/index.php?bm_sid=1&mode=view&sid=51&page=1&SearchCate=&SearchStatus=&SearchColumn=&SearchValue="><span>자세히보기</span></a></div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+                <article class="sli0708">
+					<div class="sli_align">
+						<div class="md_align">
+							<div class="guide_ps">
+
+								<div class="guide_txt">
+									<h1>마끼다 정품등록 서비스<br>등록하면 보증기간 3년 연장!</h1>
+									<p>마끼다 정품등록은 웹/앱에서 가능합니다.</p>
+								</div>
+								<div class="sli_btn_ps">
+									<div class="sli_btn_grp">
+										<div class="sli_btn"><a href="http://lkmakita.co.kr/bbs/index.php?bm_sid=1&mode=view&sid=37&page=1&SearchCate=&SearchStatus=&SearchColumn=&SearchValue=					
+										"><span>자세히보기</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+                <div class="btn_align">
+                    <div class="btn_area">
+                        <div class="visual_btn">
+                            <button class="left">이전 작품</button>
+                            <span class="visual_indi"></span>
+                            <button class="right">다음 작품</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="two_sec">
+                <div id="swipe_area">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230404145939_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+                                        <span class="code_num">DAS18180</span>
+                                        <span class="title">180 무선 더스크건</span>
+                                    </span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230404150203_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">VC006GM</span>
+										<span class="title">80Vmax <br/>무선 집진기</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230406145736_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">UT002G</span>
+										<span class="title">40Vmax 무선 믹서기</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230406161419_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">UR013G</span>
+										<span class="title">40Vmax 무선 예초기<br/>(바이크 핸들)</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230224151117_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">TD003G</span>
+										<span class="title">40Vmax 무선 <br />임팩트 드라이버</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230224145516_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">DUR193</span>
+										<span class="title">18V 무선 예초기<br /></span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230224143604_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">DUC101</span>
+										<span class="title">18V 무선 전정톱</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20230224132503_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">DCF301</span>
+										<span class="title">18V 무선 선풍기</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20221027174401_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">DHG181</span>
+										<span class="title">18V 무선 열풍기</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20220819181258_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">RT001G</span>
+										<span class="title">40Vmax 무선 트리머</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20210628153901_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">DKS513</span>
+										<span class="title">18V 무선 방진 원형톱</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="pro_area">
+                                    <span class="icon_area">
+                                        <img src="https://www.lkmakita.co.kr/upload/product/thumbnail/gimg_20220830181843_thum.png" width="245" alt="DAS180 이미지"/>
+                                    </span>
+                                    <span class="title_area">
+										<span class="code_num">UC012G</span>
+										<span class="title">40Vmax 무선 체인톱</span>
+									</span>
+                                    <span class="detail-view">상세보기</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_arae">
+                        <button type="button" class="btn_prev">prev</button>
+                        <span id="swipe_area_paging" class="btn_area" style="text-align:center;"></span>
+                        <button type="button" class="btn_next">next</button>
+                    </div>
+                </div>
+                <div class="title-area">
+                    <p class="title"><img src='./images/icon/main_sec02_title.png' alt=""/></p>
+                    <p class="text">마끼다가 가져다 준 생활의 변화를 느껴보세요. 당신의 더 나은 내일을 만들어 드립니다.</p>
+                </div>
+            </section>
+
+            <section class="thr_sec">
+                <div class="sec_wrap">
+                    <div>
+                        <p class="title"><img src='./images/icon/main_sec03_title.png' alt=''/></p>
+                        <p class="text">항상 고객의 입장에서 끊임없이 노력하며 고객과 소통합니다.</p>
+                        <div class="box_area">
+                            <div class="left_box"><a href=""><img src="./images/icon/main_sec03_icon1.jpg" alt=""></a></div>
+                            <ul class="right_box">
+                                <li><a href=""><img src='./images/icon/main_sec3_icon2.jpg' alt='온라인상담'></a></li>
+                                <li><a href=""><img src='./images/icon/main_sec3_icon3.jpg' alt='대리점 안내'></a></li>
+                                <li><a href=""><img src='./images/icon/main_sec3_icon4.jpg' alt='서비스 지정점 안내'></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fou_sec">
+                <div class="sec_wrap">
+                    <div>
+                        <p class="title"><img src="./images/icon/main_sec04_title.png" alt=""/></p>
+                        <p class="text">마끼다는 제품의 품질 향상과 고객의 편의를 위해 항상 최선을 다하고 있습니다.</p>
+                        <div class="news_area">
+                            <p class="more_bt"><a href="">더보기</a></p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="img_area">
+                                            <img src="https://www.lkmakita.co.kr/upload/bbs/1/thumbnail/bbs_thum_20191025172637_thum.jpg" alt="이미지1">
+                                            <span class="dimd"></span>
+                                            <span class="label tp1">공지<br>사항</span>	
+                                        </span>
+                                        <span class="txt_area">
+											<span class="title">마끼다 직영 서비스센터 택배 안내</span>
+											<span class="text">&nbsp;이곳에 마끼다마끼다에 맡기다!&quot;각 지역별 직영 서비스센터에서 서비스를 받아보세요!&quot;&nbsp;&nbsp;&nbsp;Make Your Work Perfect!&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											<!-- <span class="date">2019.10.25</span> -->
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="img_area">
+                                            <img src="https://www.lkmakita.co.kr/upload/bbs/1/thumbnail/bbs_thum_20190924110029_thum.jpg" alt="이미지1">
+                                            <span class="dimd"></span>
+                                            <span class="label tp1">공지<br>사항</span>	
+                                        </span>
+                                        <span class="txt_area">
+											<span class="title">마끼다 쇼룸, 직접 체험해 보세요!</span>
+											<span class="text">&nbsp;&nbsp;마끼다에서는 고객들이 마끼다 제품을 직접 보고 시연할 수 있는 쇼룸을 운영하고 있습니다.또한 서비스센터와 함께 운영하여 편리하게 A/S 서비스를 제공 받으실 수 있습니다.현재 운영 되고 있는 마끼다 쇼룸은 평택, 광주, 대구 지역에서 만나 보실 수 있으며더 많은 지역에서 쇼룸을 만나보실 수 있도록 노력하겠습니다!&nbsp;Make Your Work Perfect!​&nbsp; &nbsp;&nbsp;&nbsp;</span>
+											<!-- <span class="date">2019.09.24</span> -->
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="img_area">
+                                            <img src="https://www.lkmakita.co.kr/upload/bbs/1/thumbnail/bbs_thum_20190801125258_thum.png" alt="이미지1">
+                                            <span class="dimd"></span>
+                                            <span class="label tp1">공지<br>사항</span>	
+                                        </span>
+                                        <span class="txt_area">
+											<span class="title">LK마끼다 광주 쇼룸 오픈!</span>
+											<span class="text">LK마끼다 광주 직영 서비스센터 신규 오픈!전국으로 서비스 네트워크 확대&nbsp;&nbsp; &nbsp;Make Your Work Perfect!&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											<!-- <span class="date">2019.08.01</span> -->
+										</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="right_bullet">
+                <button type="button" class="on"></button>
+                <button type="button"></button><button type="button"></button>
+                <button type="button"></button>
+            </div>
+        </section>
+
+    </section>
+
+    <script>
+        var window_height=$(window).height();
+        var window_width=$(window).width();
+        var $dimmed=$('.popup_dimmed');
+
+        function setCookie(name,value,expiredays){
+            var today=new Date();
+            today.setDate(today.getDate()+expiredays);
+
+            document.cookie = name+'='+escape(value)+'; path=/;expires='+today.toGMTString()+';';
+        }
+        function getCookie(name)
+        {
+            var cName = name + "=";
+            var x = 0;
+            var i = 0;
+            while ( i <= document.cookie.length )
+            {
+                var y = (x+cName.length);
+                if ( document.cookie.substring( x, y ) == cName )
+                {
+                    if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+                        endOfCookie = document.cookie.length;
+                    return unescape( document.cookie.substring( y, endOfCookie ) );
+                }
+                x = document.cookie.indexOf( " ", x ) + 1;
+                if ( x == 0 )
+                    break;
+            }
+            return "";
+        }
+
+        $(window).load(function(){
+            $("body").css({
+                position: "fixed",
+                width: "100%"
+            });
+            $dimmed=$('.popup_dimmed');
+            $dimmed.css({display:'block'}).addClass('active');
+
+        })
+    </script>
+
+    <footer id="footer">
+        <div class="footer_wrap">
+            <p class="logo"><img src="./images/layout/f_logo.png" alt="마끼다 롷고"></p>
+            <ul>
+                <li><a href="">이메일 무단 수집 거부</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="" target="_blank">웹 발주 시스템</a></li>
+                <li><a href="#news_letter" class="popup_btn">뉴스레터 신청</a></li>
+            </ul>
+            <address>
+                ㈜엘케이마끼다총판<br />
+				우편번호 07268 서울시 영등포구 선유로 151 LK사옥<br>
+				제품 A/S 보내실 곳 : 경기도 평택시 포승읍 포승산단로 40번길 15-12 마끼다평택서비스센터<br>
+				전화 : 1522-0909  I  팩스 : 02-2630-4701  I  사업자등록번호 107-81-57216
+            </address>
+            <p class="inq_num">
+				제품안내 및 AS 문의 <span>1522-0909</span>
+			</p>
+            <ul class="sns">
+                <li class="insta"><a href= "https://www.instagram.com/makita_powertools_korea" target="_blank" alt ="insta"></a></li>
+				<li class="navercafe"><a href= " https://cafe.naver.com/makitapowertools" target="_blank" alt ="navercafe"></a></li>
+				<li class="facebook"><a href= "https://www.facebook.com/powertoolsofficial" target="_blank" alt ="facebook"></a></li>
+				<li class="youtube"><a href= "https://www.youtube.com/channel/UCEU4gcCPP7t9cx4tKzFbAEA?view_as=subscriber" target="_blank" alt ="youtube"></a></li>
+				<li class="blog"><a href="https://blog.naver.com/makitapowertools" target="_blank" alt="blog"></a></li>
+            </ul>
+            <p class="copyright">Copyright © 2017 LK Makita Co,. Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</div>
+</body>
+</html>

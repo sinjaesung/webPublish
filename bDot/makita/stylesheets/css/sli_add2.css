@@ -1,0 +1,336 @@
+
+.sli_align{
+	width: 1500px; 
+	margin: auto;
+	position: relative;
+	height: 100%;
+	display: table;
+	z-index: 10;
+
+}
+
+.md_align {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 50px;
+}
+
+.sli_img1 {
+	background: url('../../images/icon/sli1_img.png') no-repeat;
+	width: 690px;
+	height: 750px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#main_area section.fir_sec article {
+	display: block;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+}
+
+
+#main_area section.fir_sec article.sli_gj{
+	opacity:0;
+	background: url('../../images/icon/main_slide_gj.jpg') no-repeat center;
+	background-size: auto 100%;
+
+}
+
+#main_area section.fir_sec article.sli1{
+	opacity:0;
+	background: url('../../images/icon/main_visual_sli2.jpg') no-repeat center;
+	background-size: auto 100%;
+	display:none;
+
+}
+
+
+#main_area section.fir_sec article.sli2{
+	/* background: url('../../images/icon/main_visual_sli_0424.png') no-repeat center;
+	background-size: auto 100%; */
+	opacity:0;
+	display:none;
+}
+
+
+
+#main_area section.fir_sec article.sli3{
+	background: url('../../images/icon/main_visual_sli3.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+#main_area section.fir_sec article.sli4{
+	background: url('../../images/icon/main_visual_sli4.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+
+}
+
+#main_area section.fir_sec article.sli5{
+	background: url('../../images/main/main_slide_1.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+
+}
+
+#main_area section.fir_sec article.sli6{
+	background: url('../../images/main/main_slide_2.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+#main_area section.fir_sec article.sli7{
+	background: url('../../images/main/main_visual_33.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+
+#main_area section.fir_sec article.sli8{
+	background: url('../../images/main/main_visual_2.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+#main_area section.fir_sec article.sli9{
+	background: url('../../images/main/main_visual_4.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+#main_area section.fir_sec article.sli0708{
+	background: url('../../images/main/main_visual_sli0708.jpg') no-repeat center;
+	background-size: auto 100%;
+	opacity:0;
+	display:none;
+}
+
+
+.guide_txt{
+	margin-bottom: 80px;
+	height: 200px;
+}
+.guide_txt h1{
+	font-size: 60px;
+	color: #fff;
+	line-height: 75px;
+	letter-spacing: -4px;
+	font-weight: 500;
+	position: absolute;
+	top: -13px;
+}
+.guide_txt p{
+	font-size: 24px;
+	color: #fff;
+	line-height: 32px;
+	letter-spacing: -1px;
+	position: absolute;
+	top: 173px;
+}
+.sli_btn_grp{
+	margin-bottom: 15px;
+	width: 100%;
+	position: relative;
+	display: table;
+
+}
+.sli_btn_ps{
+	position: absolute;
+	top:  277px;
+}
+.sli_btn{
+	width: 178px;
+	height: 54px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 54px;
+	margin-right: 15px;
+	float: left;
+	position: relative;
+	background: url('../../images/icon/slibtn_bg.png') no-repeat;
+
+}
+
+.visual_indi{
+	position: relative;
+	top: -5px;
+}
+.guide_ps{
+width: 100%;
+height:400px;
+position: relative;
+}
+
+
+.sli_btn a{
+	width: 100%;
+	height:100%;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#fff;
+	background: url('../../images/icon/slibtn_bg.png') no-repeat;
+}
+
+.sli_btn a:hover{
+	color: #333 !important;;
+	transition: all ease .4s;
+	font-weight: 500;
+
+}
+
+.sli_btn a::after{
+	position: absolute;
+	width: 0;
+	height:100%;
+	content:"";
+	background: url('../../images/icon/slibtn_bg.png') no-repeat;
+	left: 0;
+	top: 0;
+	z-indeX: 90;
+
+}
+
+.sli_btn a:hover::after{
+	content:"";
+	width: 100%;
+	height:100%;
+	color: #333;
+	transition: all ease .4s;
+	background: url('../../images/icon/slibtn_bg_on.png');
+}
+
+.sli_btn a span{
+	width:100%;
+	height:100%;
+	display:block;
+	z-indeX: 999;
+	color:#fff;
+	position: absolute;
+}
+
+
+
+.sli_btn a:hover span{
+	color:#333;
+
+}
+
+
+
+
+
+#main_area section.fir_sec .btn_area .visual_indi button {
+	width: 8px;
+	height: 8px;
+	display: inline;
+	margin: 0 10px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	transition: .3s ease all;
+	border-radius: 6px;
+	border: 2px solid #fff;
+	background: transparent;
+	box-sizing: border-box;
+	padding: 0;
+
+}
+
+
+#main_area section.fir_sec .btn_area .visual_indi button:hover{
+	background-color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	transition: .3s ease all;
+
+}
+
+
+#main_area section.fir_sec .btn_area .visual_indi button.on {
+	width: 30px;
+	height: 8px;
+	border: 2px solid #fff;
+	background-color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	transition: .3s ease all;
+
+}
+
+.btn_align {
+	width: 1500px;
+	margin: auto;
+	position:relative;
+	height: 100%;
+}
+
+#main_area section.fir_sec .btn_area .visual_btn > button.left {
+	background: url('../../images/btn/main_visual_left_v1.png') no-repeat;
+	margin-right: 23px;
+}
+
+#main_area section.fir_sec .btn_area .visual_btn > button.right {
+	background: url('../../images/btn/main_visual_right_v1.png') no-repeat;
+	margin-left: 23px;
+}
+
+#main_area section.fir_sec .btn_area .visual_btn > button {
+	display: inline;
+	text-indent: -9999px;
+	width: 41px;
+	height: 41px;
+}
+
+#main_area section.fir_sec .btn_area {
+	z-index: 30;
+	position: absolute;
+	left: 50px;
+	width: auto;
+	bottom: 56px;
+	text-align: center;
+
+}
+
+#main_area section.fir_sec{
+	min-height: 600px;
+}
+#wrap #container #product_bar .bar_wrap_swipe .swiper-container ul li{
+	float: left;
+}
+
+.bar_wrap_swipe  .swiper-wrapper{width: 1264px !important; margin: auto;    transform: translate3d(0px, 0px, 0px) !imporant; }
+.bar_wrap_swipe .swiper-slide{
+	width: 84px !important;
+}
+
+#wrap #container #product_bar .bar_wrap_swipe{
+	width: 100%;
+}
+	
+@media (max-width: 1200px) {
+	.bar_wrap_swipe  .swiper-wrapper{width: 1022px !important; margin: auto;  transform: translate3d(0px, 0px, 0px) !imporant;  }
+
+	.bar_wrap_swipe .swiper-slide{
+		width: 73px !important;
+		
+	}
+	#wrap #container #product_bar .bar_wrap_swipe .swiper-container ul li a .tit{
+		font-size: 12px;
+		position: relative;
+		top: 5px;
+	}
+
+}
+	

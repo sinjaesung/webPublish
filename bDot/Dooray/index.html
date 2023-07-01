@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="description" content="한국의 과학발전을 위한 공익재단. 과학기술상, 펠로십, 장학후원 등 사업소개 및 응모 안내.">
+	<meta property="og:title" content="한국도레이과학진흥재단">
+	<meta property="og:description" content="한국의 과학발전을 위한 공익재단. 과학기술상, 펠로십, 장학후원 등 사업소개 및 응모 안내.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.koreatoraysf.org/">
+	<meta property="og:image" content="http://toray.gabia.io/resources/assets/images/og.jpg">
+	<title>한국도레이과학진흥재단</title>
+    <script src="./resources/assets/library/jquery/jquery-3.6.3.min.js"></script>
+	<script src="./resources/assets/library/jquery/jquery.countTo.min.js"></script>
+	<script src="./resources/assets/library/swiper/swiper-bundle.min.js"></script>
+	<script src="./resources/assets/library/aos/aos.js"></script>
+	<script src="./resources/assets/script/common.js"></script>
+	<link rel="stylesheet" href="./resources/assets/library/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./resources/assets/library/aos/aos.css">
+	<link rel="stylesheet" href="./resources/assets/css/common.css">
+	<link rel="shortcut icon" href="./resources/assets/images/favicon.ico" type="image/x-icon">
+    <script>
+		
+		/*if (window.location.protocol != "https:") {
+			window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+		}
+
+		if (document.location.protocol == 'http:') {
+			document.location.href = document.location.href.replace('http:', 'https:');
+		}*/
+		
+	</script>
+    <!-- 개발 스크립트 -->
+	<script src="./resources/assets/script/project.js"></script>
+</head>
+<body class="loading">
+<div id="wrap" class="wrap white">
+    <header id="header" class="header header--main">
+        <div class="header__mark"></div>
+        <div class="header__wrap">
+            <div class="header__inner">
+                <h1 class="logo">
+                    <a href="">
+                        <span class="blind">한국도레이과학진흥재단</span>
+                    </a>
+                </h1>
+                <ul class="gnb" data-sub="">
+                    <li>
+                        <a href="" class="gnb__link">재단소개</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="" class="lnb__link">이사장 인사말</a>
+                            </li>
+                            <li>
+                                <a href="" class="lnb__link">연혁</a>
+                            </li>
+                            <li>
+                                <a href="" class="lnb__link">비전</a>
+                            </li>
+                            <li>
+                                <a href="" class="lnb__link">함께하는 사람들</a>
+                            </li>
+                            <li>
+                                <a href="" class="lnb__link">도레이그룹과학진흥재단</a>
+                            </li>
+                            <li>
+                                <a href="" class="lnb__link">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="gnb__link">한국도레이 과학기술상</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#" class="lnb__link">공모개요</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">자주 묻는 질문</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">수상자 소개</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="gnb__link">한국도레이 펠로십</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#" class="lnb__link">공모개요</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">자주 묻는 질문</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">수상자 소개</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="gnb__link">장학후원</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#" class="lnb__link">사업소개</a>
+                            </li>                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="gnb__link">학술전통</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#" class="lnb__link">사업소개</a>
+                            </li>                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="gnb__link">재단소식</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#" class="lnb__link">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">뉴스</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lnb__link">공시현황</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="snb">
+                    <div class="language">
+                        <button type="button" class="btn-language">KR</button>
+                        <ul class="language__list">
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">JP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" id="btnMenu" class="btn-menu">
+                        <span class="btn-menu__line btn-menu__line--top"></span>
+                        <span class="btn-menu__line btn-menu__line--bottom"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="sitemap" class="sitemap">
+            <div class="sitemap__wrap">
+                <div class="sitemap__box">
+                    <button type="button" id="sitemapClose" class="sitemap__close">
+                        <span class="blind">사이트맵 닫기</span>
+                    </button>
+                    <ul class="sitemap__gnb">
+                        <li class="active">
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">01</span>
+                                <span class="sitemap__title">재단소개</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">이사장 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">비전</a>
+                                </li>
+                                <li>
+                                    <a href="#">함께하는 사람들</a>
+                                </li>
+                                <li>
+                                    <a href="#">도레이그룹과학진흥재단</a>
+                                </li>
+                                <li>
+                                    <a href="#">오시는길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">02</span>
+                                <span class="sitemap__title">한국도레이 과학기술상</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">공모개요</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">수상자 소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">03</span>
+                                <span class="sitemap__title">한국도레이 펠로십</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">공모개요</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주묻는질문</a>
+                                </li>
+                                <li>
+                                    <a href="#">수상자 소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">04</span>
+                                <span class="sitemap__title"> 장학후원</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">사업소개</a>
+                                </li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">05</span>
+                                <span class="sitemap__title"> 학술진흥</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">사업소개</a>
+                                </li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="sitemap__menu">
+                                <span class="sitemap__num">06</span>
+                                <span class="sitemap__title"> 재단소식</span>
+                            </div>
+                            <ul class="sitemap__lnb">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>  
+                                <li>
+                                    <a href="#">뉴스</a>
+                                </li>  
+                                <li>
+                                    <a href="#">공시현황</a>
+                                </li>                                
+                            </ul>
+                        </li> 
+                    </ul>
+                    <ul class="sitemap__bottom">
+                        <li>
+                            <a href="#">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="btnEmailPopup">이메일 무단 수집 거부</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="emailPopup" class="popup popup--email">
+        <div class="popup__wrap">
+            <div class="popup__box">
+                <h2 class="popup__title">이메일 무단 수집 거부</h2>
+                <div class="popup__contents">
+                    본 웹사이트에서 게시된 이메일 주소가 전자우편 수집 프로그램이나 <br>
+                    그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부합니다. <br>
+                    이를 위반시 정보통신망법에 의해 처벌받으실 수 있습니다.
+                </div>
+                <button id="closePopup" type="button" class="popup__close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="container" class="container">
+        <div id="main" class="main" style="transition:all 0.7s ease-out;">
+            <section class="main-section" data-name="visual" data-color="white">
+                <div class="main-visual">
+                    <div class="main-visual__slider">
+						<div class="swiper-wrapper">
+							<!-- [D] 이미지 등록 -->
+							<div class="main-visual__item swiper-slide">
+								<div class="main-visual__bg main-visual__bg--pc" style="background-image:url(./resources/assets/images/intro01.jpg)"></div>
+								<div class="main-visual__bg main-visual__bg--mo" style="background-image:url(./resources/assets/images/intro01_mo.jpg)"></div>
+								<div class="main-visual__content">
+									<div class="main-visual__text main-visual__text--black">
+										<h2 class="main__slogan main__slogan--visual">
+											더 나은 미래, <br>
+											한국의 과학기술의 발전을 위해 이바지하겠습니다
+										</h2>
+										<p class="main-visual__description">
+											기초 과학과 공학에 지속적으로 지원하고 첨단 화학소재 개발로 삶의 질을 향상시키며 <br>
+											나아가 인류의 삶에 공헌할 수 있는 재단이 되도록 노력하겠습니다.
+										</p>
+										<div class="main-visual__button">
+											<a href="/ko/foundation/greeting.do" class="button button--black">
+												<span class="button__arrow button__arrow--white">재단소개 바로가기</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-visual__item swiper-slide">
+								<div class="main-visual__bg main-visual__bg--pc" style="background-image:url(./resources/assets/images/intro02.jpg)"></div>
+								<div class="main-visual__bg main-visual__bg--mo" style="background-image:url(./resources/assets/images/intro02_mo.jpg)"></div>
+								<div class="main-visual__content">
+									<div class="main-visual__text">
+										<h2 class="main__slogan main__slogan--long main__slogan--visual">
+											지난 5년간 과학기술상 <strong><span class="num">10</span>명</strong>, <br> 
+											펠로십 <strong><span class="num">24</span>억원</strong>, 장학후원 <strong><span class="num">149</span>명</strong>, 학술후원 <strong><span class="num">25</span>건</strong>으로 <br>
+											한국의 과학기술 발전에 기여하고 있습니다								
+										</h2>
+										<h2 class="main__slogan main__slogan--short main__slogan--visual">
+											과학기술상 <strong>10명</strong> <br>
+											펠로십 <strong>24억원</strong> <br>
+											이공계 장학생 <strong>149명</strong> <br>
+											학술후원 <strong>24건</strong> 
+										</h2>
+									</div>
+								</div>
+							</div>
+							<div class="main-visual__item swiper-slide">
+								<div class="main-visual__bg main-visual__bg--pc" style="background-image:url(./resources/assets/images/intro03.jpg)"></div>
+								<div class="main-visual__bg main-visual__bg--mo" style="background-image:url(./resources/assets/images/intro03_mo.jpg)"></div>
+								<div class="main-visual__content">
+									<div class="main-visual__text">
+										<h2 class="main__slogan main__slogan--visual">
+											현재 공모접수가 <br class="moview">
+											진행되고 있습니다
+											<small>접수기간: 2023.04.01 ~ 2023.06.30</small>
+										</h2>
+										<p class="main-visual__description">
+											제 6회 한국도레이 과학기술상, 한국도레이 펠로십 접수가 진행되고 있습니다. <br>
+											접수기간 : 2023. 04. 01 ~ 2023. 06. 30
+										</p>
+										<div class="buttons main-visual__button">
+											<a href="/ko/prize/prizeInfo.do" class="button button--reverse" style="background-color:#C55A11">
+												<span class="button__arrow button__arrow--black">한국도레이 과학기술상</span>
+											</a>
+											<a href="/ko/fellowship/fellowshipInfo.do" class="button button--reverse" style="background-color:#FFC000">
+												<span class="button__arrow button__arrow--black">한국도레이 펠로십</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="main-visual__controller">
+                        <div class="main-visual__bullet"></div>
+                        <button type="button" id="pauseBtn" class="main-visual__pause"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" data-name='business' data-color='black'>
+                <div class="main-business">
+                    <div class="row">
+                        <div class="main-business__inner">
+                            <div class="main__box">
+                                <h2 class="main__title">
+                                    <small style="font-family:Noto Sans KR">주요사업</small>
+                                    새로운 도전에 함께합니다.
+                                </h2>
+                                <p class="main__description">
+                                    과학자와 공학자의 연구를 도와 과하긱술발전에 이바지하고<br class="pcview">
+                                    대한민국 과학 인재 육성 지원합니다.
+                                </p>
+                            </div>
+                            <ul class="main-business__list">
+                                <li>
+                                    <a href="#" class="main-business__link">
+                                        <span class="main-business__item">
+                                            <span class="main-business__title">
+                                                한국 도레이 과학기술상
+                                            </span>
+                                            <span class="main-business__description">
+                                                새로운 기초고학과 공학의
+                                                연구문화를 만들어 나갑니다
+                                            </span>
+                                        </span>
+                                        <span class="main-business__object">
+                                            <span class="main-business__icon main-business__icon--motion main-business__icon--01">
+                                                <video src="./resources/assets/images/motion/motion01.mp4" playsinline autoplay muted="muted"></video>
+                                            </span>
+                                            <span class="main-business__icon main-business__icon--static"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="main-business__link">
+                                        <span class="main-business__item">
+                                            <span class="main-business__title">
+                                                한국도레이 펠로십
+                                            </span>
+                                            <span class="main-business__description">
+                                                과학 기술발전을 위한
+												다양한 신진의 활동을 지원합니다
+                                            </span>
+                                        </span>
+                                        <span class="main-business__object">
+                                            <span class="main-business__icon main-business__icon--motion main-business__icon--02">
+                                                <video src="./resources/assets/images/motion/motion02.mp4" playsinline autoplay muted="muted"></video>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+									<a href="/ko/scholarship/scholarshipInfo.do" class="main-business__link">
+										<span class="main-business__item">
+											<span class="main-business__title">
+												장학후원
+											</span>
+											<span class="main-business__description">
+												창의·융합 인재양성을 위해 장학 프로그램을 운영합니다
+											</span>
+										</span>
+										<span class="main-buseinss__object">
+											<span class="main-business__icon main-business__icon--motion main-business__icon--03">
+												<video src="./resources/assets/images/motion/motion03.mp4" playsinline  autoplay muted="muted"></video>
+											</span>
+										</span>
+									</a>
+								</li>
+                                <li>
+									<a href="/ko/promotion/promotionInfo.do" class="main-business__link">
+										<span class="main-business__item">
+											<span class="main-business__title">
+												학술 진흥
+											</span>
+											<span class="main-business__description">
+												학술 및 과학문화 향상과 교류촉진에 기여합니다
+											</span>
+										</span>
+										<span class="main-buseinss__object">
+											<span class="main-business__icon main-business__icon--motion main-business__icon--04">
+												<video src="./resources/assets/images/motion/motion04.mp4" playsinline autoplay muted="muted"></video>
+											</span>
+										</span>
+									</a>
+								</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" data-name="counter" data-color="white">
+                <div class="main-counter">
+                    <div class="main-counter__wrap">
+                        <div class="main__box">
+                            <h2 class="main__title main__title--white">
+                                <small>KTSF At A Glance</small>
+                                숫자로 보는 <br/>
+                                <span class="toraytypo toraytypo--white pcview">
+                                    한국도레<span class="font-transform"> |</span>과학진흥재단
+                                </span>
+                                <span class="toraytypo toraytypo--white moview">
+                                    한국도레과학진흥재단
+                                </span>
+                            </h2>
+                            <p class="main__description main__description--white">
+                                변화와 혁신의 중심인 과학의 토대를 강화하여 <br>
+								대한민국의 과학기술 발전과 인류의 미래과제 해결에 기여하겠습니다
+                            </p>
+                        </div>
+                        <ul class="main-counter__list">
+                            <li data-aos="counter_mo">
+                                <div class="main-counter__item">
+                                    <strong id="num01" class="numbers numbers--mo">10</strong>
+                                    <strong class="numbers" data-from="0" data-to="10" data-speed="1800" data-refresh-interval="50"></strong>명
+                                    <span class="main-counter__contents">과학기술상 수상자</span>
+                                </div>
+                                <div class="main-counter__bg" style=""></div>
+                            </li>
+                            <li data-aos="counter-mo">
+								<div class="main-counter__item">
+									<strong id="num02" class="numbers numbers--mo">24</strong>
+									<strong class="numbers" data-from="0" data-to="24"
+									data-speed="1800" data-refresh-interval="50"></strong> 억원
+									<span class="main-counter__contents">펠로십 지원금</span>
+								</div>
+								<div class="main-counter__bg" style="background-image:url(./resources/assets/images/bg_counter02.jpg)"></div>
+							</li>
+							<li data-aos="counter-mo">
+								<div class="main-counter__item">
+									<strong id="num03" class="numbers numbers--mo">149</strong>
+									<strong class="numbers" data-from="0" data-to="149"
+									data-speed="1800" data-refresh-interval="50"></strong> 명
+									<span class="main-counter__contents">이공계 대학생 장학후원</span>
+								</div>
+								<div class="main-counter__bg" style="background-image:url(./resources/assets/images/bg_counter03.jpg)"></div>
+							</li>
+							<li data-aos="counter-mo">
+								<div class="main-counter__item">
+									<strong id="num04" class="numbers numbers--mo">25</strong>
+									<strong class="numbers" data-from="0" data-to="25"
+									data-speed="1800" data-refresh-interval="50"></strong> 개
+									<span class="main-counter__contents">과학문화 학술진흥</span>
+								</div>
+								<div class="main-counter__bg" style="background-image:url(./resources/assets/images/bg_counter04.jpg)"></div>
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section main-section--footer" data-name="footer" data-color="black">
+                <footer id="footer" class="footer">
+                    <div class="footer__wrap">
+                        <div class="footer__item">
+                            <div class="footer__menu">
+                                <a href="#"><strong>개인정보처리방ㅊ미</strong></a>
+                                <a id="emailPopupBtn" href="">이메일무단수집거부</a>
+                            </div>
+                            <p class="footer__copyright">Copyright ⓒ 2023 KOREA TORAY SCIENCE FOUNDATION. All Rights Reserved.</p>
+                        </div>
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="./resources/assets/images/logo_white.png" alt="한국도레이과학진흥재단">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+            <section class="main-section main-section--banner" data-name="banner" data-color="black"></section>
+        </div>
+        <div class="main-footer">
+            <aside class="banner main-banner">
+                <div class="main-banner__item">
+                    <h3 class="main__slogan main-banner__title">
+                        현재 공모접수가 <br class="main-banner__br">
+                        진행도고있습니다.
+                    </h3>
+                    <p class="main-banner__description main__description main__description--white">
+                        제6회 한국도레이 과학기술상, <br class="main-banner__br">
+						한국도레이 펠로십 접수가 진행되고 있습니다 <br>
+						접수기간: 2023.04.01 ~ 2023.06.30 
+                    </p>
+                    <div class="buttons main-banner__button">
+                        <a href="" class="button button--white">
+                            <span class="button__arrow button__arrow--white">한국도레이고학기술상</span>
+                        </a>
+                        <a href="" class="button button--white">
+                            <span class="button_arrow button__arrow--white">한국도레이 펠로십</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <script>
+            $(function(){
+                AOS.init({
+                    duration:800
+                });
+                history.scrollRestoration='manual';
+                //loading
+                function loading(){
+                    $('body').removeClass('loading');
+                }
+                $(window).bind('load',loading);
+                //kvSwiper
+                var kvSwiper=new Swiper('.main-visual__slider',{
+                    effect:'fade',
+                    pagination:{
+                        el:'.main-visual__bullet',
+                        clickable:true
+                    },
+                    autoplay:{
+                        delay:5000,
+                        disableOnInteraction:false
+                    }
+                })
+                $('#pauseBtn').click(function(e){
+                    $(this).toggleClass('active');
+                    if($(this).hasClass('active')){
+                        kvSwiper.autoplay.stop();
+                    }else{
+                        kvSwiper.autoplay.start();
+                    }
+                })
+                $('.main-counter__list > li').on('mouseenter',function(){
+                    const parentUl = $(this).parent();
+                    parentUl.addClass('active');
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+                $('.main-counter__list > li').on('mouseleave',function(){
+                    const parentUl = $(this).parent();
+                    parentUl.removeClass('active');
+                    $(this).removeClass('active');
+                })
+                $(window).scroll(function(){
+                    var $mainSections=$('.main-section');
+                    var sectionsTop=[];
+                    if(window.innerWidth < 1336){
+                       var scTop =$(this).scrollTop();
+                       $mainSections.each((index,ele)=>{
+                         sectionsTop.push(ele.offsetTop);
+                       })
+                       //섹션active
+                       for(var i=0; i<sectionsTop.length; i++){
+                            if(scTop =sectionsTop[i] && scTop <sectionsTop[i+1]){
+                                $mainSections.eq(i).addClass('active').siblings().removeClass('active');
+                            }
+                            if(scTop >=sectionsTop[sectionsTop.length-1]){
+                                $mainSections.eq(sectionsTop.length -1).addClass('active').siblings().removeClass('active');
+                            }
+                       }
+                       //섹션 컬러라이징
+                       var currentSection = $('.main-section.active');
+                       if(currentSection.data('color')==='white'){
+                        $('#wrap').addClass('white');
+                       }else{
+                        $('#wrap').removeClass('white');
+                       }
+                    }
+                })
+            });
+        </script>
+        <script src="./resources/assets/library/jquery/jquery.counterup.min.js"></script>
+		<script src="./resources/assets/library/jquery/jquery.waypoints.min.js"></script>
+        <script>
+            $(function(){
+                var $body=$('body'),
+                $wrap=$('#wrap'),
+                currentIndex=0,
+                isMove=false,
+                isText=false,
+                mouseWheel=0;
+                var startY,endY;
+
+                var intro={
+                    //mouse wheelss
+                    handleWheel:function(e){
+                        if(!$body.hasClass('modal-open')){
+                            if(!this.isMobile()){
+                                if(!isMove){
+                                    if(e.originalEvent.deltaY > 0){
+                                        if(!this.isLast()){
+                                            isMove=true;
+                                            currentIndex++;
+                                            this.setTransitionSection();
+                                        }
+                                    }else{
+                                        if(!this.isFirst()){
+                                            isMove=true;
+                                            currentIndex--;
+                                            this.setTransitionSection();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        console.log("now currentiNDEX:",currentIndex);
+                    },
+                    //터치
+                    handleTouch:function(e){
+                        startY = e.originalEvent.changedTouches[0].screenY;
+                    },
+                    handleTouchMove:function(e){
+                        if(!$body.hasClass("modal-open")){
+                            if(!this.isMobile()){
+                                if(!isMove){
+                                    endY=e.originalEvent.changedTouches[0].screenY;
+                                    if(startY - endY>50){
+                                        if(!this.isLast()){
+                                            isMove = true;
+                                            currentIndex++;
+                                            this.setTransitionSection();
+                                        }
+                                    }else if(endY-startY>50){
+                                        if(!this.isFirst()){
+                                            isMove=true;
+                                            currentIndex--;
+                                            this.setTransitionSection();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        console.log("now currentiNDEX:",currentIndex);
+                    },
+                    //pc,mo구분
+                    isMobile:function(){
+                        var ww=window.innerWidth;
+                        return ww < 1366;
+                    },
+                    isOverFlow(){
+                        if(intro.isMobile()){
+                            $body.removeClass('scroll-lock');
+                        }else{
+                            $body.addClass('scroll-lock')
+                        }
+                    },
+                    //섹션넘기기
+                    setTransitionSection: function(){
+                        if(currentIndex < 3){
+                            $('.main').css('transform','translate3d(0px, -'+currentIndex*window.innerHeight+'px, 0px)');
+                            $('.main-footer').removeClass('active');
+                        }
+                        if(currentIndex==3){
+                            $('.main').css('transform','translate3d(0px,-'+ ((currentIndex -1)*window.innerHeight+$('.main-section').eq(currentIndex)[0].clientHeight)+'px,0px)');
+                            $('.main-footer').removeClass('active');
+                        }
+                        if(currentIndex==4){
+                            $('.main').css('transform','translate3d(0px, -' + ((currentIndex - 2) * window.innerHeight + $('.main-section').eq(currentIndex - 1)[0].clientHeight + $('.main-footer')[0].clientHeight) + 'px, 0px)');
+                            setTimeout(function(){
+                                $('.main-footer').addClass('active');
+                            },700);
+                        }
+                        setTimeout(function(){
+                            isMove=false;
+                        },1000);
+                        intro.setCurrentSection();
+                    },
+                    setCurrentSection:function(){
+                        var currentSection = $('.main-section').eq(currentIndex);
+                        currentSection.addClass('active').siblings('.main-section').removeClass('active');
+                        if(currentSection.data('color')==='white'){
+                            $wrap.addClass("white");
+                        }else{
+                            $wrap.removeClass('white');
+                        }
+
+                        if(currentSection.data('name')==='counter'){
+                            setTimeout(function(){
+                                $('.numbers').countTo({
+                                    formatter:function(value,options){
+                                        return value.toFixed(0).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+                                    }
+                                })
+                            },100);
+                        }
+                    },
+                    isFirst:function(){
+                        return currentIndex===0;
+                    },
+                    isLast:function(){
+                        return $('.main-section').length == (currentIndex +1);
+                    },
+                    goFirst(){
+                        $('.main').css('transform','translate3d(0px,0px,0px)');
+                        currentIndex=0;
+                        intro.setTransitionSection();
+                        $(window).scrollTop(0)
+                    },
+                    handleMobileScroll:function(e){
+                        var $mainSections=$('.main-section');
+                        var sectionsTop=[];
+                        if(intro.isMobile()){
+                            var scTop=$(this).scrollTop();
+                            $mainSections.each((index,ele)=>{
+                                sectionsTop.push(ele.offsetTop);
+                            })
+                            for(var i=0; i<sectionsTop.length; i++){
+                                if(scTop >= sectionsTop[i] && scTop < sectionsTop[i+1]){
+                                    $mainSections.eq(i).addClass('active').siblings().removeClass('active');
+                                }
+                                if(scTop >= sectionsTop[sectionsTop.length -1]){
+                                    $mainSections.eq(sectionsTop.length -1).addClass('active').siblings().removeClass('active');
+                                }
+                            }
+                            var currentSection=$('.main-section.active');
+                            if(currentSection.data('color')==='white'){
+                                $wrap.addClass('white');
+                            }else{
+                                $wrap.removeClass('white');
+                            }
+                        }
+                    },
+                    bind:function(){
+                        $(window).bind('mousewheel',function(e){intro.handleWheel(e)});
+                        $(window).bind("touchstart",function(e){intro.handleTouch(e)});
+                        $(window).bind("touchend",function(e){intro.handleTouchMove(e)});
+                        $(window).bind("load",intro.isOverFlow);
+                        $(window).bind('resize',intro.isOverFlow);
+                    },
+                    init:function(){
+                        $('.main-section').eq(currentIndex).addClass('active');
+                        $(window).bind('load',intro.isOverFlow);
+                    }
+                }
+                intro.bind();
+                intro.init();
+
+                $('.main-business__list > li').on('mouseenter',function(){
+                    var idx=$(this).index(), thisMotion=$(this).find('video')[0];
+                    thisMotion.play();
+                });
+                $('.main-business__list > li').on('mouseleave',function(){
+                    var idx=$(this).index(), thisMotion = $(this).find('video')[0];
+                    thisMotion.pause();
+                    thisMotion.currentTime = 0
+                })
+                $('.numbers--mo').counterUp({
+                    duration:4000,
+                    delay:16
+                })
+            })
+        </script>
+    </div>
+
+    <div class="main-popup">
+        <div class="main-popup__bg"></div>
+        <div class="main-popup__wrap">
+            <div class="main-popup__inner">
+                <div class="main-popup__contents">
+                    <div class="swiper-wrapper">
+                        <div class="main-popup__item swiper-slide">
+                            <img src="https://www.koreatoraysf.org/upload/popup/103_1_a61079fd-b0a9-44bf-ae3b-99d498f0a29f.png" alt="제6회 한국도레이 과학기술상 및 펠로십 공모">
+                        </div>  
+                        <!-- pc 링크 -->
+                        <div class="main-popup__links pcview">
+                            <!-- 4: pc 링크 1 -->
+                            <a href="https://www.koreatoraysf.org/ko/prize/prizeInfo.do" target="_blank" class="main-popup__link">
+                                <span class="blind">팝업 링크1_pc</span>
+                            </a>
+                            <!-- 6: pc 링크 2 -->
+                            <a href="https://www.koreatoraysf.org/ko/fellowship/fellowshipInfo.do" target="_blank" class="main-popup__link">
+                                <span class="blind">팝업 링크2_pc</span>
+                            </a>
+                        </div>
+                        <!-- 모바일 링크 -->
+                        <div class="main-popup__links moview">
+                            <!-- 5: 모바일 링크 1 -->
+                            <a href="https://www.koreatoraysf.org/ko/prize/prizeInfo.do" target="_blank" class="main-popup__link">
+                                <span class="blind">팝업 링크1_모바일</span>
+                            </a>
+                            <!-- 7: 모바일 링크 2 -->
+                            <a href="https://www.koreatoraysf.org/ko/fellowship/fellowshipInfo.do" target="_blank" class="main-popup__link">
+                                <span class="blind">팝업 링크2_모바일</span>
+                            </a>
+                        </div>	
+                    </div>
+                </div>
+                <div class="main-popup__indicator"></div>
+                <div class="main-popup__footer">
+                    <div class="main-popup__todaycheck">
+                        <label for="todaypopup">
+                            <input type="checkbox" name="anonymous" id="todaypopup" class="chk blind">
+                            <span class="icon-form"></span>
+                            오늘 하루 보지 않음
+                        </label>
+                    </div>
+                    <button type="button" id="popupclose" class="main-popup__close">
+                        <img src="./resources/assets/images/icons/icon_close_popup.svg" alt="팝업닫기">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+		$(function() {
+			var popSwiper = new Swiper('.main-popup__contents', {
+				pagination: {
+					el: '.main-popup__indicator',
+				},
+			})
+			var $popupItems = $('.main-popup__item');
+			if ($popupItems.length === 1) {
+				$('.main-popup__indicator').css('display','none');
+			}
+		})
+	</script>
+</div>
+</body>
+</html>
