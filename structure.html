@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            box-sizing:border-box;
+        }
+        html{
+            font-family: 'Noto Serif KR', serif;font-size:1rem; 
+        }
+        body,h1,h2,h3,h4,p,ul,li{margin:0;padding:0;}
+        h1,h2,p{font-size:1rem;}
+
+        h1{
+            font-size:2rem;
+        }
+        h2{ font-size:1.5rem;
+        }
+
+        .row{ 
+            max-width:1000px; width:100%;margin:auto;padding:calc(100vmin* (60/1080));
+            background-color:#efefef
+        }
+
+        section{
+            margin:calc(100vh * (60/1080)) calc(100vw * (40/1600));background-color:#909090
+        }
+        article{background-color:#a7a7a7}
+        header{background:linear-gradient(90deg,#8020ef,#2040df);}
+        nav{background-color:#20df40;}
+        footer{
+            background-color:#000;
+            padding:calc(100vmax * (40/1100)) calc(100vmax *(40/1600))
+        }
+        ul.horizontalUl{
+            display:flex;padding:calc(100vmin * (20/1080)); gap:10px; justify-content:center
+        }
+        ul.horizontalUl li{
+            list-style-type:none;
+        }
+        ul.horizontalUl li a{
+            text-decoration:none; color:#202020; display:block; 
+            padding:calc(100vmax * (20/1600))
+        }
+        ul.horizontalUl li a:hover{
+            background-color:black;color:white; transition:all 1s;
+        }
+
+        .flex1{
+            display:flex;flex-flow:row wrap;
+        }
+        .col12{
+            width:calc(100% / 12 * 12);
+        }
+        .col11{
+            width:calc(100% / 12 * 11);
+        }
+        .col10{
+            width:calc(100% / 12 * 10);
+        }
+        .col9{
+            width:calc(100% / 12 *9);
+        }
+        .col8{
+            width:calc(100% / 12 * 8);
+        }
+        .col7{
+            width:calc(100% / 12 *7);
+        }
+        .col6{
+            width:calc(100% / 12 *6);
+        }
+        .col5{
+            width:calc(100% / 12 *5);
+        }
+        .col4{
+            width:calc(100% / 12 *4);
+        }
+        .col3{
+            width:calc(100% / 12 *3);
+        }
+        .col2{
+            width:calc(100% / 12 *2);
+        }
+        .col1{
+            width:calc(100% / 12 *1);
+        }
+        
+    </style>
+</head>
+<body>
+    
+<div id="contentContainer">
+    <nav>
+        <div class="row">
+            <div class="logo">
+                <img src="" alt="설명설명"/>
+            </div>
+            <ul class="horizontalUl">
+                <li><a href='#'>메뉴1</a></li>
+                <li><a href='#'>메뉴2</a></li>
+                <li><a href='#'>메뉴3</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="row">
+            <h1>의미론적 웹 만들기</h1>
+            <h2>의미론적 웹 만들기</h2>
+        </div>
+    </header>
+    
+    
+    <section>
+        <div class="row flex1">
+            <div class="col8">
+                <h2>의미론적 웹의 정의 </h2>
+                <p>웹이 확대되고 현대적으로 변화면서 의미전달이 중요하게 되었다.</p>
+            </div>
+            <div class="col4"style='background-color:#a1a1a1'>
+                fffefeg
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row flex1">
+            <div class="col4"style='background-color:#a1a1a1'>
+                fffefeg
+            </div>
+            <div class="col8">
+                <h2>의미론적 웹의 정의 </h2>
+                <p>웹이 확대되고 현대적으로 변화면서 의미전달이 중요하게 되었다.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row flex1">
+            <div class="col8">
+                <h2>의미론적 웹의 정의 </h2>
+                <p>웹이 확대되고 현대적으로 변화면서 의미전달이 중요하게 되었다.</p>
+            </div>
+            <div class="col4"style='background-color:#a1a1a1'>
+                fffefeg
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            푸터푸터푸터짱 웹표준이란 이러한 태그의 시멘틱적구조 맞게 잘 짜는것 기본, 웹접근성은 좀더 까다로움. 크로스브라우징만 잘해도 반은 먹음.
+        </div>
+        <address>
+            <a href="" target="_blank">Please concact via gnsjidgnsisi@naver.com</a>
+        </address>
+    </footer>
+</div>    
+
+</body>
+</html>
