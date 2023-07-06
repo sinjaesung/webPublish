@@ -9,6 +9,51 @@
     -ms-border-radius:50%;
     -o-border-radius:50%;
 }
+.motionCircle1{
+    animation-duration:1.0s;
+    animation-name:moveupdown;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+.motionCircle2{
+    animation-duration:1.0s;
+    animation-name:moveupdown2;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+.motionCircle3{
+    animation-duration:1.0s;
+    animation-name:moveupdown3;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+
+@Keyframes moveupdown{
+    from{
+        transform:translateY(0)translateX(0)
+    } 
+    to{
+        transform:translateY(160px)translateX(-140px)
+    }
+}
+@Keyframes moveupdown2{
+    from{
+        transform:translateY(-80px)translateX(-70px)
+    } 
+    to{
+        transform:translateY(80px)translateX(70px)
+    }
+}
+@Keyframes moveupdown3{
+    from{
+        transform:translateY(-80px)
+    } 
+    to{
+        transform:translateY(80px)
+    }
+}
+
 .inner ul li.contBtn.marginRightFlag{
     margin-right:calc(100vw * (30/1920));
 }   
@@ -114,7 +159,7 @@
         position:relative;z-index:3;text-align:center;padding-top:calc(100vh * (350/1080));
     }
     section.mainVisual div.inner h2.visualTit{
-        width:100%; max-width:906px; text-align:center; font-size:calc(100vh * (80/1080));font-weight:700;line-height:calc(100vh * (100/1080));color:white;
+        width:100%; max-width:906px; text-align:center; font-size:calc(100vmin * (72/1080));font-weight:700;line-height:calc(100vh * (100/1080));color:white;
         margin:0 auto; padding-bottom:calc(100vmin * (27/1080))
     }   
     section.mainVisual div.inner p.visualDesc{
@@ -145,7 +190,7 @@
         font-size:calc(100vh * (30/1080));color:white;line-height:1.1;padding-bottom:calc(100vh * (50/1080));
     }
     section.section01 .inner p.highlightTxt{
-        font-size:calc(100vh * (60/1080));color:white;line-height:1.33;font-weight:700;width:100%;max-width:858px;
+        font-size:calc(100vmin * (56/1080));color:white;line-height:1.33;font-weight:700;width:100%;max-width:858px;
     }
     section.section01 .inner div.motionCircleEffect{
         position:absolute;
@@ -297,7 +342,7 @@
         -moz-transform:translateX(-50%) translateY(-50%);
         -ms-transform:translateX(-50%) translateY(-50%);
         -o-transform:translateX(-50%) translateY(-50%);
-}
+    }
     section.section04 .inner div.contentWrapper{
         width:100%;position:absolute;left:0;top:0;padding-top:calc(100vh * (130/1080));z-index:4
     }
@@ -505,10 +550,14 @@
     }
     section.section08 .inner ul.imgframeList li.rowitem{
         width:calc(100% * (680 / (1400)));height:calc(100vw * (680/1920));display:flex;flex-flow:row nowrap;justify-content:center;align-items:center;
-        background-color:#505050;position:relative;
+        background-color:#505050;position:relative;overflow:hidden;
+    }
+    section.section08 .inner ul.imgframeList li.rowitem:hover img.frameimg{
+        width:120%;height:120%;
     }
     section.section08 .inner ul.imgframeList li.rowitem img.frameimg{
-        width:100%;height:100%;position:absolute;left:0;top:0
+        width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%)translateY(-50%);
+        transition:width 1s,height 1s
     }
     section.section08 .inner ul.imgframeList li.rowitem p.frametxt{
         font-size:calc(100vmin * (54/1080));color:white;line-height:1.15;font-weight:700;
@@ -751,7 +800,7 @@
         position:relative;z-index:3;text-align:center;padding-top:calc(100vh * (350/1080));
     }
     section.mainVisual div.inner h2.visualTit{
-        width:100%; max-width:906px; text-align:center; font-size:calc(100vh * (64/1080));font-weight:700;line-height:calc(100vh * (90/1080));color:white;
+        width:100%; max-width:906px; text-align:center; font-size:calc(100vmin * (64/1080));font-weight:700;line-height:calc(100vh * (90/1080));color:white;
         margin:0 auto;padding-bottom:calc(100vmin * (27/1080))
     }   
     section.mainVisual div.inner p.visualDesc{
@@ -1127,11 +1176,14 @@
     }
     section.section08 .inner ul.imgframeList li.rowitem{
         width:45%;height:calc(100vw * (568/1500));display:flex;flex-flow:row nowrap;justify-content:center;align-items:center;
-        background-color:#505050;position:relative;
+        background-color:#505050;position:relative;overflow:hidden;
+    }
+    section.section08 .inner ul.imgframeList li.rowitem:hover img.frameimg{
+        width:120%;height:120%
     }
     section.section08 .inner ul.imgframeList li.rowitem img.frameimg{
-        width:100%;height:100%;position:absolute;left:0;top:0;
-
+        width:100%;height:100%;position:absolute;;left:50%;top:50%;transform:translateX(-50%)translateY(-50%);
+        transition:width 1s,height 1s
     }
     section.section08 .inner ul.imgframeList li.rowitem p.frametxt{
         font-size:calc(100vmin * (42/1080));color:white;line-height:1.15;font-weight:700;
@@ -1787,10 +1839,10 @@
     section.section08 .inner ul.imgframeList li.rowitem{
         width:100%;height:calc(100vw*(335/375));max-width:calc(640px * (335/375));max-height:calc(640px * (335/375));
         display:flex;flex-flow:row nowrap;justify-content:center;align-items:center;
-        background-color:#505050;margin-bottom:calc(100vh * (20/812));position:relative;
+        background-color:#505050;margin-bottom:calc(100vh * (20/812));position:relative;overflow:hidden
     }
     section.section08 .inner ul.imgframeList li.rowitem img.frameimg{
-       width:100%;height:100%;position:absolute;left:0;top:0
+       width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%)translateY(-50%);
     }
     section.section08 .inner ul.imgframeList li.rowitem p.frametxt{
         font-size:calc(100vmax * (20/812));color:white;line-height:1.15;font-weight:700;
@@ -1806,7 +1858,7 @@
         opacity:0.3;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
-}
+    }
 
     /*section09*/
     section.section09{
