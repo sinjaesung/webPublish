@@ -35,8 +35,18 @@
     src:url(../../font/Gotham-Bold.eot?#iefix) format("embedded-opentype"), url(../../font/Gotham-Bold.woff) format("woff"), url(../../font/Gotham-Bold.woff2) format("woff2"), url(../../font/Gotham-Bold.ttf) format("truetype"), url(../../font/Gotham-Bold.otf) format("opentype")
 }
 
-.view_type .detail_view .detail_header .swiper-box .swiper-thumbnail-wrap:after { content:" "; display:block; clear:both }
+@import url('https//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.Roboto{
+	font-family:'Roboto'
+}
+.SpoqaHansans{
+	font-family:'Spoqa Han Sans Neo','Spoqa Han Sans JP';
+}
+.view_type .detail_view .detail_header .swiper-box .swiper-thumbnail-wrap:after { content:" "; display:block; clear:both }
+html,body{background-color:#101111}
 body { -webkit-backface-visibility:hidden }
 
 fieldset, img { border:0 none }
