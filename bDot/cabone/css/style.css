@@ -313,7 +313,6 @@
         position:absolute;
         width:calc(100vh * (800/1080));
         height:calc(100vh * (800/1080));
-        background:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vh * (150/1080)));
         -webkit-filter:blur(calc(100vh * (150/1080)));right:calc(100vw * (100/1920));bottom:calc(100vh * (196/1080));
@@ -431,7 +430,6 @@
         position:absolute;
         width:calc(100vh * (800/1080));
         height:calc(100vh * (800/1080));
-        background:#008cff;
         opacity:0.35;
         filter:blur(calc(100vh * (150/1080)));
         -webkit-filter:blur(calc(100vh * (150/1080)));left:calc(-100vw * (100/1920));bottom:calc(100vh * (580/1080));
@@ -495,7 +493,6 @@
         position:absolute;
         width:calc(100vh * (800/1080));
         height:calc(100vh * (800/1080));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vh * (150/1080)));
         -webkit-filter:blur(calc(100vh * (150/1080)));
@@ -556,7 +553,6 @@
         left:calc(100vw * (100/1920));
         width:calc(100vh * (800/1080));
         height:calc(100vh * (800/1080));
-        background-color:#00ffa8;
         opacity:0.35;
         filter:blur(calc(100vmin * (150/1080)));
         -webkit-filter:blur(calc(100vmin * (150/1080)));
@@ -646,7 +642,6 @@
         right:calc(100vw * (170/1920));
         width:calc(100vmin * (800/1080));
         height:calc(100vmin * (800/1080));
-        background-color:#008cff;
         opacity:0.35;
         filter:blur(calc(100vmin * (150/1080)));
         -webkit-filter:blur(calc(100vmin * (150/1080)));
@@ -689,7 +684,6 @@
         left:calc(100vw * (100/1920));
         width:calc(100vmin * (800/1080));
         height:calc(100vmin * (800/1080));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vmin * (150/1080)));
         -webkit-filter:blur(calc(100vmin * (150/1080)));
@@ -731,7 +725,6 @@
         right:calc(100vw * (100/1920));
         width:calc(100vmin * (800/1080));
         height:calc(100vmin * (800/1080));
-        background-color:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vmin * (150/1080)));
         -webkit-filter:blur(calc(100vmin * (150/1080)));
@@ -1122,7 +1115,6 @@
         position:absolute;
         width:calc(100vh * (640/1080));
         height:calc(100vh * (640/1080));
-        background:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vh * (120/1080)));
         -webkit-filter:blur(calc(100vh * (120/1080)));
@@ -1231,7 +1223,6 @@
         position:absolute;
         width:calc(100vh * (640/1080));
         height:calc(100vh * (640/1080));
-        background:#008cff;
         opacity:0.35;
         filter:blur(calc(100vh * (120/1080)));
         -webkit-filter:blur(calc(100vh * (120/1080)));
@@ -1288,7 +1279,6 @@
         position:absolute;
         width:calc(100vh * (640/1080));
         height:calc(100vh * (640/1080));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vh * (120/1080)));
         -webkit-filter:blur(calc(100vh * (120/1080)));
@@ -1349,7 +1339,6 @@
         left:calc(100vw * (100/1920));
         width:calc(100vh * (640/1080));
         height:calc(100vh * (640/1080));
-        background-color:#00ffa8;
         opacity:0.35;
         filter:blur(calc(100vmin * (120/1080)));
         -webkit-filter:blur(calc(100vmin * (120/1080)));
@@ -1439,7 +1428,6 @@
         right:calc(100vw * (170/1920));
         width:calc(100vmin * (640/1080));
         height:calc(100vmin * (640/1080));
-        background-color:#008cff;
         opacity:0.35;
         filter:blur(calc(100vmin * (120/1080)));
         -webkit-filter:blur(calc(100vmin * (120/1080)));
@@ -1482,7 +1470,6 @@
         left:calc(100vw * (100/1920));
         width:calc(100vmin * (640/1080));
         height:calc(100vmin * (640/1080));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vmin * (120/1080)));
         -webkit-filter:blur(calc(100vmin * (120/1080)));
@@ -1524,7 +1511,6 @@
         right:calc(100vw * (100/1920));
         width:calc(100vmin * (640/1080));
         height:calc(100vmin * (640/1080));
-        background-color:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vmin * (120/1080)));
         -webkit-filter:blur(calc(100vmin * (120/1080)));
@@ -1826,7 +1812,6 @@
         position:absolute;
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
@@ -1961,7 +1946,6 @@
         position:absolute;
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background:#008cff;
         opacity:0.35;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
@@ -2033,7 +2017,6 @@
         position:absolute;
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
@@ -2094,11 +2077,10 @@
         left:calc(-100vw * (33/800));
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background-color:#00ffa8;
         opacity:0.35;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
-}
+    }
 
     /*section07*/
     section.section07{
@@ -2183,7 +2165,6 @@
         right:calc(100vw * (80/800));
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background-color:#008cff;
         opacity:0.35;
         filter:blur(calc(100vmin * (50/800)));
         -webkit-filter:blur(calc(100vmin * (50/800)));
@@ -2223,7 +2204,6 @@
         left:calc(-100vw * (65/800));
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background: linear-gradient(135deg, #008CFF 0%, #00FFA8 100%);
         opacity:0.35;
         filter:blur(calc(100vmax * (50/812)));
         -webkit-filter:blur(calc(100vmax * (50/812)));
@@ -2265,7 +2245,6 @@
         right:calc(-100vw * (40/800));
         width:calc(100vmin * (260/375));
         height:calc(100vmin * (260/375));
-        background-color:#00ffab;
         opacity:0.35;
         filter:blur(calc(100vmin * (50/812)));
         -webkit-filter:blur(calc(100vmin * (50/812)));
