@@ -1,0 +1,465 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>리만몰 대만사이트</title>
+	<script src="./common/jquery-latest.min.js"></script>
+	<script src="./common/jquery.easing.min.js"></script>
+	<script src="./common/swiper/swiper.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./common/jquery.counterup.min.js"></script>
+	<script src="./common/waypoints.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="./common/swiper/swiper.min.css">
+	<link rel="stylesheet" href="./common/mobile.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="mo">
+<div class="mobile">
+    <div class="mobilewrap">
+        <div class="mo-content">
+            <div class="mobox" data-bg="default">
+                <div class="boxs">
+                    <div class="topmenuwrap"id='topmenuwrap'>
+                        <div id="topElementWrapping"style='position:relative;left:0;top:0;padding-top:30px'>
+                            <div id="header" class="header">
+                                <div class="header__inner">
+                                    <div class="logo">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="snb clearfix">
+                                        <!--<div class="snb__lang">Eng</div>
+                                        <button type="button" id="btnGnb" class="btn-gnb">
+                                            <span class="btn-gnb__line"></span>
+                                            <span class="btn-gnb__line"></span>
+                                        </button>-->
+                                        <div class="snb__share">
+                                            <div class="svgframe"id='snbshareIcon'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none">
+                                                <circle cx="18.333" cy="9.4375" r="2" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="8.5" cy="14.1875" r="2" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="18.333" cy="19.5625" r="2" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5 15.1875L16.5 18.1875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.5 10.1875L10.5 13.1875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="shoppingshare"id="shoppingshare">
+                                                <img src="./img/daeman/shoppingwrap.png" class="IMG"/>
+                                            </div>
+                                        </div>
+                                        <div class="snb__cart">
+                                            <img src="./img/daeman/daemanCart.png" class="IMG"/>
+                                        </div>
+                                        <div class="snb__menu">
+                                            <div class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none">
+                                                <rect x="5" y="10" width="18" height="1.5" fill="black"/>
+                                                <rect x="5" y="16.5" width="18" height="1.5" fill="black"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topbanner">
+                        <div class="topbanner__movementTypo">
+                        </div>
+                    </div>
+                    <div class="main-intro">
+                        <div class="main-intro__inner">
+                            <!--<div class="slogan">
+                                <div class="textpart">
+                                    더 나은 미래로,
+                                    <span data-aos="mask" class="textpart_mask"></span>
+                                </div>
+                                <div class="textpart">
+                                    함께가는
+                                    <span data-aos="mask" data-aos-delay="1000" class="textpart_mask"></span>
+                                </div>
+                                <div class="textpart">
+                                    JB금융지주
+                                    <span data-aos="mask" data-aos-delay="2000" class="textpart_mask"></span>
+                                </div>
+                            </div>
+                            <div class="subtext" data-aos="fade" data-aos-delay="3000" data-aos-offset='-100'>
+                                JB금융그룹은 고객 중심의 생각으로 <br/>
+                                더 건강한 내일을 만듭니다.
+                            </div>-->
+                            <div class="slogan">
+                                <h2 class="slogan__txt">
+                                    <img src="./img/daeman/mainvisualTitModify.png"/>
+                                </h2>
+                                <div class="slogan__button">
+                                    <img src="./img/daeman/mainvisualButtonModfiy.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main-products">
+                        <h2 class="subtitle">
+                            <img src="./img/daeman/mainProSubtit.png"style="width:100%;height:auto"/>
+                        </h2>
+                        <div class="cardwrap">
+                            <div class="cardwrap__item" >
+                                <div class="main-pro__slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="cardwrap__content">
+                                                <img src="./img/daeman/proSlider1.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cardwrap__content">
+                                                <img src="./img/daeman/proSlider2.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cardwrap__content">
+                                                <img src="./img/daeman/proSlider3.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cardwrap__content">
+                                                <img src="./img/daeman/proSlider4.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination swiper-paginationstyle1 swiper-pagination_ele0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main-visual">
+                        <h2 class="main-visual__title">
+                            <img src="./img/daeman/mainvisualTitles.svg" style="width:100%;height:auto"/>
+                        </h2>
+                        <div class="main-visual__slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="main-visual__content">
+                                        <div class="main-visual__videoimg" >
+                                            <a href='https://www.youtube.com/watch?v=OuMER-Pgr8o&feature=youtu.be' target="_blank"><img src="./img/daeman/mainvisual_video.png" class="IMG"/></a>
+                                        </div>
+                                        <div class="main-visual__subtext">
+                                            <img src="./img/daeman/mainvisualSubtit.svg" style="width:100%;height:auto"/>
+                                        </div>
+                                        <div class="main-visual__visuallist">
+                                            <ul class="visuallist">
+                                                <li >
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item1.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item2.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item" >
+                                                        <img src="./img/daeman/mainvisual_item3.png"class="IMG"/>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-visual__content">
+                                        <div class="main-visual__videoimg" >
+                                            <a href='https://www.youtube.com/watch?v=OuMER-Pgr8o&feature=youtu.be' target="_blank"><img src="./img/daeman/mainvisual_video.png" class="IMG"/></a>
+                                        </div>
+                                        <div class="main-visual__subtext">
+                                            <img src="./img/daeman/mainvisualSubtit.svg" style="width:100%;height:auto"/>
+                                        </div>
+                                        <div class="main-visual__visuallist">
+                                            <ul class="visuallist">
+                                                <li >
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item1.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item2.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item" >
+                                                        <img src="./img/daeman/mainvisual_item3.png"class="IMG"/>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-visual__content">
+                                        <div class="main-visual__videoimg" >
+                                            <a href='https://www.youtube.com/watch?v=OuMER-Pgr8o&feature=youtu.be' target="_blank"><img src="./img/daeman/mainvisual_video.png" class="IMG"/></a>
+                                        </div>
+                                        <div class="main-visual__subtext">
+                                            <img src="./img/daeman/mainvisualSubtit.svg" style="width:100%;height:auto"/>
+                                        </div>
+                                        <div class="main-visual__visuallist">
+                                            <ul class="visuallist">
+                                                <li >
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item1.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item2.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item" >
+                                                        <img src="./img/daeman/mainvisual_item3.png"class="IMG"/>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-visual__content">
+                                        <div class="main-visual__videoimg" >
+                                            <a href='https://www.youtube.com/watch?v=OuMER-Pgr8o&feature=youtu.be' target="_blank"><img src="./img/daeman/mainvisual_video.png" class="IMG"/></a>
+                                        </div>
+                                        <div class="main-visual__subtext">
+                                            <img src="./img/daeman/mainvisualSubtit.svg" style="width:100%;height:auto"/>
+                                        </div>
+                                        <div class="main-visual__visuallist">
+                                            <ul class="visuallist">
+                                                <li >
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item1.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item">
+                                                        <img src="./img/daeman/mainvisual_item2.png"class="IMG">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="visuallist__item" >
+                                                        <img src="./img/daeman/mainvisual_item3.png"class="IMG"/>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-paginationstyle1 swiper-pagination_ele1"></div>
+                        </div>
+                    </div>
+                    <div class="main-event">
+                        <h2 class="main-event__subtitle "data-aos="fade-up"data-aos-offset="-160" data-aos-duration="150">
+                            <img src="./img/daeman/eventTitle.png" style="width:100%;height:auto">
+                        </h2>
+                        <div class="main-event__eventImg"data-aos="fade-up"data-aos-offset="-160" data-aos-duration="150">
+                            <img src="./img/daeman/eventbanner.png" class="IMG"/>
+                        </div>
+                    </div>
+                    <div class="main-event2">
+                        <h2 class="main-event2__subtitle"data-aos="fade-up">
+                            <img src="./img/daeman/eventTitle2.png" style="width:100%;height:auto">
+                        </h2>
+                        <div class="main-event2__eventImg"data-aos="fade-up">
+                            <img src="./img/daeman/eventImg1.png" class="IMG"/>
+                        </div>
+                        <div class="main-event2__eventImg"data-aos="fade-up">
+                            <img src="./img/daeman/eventImg2.png" class="IMG"/>
+                        </div>
+                    </div>
+                    <div class="main-discount"data-aos="fade-up">
+                       <img src="./img/daeman/discountEvent.png" style="width:100%;height:auto"/>
+                    </div>
+                    <div class="main-instagram"data-aos="fade-up">
+                        <h2 class="main-instagram__subtitle">
+                            <img src="./img/daeman/instaTitle.png"style="width:100%;height:auto"/>
+                        </h2>
+                        <ul class="main-instagram__instaList">
+                            <li class="main-instagram__instaItem">
+                                <a href='https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA==' target='_blank'><img src="./img/daeman/instaimg1.png" class="IMG"/></a>
+                            </li>
+                            <li class="main-instagram__instaItem">
+                                <a href='https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA==' target='_blank'><img src="./img/daeman/instaimg2.png" class="IMG"/></a>
+                            </li>
+                            <li class="main-instagram__instaItem">
+                                <a href='https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA==' target='_blank'><img src="./img/daeman/instaimg3.png" class="IMG"/></a>
+                            </li>
+                            <li class="main-instagram__instaItem">
+                                <a href='https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA==' target='_blank'><img src="./img/daeman/instaimg4.png" class="IMG"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <img src="./img/daeman/++footer.png"/>
+                        <a href='#' class='footertop'data-aos="fade-up">
+                        </a>
+                    </div>
+                    <div class="botmenuwrap">
+                        <div class="botmenu"id='botmenu'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+AOS.init({
+	duration:1000,
+	once:false,
+	offset:0
+});
+$(function(){
+    let prevScrollTop=0;
+	$(window).on('load',function(){
+		AOS.refresh();
+	});
+	$('.mo-content').scroll(function(){
+		AOS.init({
+			duration:1000,
+			once:false,
+			offset:0
+		});
+		const ns=new Swiper(".main-pro__slider",{
+			slidesPerView:2,
+			/*loop:true,
+			autoplay:{
+				delay:10000
+			}*/
+            pagination:{
+                el:'.swiper-pagination_ele0',
+                type:'progressbar'
+            }
+		});
+        const vs=new Swiper(".main-visual__slider",{
+            slidesPerView:1,
+            pagination:{
+                el:'.swiper-pagination_ele1',
+                type:'progressbar'
+            }
+        })
+		let scrollTop=$(".mo-content").scrollTop(),
+		conTop=$('.mo-content').offset().top;
+
+		/*if((scrollTop > conTop + 1960) && (scrollTop<conTop +2655)){
+			$('.mobox').attr('data-bg','blue');
+		}else{
+			$('.mobox').attr('data-bg','default');
+		}*/
+        //console.log("scrolltop값 추적:",scrollTop);
+        let scroll_distance=scrollTop - prevScrollTop;//지금값이 더 크다면 아래방향으로 스크롤링, 지금값이 더 작다면 위로 스크롤링
+
+        //console.log('scrolltop:',scrollTop);
+        if(scroll_distance >0){
+           // console.log('아래로 스클로링');
+            //$('#'+botmenu.id).stop().slideUp(150);
+            $('#'+botmenu.id).stop().animate({
+                top:'200%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'-100px'
+            },600,function(){
+                $('#topmenuwrap').css({'display':'none'});
+                $("#header").removeClass("on");
+            })
+        }else{
+            //console.log('위로 스크롤링');
+            //$('#'+botmenu.id).stop().slideDown(150);
+            if(scrollTop > 400){
+                $('#header').addClass("on");
+                $('#topmenuwrap').css({'display':'block'});
+                $('#'+botmenu.id).stop().animate({
+                top:'0%'
+                });
+                $('#topElementWrapping').stop().animate({
+                    top:'0'
+                },600);
+            }
+        }  
+        if(scrollTop <=30){
+            $('#topElementWrapping').css({"padding-top":"30px"});
+        }else{
+            $('#topElementWrapping').css({"padding-top":0});
+        }
+
+		/*if(top > 1){
+           // console.log("top>1인경우???:",top);
+			$("#header").addClass("active");
+			$('.boxs').addClass('on');
+		}else{
+            //console.log("top<1인경우???:",top);
+			$('#header').removeClass('active');
+			$('.boxs').removeClass('on');
+		}*/
+
+        prevScrollTop=scrollTop;
+	});
+    function scrollgnb_dynamicPos(){
+        console.log("1.2초마다 호출");
+        let scrollTop=$(".mo-content").scrollTop();
+        if(scrollTop <=30){
+            $('#topElementWrapping').css({"padding-top":"30px"});
+        }else{
+            $('#topElementWrapping').css({"padding-top":0});
+        }
+
+        if(scrollTop==0){
+            $('#topElementWrapping').css({"padding-top":"30px"});
+            $('#'+botmenu.id).stop().animate({
+                top:'0%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'0'
+            },600);
+            $('#header').addClass("on");
+            $('#topmenuwrap').css({'display':'block'});
+        }
+    }
+    window.setInterval(scrollgnb_dynamicPos,1200);
+
+	function topClickEvent(){
+		$('.mo-content').stop().animate({scrollTop:0},800,'linear');
+		return false;
+	}
+	$('.footertop').on("click",topClickEvent);
+
+    let shareToggle='closed';
+    function snbshareClickEvent(event){
+
+       if(shareToggle!='open'){
+          $('#shoppingshare').css({'display':'block'})
+          shareToggle='open';
+          $('#shoppingshare').stop().animate({
+            top: '102%',
+            opacity:1
+          })
+       }else{
+            $('#shoppingshare').animate({
+                top: '0%',
+                opacity:0
+            },500,function(){
+               $(this).css({'display':'none'})
+            })
+            shareToggle='closed';
+       }
+    }
+    $('#snbshareIcon').on("click",snbshareClickEvent);
+});
+</script>
+</body>
+</html>

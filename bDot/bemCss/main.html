@@ -7,662 +7,593 @@
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./js/library/swiper-4.5.0/dist/css/swiper.min.css"/>
     <script src="./js/library/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <script src="./common/jquery-latest.min.js"></script>
+	<script src="./common/jquery.easing.min.js"></script>
+    <script src="./common/jquery.counterup.min.js"></script>
 </head>
-<body>
-<div class="wrap">
-    <header class="header">
-        <div class="header__inner">
-            <h2 class="header__logo">
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <div class="logo__svgframe">
-                            <span class="svgframe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
-                                <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="#04263F"/>
-                                <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="#04263F"/>
-                                <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="#04263F"/>
-                                <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="#04263F"/>
-                                <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="#04263F"/>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </h2>
-            <div class="header__utilList">
-                <ul class="utilList">
-                    <li class="utilList__item">
-                        <a href='#' class="link">
-                            <div class="utilList__svgframe">
-                                <span class="svgframe">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3667 5.53071C12.3667 6.44765 12.0024 7.32703 11.3541 7.97541C10.7057 8.6238 9.82629 8.98805 8.90935 8.98805C7.99241 8.98805 7.11302 8.6238 6.46465 7.97541C5.81626 7.32703 5.45201 6.44765 5.45201 5.53071C5.45201 4.61377 5.81626 3.73437 6.46465 3.086C7.11302 2.43762 7.99241 2.07337 8.90935 2.07337C9.82629 2.07337 10.7057 2.43762 11.3541 3.086C12.0024 3.73437 12.3667 4.61377 12.3667 5.53071ZM12.451 9.78047C13.3241 9.05255 13.9517 8.07335 14.2486 6.97607C14.5454 5.87878 14.4968 4.71671 14.1097 3.64795C13.7227 2.57919 13.0157 1.65562 12.0851 1.00289C11.1545 0.350173 10.0454 0 8.90866 0C7.77195 0 6.66284 0.350173 5.73222 1.00289C4.8016 1.65562 4.09464 2.57919 3.70756 3.64795C3.32046 4.71671 3.272 5.87878 3.56879 6.97607C3.86558 8.07335 4.4932 9.05255 5.36626 9.78047C4.00489 10.4241 2.84416 11.4258 2.00836 12.6784C1.17255 13.9311 0.693127 15.3873 0.621408 16.8915C0.614742 17.1626 0.714452 17.4255 0.899212 17.6238C1.08396 17.8223 1.33906 17.9405 1.60989 17.9531C1.88071 17.9658 2.14572 17.8719 2.34817 17.6916C2.55062 17.5112 2.67442 17.2588 2.69305 16.9883C2.76845 15.3904 3.45629 13.8828 4.61382 12.7787C5.77134 11.6744 7.30962 11.0584 8.90935 11.0584C10.5091 11.0584 12.0474 11.6744 13.2049 12.7787C14.3624 13.8828 15.0503 15.3904 15.1256 16.9883C15.1291 17.1265 15.1599 17.2624 15.2166 17.3884C15.2733 17.5144 15.3547 17.6278 15.4558 17.7219C15.5568 17.816 15.6758 17.889 15.8054 17.9366C15.9351 17.9842 16.073 18.0054 16.211 17.9989C16.349 17.9925 16.4842 17.9585 16.609 17.899C16.7336 17.8395 16.8452 17.7559 16.937 17.6527C17.029 17.5495 17.0992 17.4291 17.1439 17.2984C17.1887 17.1677 17.2068 17.0293 17.1973 16.8915C17.1254 15.3872 16.6458 13.9308 15.8098 12.6781C14.9737 11.4255 13.8127 10.4239 12.451 9.78047Z" fill="#04263F"/>
-                                    </svg>
-                                </span>                       
-                            </div>
-                        </a>
-                    </li>
-                    <li class="utilList__item">
-                        <a href='#' class="link">
-                            <div class="utilList__svgframe">
-                                <span class="svgframe">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1002 1.9001C6.53539 1.9001 5.26686 3.16862 5.26686 4.73343V6.4001H10.9335V4.73343C10.9335 3.16862 9.665 1.9001 8.1002 1.9001ZM8.1002 0.100098C10.6591 0.100098 12.7335 2.17451 12.7335 4.73343V6.4001H14.1002C15.1495 6.4001 16.0002 7.25076 16.0002 8.3001V18.0001C16.0002 19.0494 15.1495 19.9001 14.1002 19.9001H2.1002C1.05086 19.9001 0.200195 19.0494 0.200195 18.0001V8.3001C0.200195 7.25075 1.05086 6.4001 2.1002 6.4001H3.46686V4.73343C3.46686 2.17451 5.54128 0.100098 8.1002 0.100098ZM2.1002 8.2001C2.04497 8.2001 2.0002 8.24487 2.0002 8.3001V18.0001C2.0002 18.0553 2.04497 18.1001 2.1002 18.1001H14.1002C14.1554 18.1001 14.2002 18.0553 14.2002 18.0001V8.3001C14.2002 8.24487 14.1554 8.2001 14.1002 8.2001H11.8335H4.36686H2.1002ZM5.45841 10.1961C5.45841 10.7484 5.0107 11.1961 4.45841 11.1961C3.90613 11.1961 3.45841 10.7484 3.45841 10.1961C3.45841 9.64379 3.90613 9.19607 4.45841 9.19607C5.0107 9.19607 5.45841 9.64379 5.45841 10.1961ZM12.0047 11.1961C12.557 11.1961 13.0047 10.7484 13.0047 10.1961C13.0047 9.64379 12.557 9.19607 12.0047 9.19607C11.4524 9.19607 11.0047 9.64379 11.0047 10.1961C11.0047 10.7484 11.4524 11.1961 12.0047 11.1961Z" fill="#04263F"/>
-                                    </svg>
-                                </span>
-                            </div>
-                            <span class="utilList__countnum">
-                                0
-                            </span>
-                        </a>
-                    </li>
-                    <li class="utilList__item">
-                        <a href='#' class="link">
-                            <div class="utilList__svgframe">
-                                <span class="svgframe">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="none">
-                                    <path d="M1 15H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M1 8H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M1 1H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
-                                    </svg>
-                                </span>                   
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <section class="KVsection">
-        <div class="KVsection__inner">
-            <div class="KVsection__titArea">
-                <h2 class="KVsection__title">
-                    Boo
-                </h2>
-                <h2 class="KVsection__title">
-                    SeBoo
-                </h2>
-                <p class="KVsection__description">
-                    A double-dose of hydration - Elevate your routine to a skincare ritual.
-                </p>
-            </div>
-            <div class="KVsection__explorelink">
-                <div class="explorelink">
-                    <span class="explorelink__txt">
-                        SHOP THE SET
-                    </span>
-                    <a href='#' class="explorelink__link">
-                        <div class="explorelink__svgframe">
-                            <span class="svgframe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
-                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="#04263F"/>
-                                </svg>
-                            </span>                 
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="KVsection__visualImg">
-                <img class="IMG"/>
-            </div>
-        </div>
-    </section>
-    <section class="section01">
-        <div class="section01__inner">
-            <div class="section01__headTop">
-                <div class="section01__tit">
-                    Shop <br/>
-                    Best-Sellers
-                </div>
-                <div class="section01__relLink">
-                    <div class="relLink">
-                        <a href="#" class="relLink__link">See All</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section01__swiperArea swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide section01__swiperslide">
-                        <div class="productItem">
-                            <div class="productItem__imgframe">
-                                <img src="" alt="상품이미지" class="IMG"/>
-                            </div>
-                            <p class="productItem__category">Moisutureizer</p>
-                            <p class="productItem__tit">
-                                DERMATOLOGY <br/>
-                                FRIST PACKAGEA EX
-                            </p>
-                            <p class="productItem__price">
-                                $20 <span class="productItem__point">(10P)</span>
-                            </p>
-                            <div class="productItem__cartbtn">
-                                <div class="productItem__svgframe">
-                                    <div class="svgframe">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.34596 1.5C4.40643 1.5 3.64478 2.26164 3.64478 3.20118V4.13636H7.04714V3.20118C7.04714 2.26164 6.28549 1.5 5.34596 1.5ZM5.34596 0C7.11392 0 8.54714 1.43322 8.54714 3.20118V4.13636H8.94192C9.90842 4.13636 10.6919 4.91987 10.6919 5.88636V11.5682C10.6919 12.5347 9.90842 13.3182 8.94192 13.3182H1.75C0.7835 13.3182 0 12.5347 0 11.5682V5.88636C0 4.91986 0.783502 4.13636 1.75 4.13636H2.14478V3.20118C2.14478 1.43322 3.578 0 5.34596 0ZM1.75 5.63636C1.61193 5.63636 1.5 5.74829 1.5 5.88636V11.5682C1.5 11.7063 1.61193 11.8182 1.75 11.8182H8.94192C9.07999 11.8182 9.19192 11.7063 9.19192 11.5682V5.88636C9.19192 5.74829 9.07999 5.63636 8.94192 5.63636H7.79714H2.89478H1.75ZM3.79832 6.88116C3.79832 7.29538 3.46254 7.63116 3.04832 7.63116C2.63411 7.63116 2.29832 7.29538 2.29832 6.88116C2.29832 6.46695 2.63411 6.13116 3.04832 6.13116C3.46254 6.13116 3.79832 6.46695 3.79832 6.88116ZM8.00295 7.63116C8.41716 7.63116 8.75295 7.29538 8.75295 6.88116C8.75295 6.46695 8.41716 6.13116 8.00295 6.13116C7.58874 6.13116 7.25295 6.46695 7.25295 6.88116C7.25295 7.29538 7.58874 7.63116 8.00295 7.63116Z" fill="#04263F"/>
-                                        </svg>
+<body class="mo">
+<div class="mobile">
+    <div class="mobilewrap">
+        <div class="mo-content">
+            <div class="mobox">
+                <div class="boxs"><!--boxs autoHeight container구조물-->
+                   
+                    <div class="topmenuwrap" id="topmenuwrap">
+                        <div id="topElementWrapping" style="position:relative;left:0;top:0">
+                            <header id='header'class="header">
+                                <div class="header__inner">
+                                    <h2 class="header__logo">
+                                        <div class="logo">
+                                            <a href="#" class="logo__link">
+                                                <div class="logo__svgframe">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
+                                                        <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="#04263F"/>
+                                                        <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="#04263F"/>
+                                                        <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="#04263F"/>
+                                                        <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="#04263F"/>
+                                                        <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="#04263F"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </h2>
+                                    <div class="header__utilList">
+                                        <ul class="utilList">
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3667 5.53071C12.3667 6.44765 12.0024 7.32703 11.3541 7.97541C10.7057 8.6238 9.82629 8.98805 8.90935 8.98805C7.99241 8.98805 7.11302 8.6238 6.46465 7.97541C5.81626 7.32703 5.45201 6.44765 5.45201 5.53071C5.45201 4.61377 5.81626 3.73437 6.46465 3.086C7.11302 2.43762 7.99241 2.07337 8.90935 2.07337C9.82629 2.07337 10.7057 2.43762 11.3541 3.086C12.0024 3.73437 12.3667 4.61377 12.3667 5.53071ZM12.451 9.78047C13.3241 9.05255 13.9517 8.07335 14.2486 6.97607C14.5454 5.87878 14.4968 4.71671 14.1097 3.64795C13.7227 2.57919 13.0157 1.65562 12.0851 1.00289C11.1545 0.350173 10.0454 0 8.90866 0C7.77195 0 6.66284 0.350173 5.73222 1.00289C4.8016 1.65562 4.09464 2.57919 3.70756 3.64795C3.32046 4.71671 3.272 5.87878 3.56879 6.97607C3.86558 8.07335 4.4932 9.05255 5.36626 9.78047C4.00489 10.4241 2.84416 11.4258 2.00836 12.6784C1.17255 13.9311 0.693127 15.3873 0.621408 16.8915C0.614742 17.1626 0.714452 17.4255 0.899212 17.6238C1.08396 17.8223 1.33906 17.9405 1.60989 17.9531C1.88071 17.9658 2.14572 17.8719 2.34817 17.6916C2.55062 17.5112 2.67442 17.2588 2.69305 16.9883C2.76845 15.3904 3.45629 13.8828 4.61382 12.7787C5.77134 11.6744 7.30962 11.0584 8.90935 11.0584C10.5091 11.0584 12.0474 11.6744 13.2049 12.7787C14.3624 13.8828 15.0503 15.3904 15.1256 16.9883C15.1291 17.1265 15.1599 17.2624 15.2166 17.3884C15.2733 17.5144 15.3547 17.6278 15.4558 17.7219C15.5568 17.816 15.6758 17.889 15.8054 17.9366C15.9351 17.9842 16.073 18.0054 16.211 17.9989C16.349 17.9925 16.4842 17.9585 16.609 17.899C16.7336 17.8395 16.8452 17.7559 16.937 17.6527C17.029 17.5495 17.0992 17.4291 17.1439 17.2984C17.1887 17.1677 17.2068 17.0293 17.1973 16.8915C17.1254 15.3872 16.6458 13.9308 15.8098 12.6781C14.9737 11.4255 13.8127 10.4239 12.451 9.78047Z" fill="#04263F"/>
+                                                            </svg>
+                                                        </span>                       
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1002 1.9001C6.53539 1.9001 5.26686 3.16862 5.26686 4.73343V6.4001H10.9335V4.73343C10.9335 3.16862 9.665 1.9001 8.1002 1.9001ZM8.1002 0.100098C10.6591 0.100098 12.7335 2.17451 12.7335 4.73343V6.4001H14.1002C15.1495 6.4001 16.0002 7.25076 16.0002 8.3001V18.0001C16.0002 19.0494 15.1495 19.9001 14.1002 19.9001H2.1002C1.05086 19.9001 0.200195 19.0494 0.200195 18.0001V8.3001C0.200195 7.25075 1.05086 6.4001 2.1002 6.4001H3.46686V4.73343C3.46686 2.17451 5.54128 0.100098 8.1002 0.100098ZM2.1002 8.2001C2.04497 8.2001 2.0002 8.24487 2.0002 8.3001V18.0001C2.0002 18.0553 2.04497 18.1001 2.1002 18.1001H14.1002C14.1554 18.1001 14.2002 18.0553 14.2002 18.0001V8.3001C14.2002 8.24487 14.1554 8.2001 14.1002 8.2001H11.8335H4.36686H2.1002ZM5.45841 10.1961C5.45841 10.7484 5.0107 11.1961 4.45841 11.1961C3.90613 11.1961 3.45841 10.7484 3.45841 10.1961C3.45841 9.64379 3.90613 9.19607 4.45841 9.19607C5.0107 9.19607 5.45841 9.64379 5.45841 10.1961ZM12.0047 11.1961C12.557 11.1961 13.0047 10.7484 13.0047 10.1961C13.0047 9.64379 12.557 9.19607 12.0047 9.19607C11.4524 9.19607 11.0047 9.64379 11.0047 10.1961C11.0047 10.7484 11.4524 11.1961 12.0047 11.1961Z" fill="#04263F"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="utilList__countnum">
+                                                        0
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="none">
+                                                            <path d="M1 15H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M1 8H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M1 1H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            </svg>
+                                                        </span>                   
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <span class="productItem__cartTxt">
-                                    ADD TO BAG
-                                </span>
-                            </div>
+                            </header>
                         </div>
-                    </div>
-                    <div class="swiper-slide section01__swiperslide">
-                        <div class="productItem">
-                            <div class="productItem__imgframe">
-                                <img src="" alt="상품이미지" class="IMG"/>
-                            </div>
-                            <p class="productItem__category">Moisutureizer</p>
-                            <p class="productItem__tit">
-                                Daily Aqua<br/>
-                                BB
-                            </p>
-                            <p class="productItem__price">
-                                $20 <span class="productItem__point">(10P)</span>
-                            </p>
-                            <div class="productItem__cartbtn">
-                                <div class="productItem__svgframe">
-                                    <div class="svgframe">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.34596 1.5C4.40643 1.5 3.64478 2.26164 3.64478 3.20118V4.13636H7.04714V3.20118C7.04714 2.26164 6.28549 1.5 5.34596 1.5ZM5.34596 0C7.11392 0 8.54714 1.43322 8.54714 3.20118V4.13636H8.94192C9.90842 4.13636 10.6919 4.91987 10.6919 5.88636V11.5682C10.6919 12.5347 9.90842 13.3182 8.94192 13.3182H1.75C0.7835 13.3182 0 12.5347 0 11.5682V5.88636C0 4.91986 0.783502 4.13636 1.75 4.13636H2.14478V3.20118C2.14478 1.43322 3.578 0 5.34596 0ZM1.75 5.63636C1.61193 5.63636 1.5 5.74829 1.5 5.88636V11.5682C1.5 11.7063 1.61193 11.8182 1.75 11.8182H8.94192C9.07999 11.8182 9.19192 11.7063 9.19192 11.5682V5.88636C9.19192 5.74829 9.07999 5.63636 8.94192 5.63636H7.79714H2.89478H1.75ZM3.79832 6.88116C3.79832 7.29538 3.46254 7.63116 3.04832 7.63116C2.63411 7.63116 2.29832 7.29538 2.29832 6.88116C2.29832 6.46695 2.63411 6.13116 3.04832 6.13116C3.46254 6.13116 3.79832 6.46695 3.79832 6.88116ZM8.00295 7.63116C8.41716 7.63116 8.75295 7.29538 8.75295 6.88116C8.75295 6.46695 8.41716 6.13116 8.00295 6.13116C7.58874 6.13116 7.25295 6.46695 7.25295 6.88116C7.25295 7.29538 7.58874 7.63116 8.00295 7.63116Z" fill="#04263F"/>
-                                        </svg>
+                    </div><!--gnb관련 덩어리-->
+                    <section class="KVsection">
+                        <div class="KVSection__swiperArea swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
+                                    <div class="KVsection__titArea">
+                                        <h2 class="KVsection__title">
+                                            <img src="./img/main/mainvisual_title.png"/>
+                                        </h2>
+                                        <h3 class="KVsection__message">
+                                            <img src="./img/main/mainvisual_message.png">
+                                        </h3>
+                                        <a class="KVsection__link">
+                                            <img src="./img/main/mainvisual_link.png">
+                                        </a>
                                     </div>
                                 </div>
-                                <span class="productItem__cartTxt">
-                                    ADD TO BAG
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section01__swiperslide">
-                        <div class="productItem">
-                            <div class="productItem__imgframe">
-                                <img src="" alt="상품이미지" class="IMG"/>
-                            </div>
-                            <p class="productItem__category">Moisutureizer</p>
-                            <p class="productItem__tit">
-                                DERMATOLOGY <br/>
-                                FRIST PACKAGEA EX
-                            </p>
-                            <p class="productItem__price">
-                                $20 <span class="productItem__point">(10P)</span>
-                            </p>
-                            <div class="productItem__cartbtn">
-                                <div class="productItem__svgframe">
-                                    <div class="svgframe">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.34596 1.5C4.40643 1.5 3.64478 2.26164 3.64478 3.20118V4.13636H7.04714V3.20118C7.04714 2.26164 6.28549 1.5 5.34596 1.5ZM5.34596 0C7.11392 0 8.54714 1.43322 8.54714 3.20118V4.13636H8.94192C9.90842 4.13636 10.6919 4.91987 10.6919 5.88636V11.5682C10.6919 12.5347 9.90842 13.3182 8.94192 13.3182H1.75C0.7835 13.3182 0 12.5347 0 11.5682V5.88636C0 4.91986 0.783502 4.13636 1.75 4.13636H2.14478V3.20118C2.14478 1.43322 3.578 0 5.34596 0ZM1.75 5.63636C1.61193 5.63636 1.5 5.74829 1.5 5.88636V11.5682C1.5 11.7063 1.61193 11.8182 1.75 11.8182H8.94192C9.07999 11.8182 9.19192 11.7063 9.19192 11.5682V5.88636C9.19192 5.74829 9.07999 5.63636 8.94192 5.63636H7.79714H2.89478H1.75ZM3.79832 6.88116C3.79832 7.29538 3.46254 7.63116 3.04832 7.63116C2.63411 7.63116 2.29832 7.29538 2.29832 6.88116C2.29832 6.46695 2.63411 6.13116 3.04832 6.13116C3.46254 6.13116 3.79832 6.46695 3.79832 6.88116ZM8.00295 7.63116C8.41716 7.63116 8.75295 7.29538 8.75295 6.88116C8.75295 6.46695 8.41716 6.13116 8.00295 6.13116C7.58874 6.13116 7.25295 6.46695 7.25295 6.88116C7.25295 7.29538 7.58874 7.63116 8.00295 7.63116Z" fill="#04263F"/>
-                                        </svg>
+                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2.png")'>
+                                    <div class="KVsection__titArea">
+                                        <h2 class="KVsection__title--style2">
+                                            <img src="./img/main/mainvisual_title2.png"/>
+                                        </h2>
+                                        <h3 class="KVsection__message--style2">
+                                            <img src="./img/main/mainvisual_message2.png">
+                                        </h3>
+                                        <a class="KVsection__link">
+                                            <img src="./img/main/mainvisual_link2.png">
+                                        </a>
                                     </div>
                                 </div>
-                                <span class="productItem__cartTxt">
-                                    ADD TO BAG
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section01__swiperslide">
-                        <div class="productItem">
-                            <div class="productItem__imgframe">
-                                <img src="" alt="상품이미지" class="IMG"/>
-                            </div>
-                            <p class="productItem__category">Moisutureizer</p>
-                            <p class="productItem__tit">
-                                Daily Aqua<br/>
-                                BB
-                            </p>
-                            <p class="productItem__price">
-                                $20 <span class="productItem__point">(10P)</span>
-                            </p>
-                            <div class="productItem__cartbtn">
-                                <div class="productItem__svgframe">
-                                    <div class="svgframe">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.34596 1.5C4.40643 1.5 3.64478 2.26164 3.64478 3.20118V4.13636H7.04714V3.20118C7.04714 2.26164 6.28549 1.5 5.34596 1.5ZM5.34596 0C7.11392 0 8.54714 1.43322 8.54714 3.20118V4.13636H8.94192C9.90842 4.13636 10.6919 4.91987 10.6919 5.88636V11.5682C10.6919 12.5347 9.90842 13.3182 8.94192 13.3182H1.75C0.7835 13.3182 0 12.5347 0 11.5682V5.88636C0 4.91986 0.783502 4.13636 1.75 4.13636H2.14478V3.20118C2.14478 1.43322 3.578 0 5.34596 0ZM1.75 5.63636C1.61193 5.63636 1.5 5.74829 1.5 5.88636V11.5682C1.5 11.7063 1.61193 11.8182 1.75 11.8182H8.94192C9.07999 11.8182 9.19192 11.7063 9.19192 11.5682V5.88636C9.19192 5.74829 9.07999 5.63636 8.94192 5.63636H7.79714H2.89478H1.75ZM3.79832 6.88116C3.79832 7.29538 3.46254 7.63116 3.04832 7.63116C2.63411 7.63116 2.29832 7.29538 2.29832 6.88116C2.29832 6.46695 2.63411 6.13116 3.04832 6.13116C3.46254 6.13116 3.79832 6.46695 3.79832 6.88116ZM8.00295 7.63116C8.41716 7.63116 8.75295 7.29538 8.75295 6.88116C8.75295 6.46695 8.41716 6.13116 8.00295 6.13116C7.58874 6.13116 7.25295 6.46695 7.25295 6.88116C7.25295 7.29538 7.58874 7.63116 8.00295 7.63116Z" fill="#04263F"/>
-                                        </svg>
+                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
+                                    <div class="KVsection__titArea">
+                                        <h2 class="KVsection__title">
+                                            <img src="./img/main/mainvisual_title.png"/>
+                                        </h2>
+                                        <h3 class="KVsection__message">
+                                            <img src="./img/main/mainvisual_message.png">
+                                        </h3>
+                                        <a class="KVsection__link">
+                                            <img src="./img/main/mainvisual_link.png">
+                                        </a>
                                     </div>
                                 </div>
-                                <span class="productItem__cartTxt">
-                                    ADD TO BAG
-                                </span>
+                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2.png")'>
+                                    <div class="KVsection__titArea">
+                                        <h2 class="KVsection__title--style2">
+                                            <img src="./img/main/mainvisual_title2.png"/>
+                                        </h2>
+                                        <h3 class="KVsection__message--style2">
+                                            <img src="./img/main/mainvisual_message2.png">
+                                        </h3>
+                                        <a class="KVsection__link--style2">
+                                            <img src="./img/main/mainvisual_link2.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-basicstyle">
+                                    
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-bulletStyle">
+                    </section>
+                    <section class="section01">
+                        <div class="section01__inner">
+                            <div class="section01__headTop">
+                                <div class="section01__tit">
+                                    <img src="img/main/shopbestseller.png"/>
+                                </div>
+                            </div>
+                            <div class="section01__swiperArea swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide section01__swiperslide">
+                                        <img src="./img/main/prd 01.png"/>
+                                    </div>
+                                    <div class="swiper-slide section01__swiperslide">
+                                        <img src="./img/main/prd 02.png"/>
+                                    </div>
+                                    <div class="swiper-slide section01__swiperslide">
+                                        <img src="./img/main/prd 03.png"/>
+                                    </div>
+                                    <div class="swiper-slide section01__swiperslide">
+                                        <img src="./img/main/prd 04.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section01__seeallBtn">
+                                <a href='./productList.html'><img src="img/main/seeall.png"/></a>
+                            </div>
+                         </div>
+                    </section>
+                    <section class="section02">
+                        <div class="section02__inner">
+                            <div class="section02__headTop">
+                                <div class="section02__tit">
+                                    <div class="sectiontit">
+                                        <img src="./img/main/shoprituals.png"/>
+                                    </div> 
+                                </div>
+                                <p class="section02__description">
+                                    Indulge in skincare rituals that nourish your skin and nurture your well-being.
+                                </p>
+                            </div>
+                            <div class="section02__swiperArea swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide section02__swiperslide">
+                                        <div class="ritualItems ritualItems--imgFramestyle">
+                                            <div class="ritualItems__tonebg"></div>
+                                            <div class="ritualItems__bgimg"style='background-image:url("./img/main/ritualItem1.png");'></div>
+                                            <h4 class="ritualItems__h4txt">GET THE</h4>
+                                            <h3 class="ritualItems__h3txt">SIGNATURE</h3>
+                                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section02__swiperslide">
+                                        <div class="ritualItems ritualItems--imgFramestyle">
+                                            <div class="ritualItems__tonebg"></div>
+                                            <div class="ritualItems__bgimg"style='background-image:url("./img/main/ritualItem2new.png");'></div>
+                                            <h4 class="ritualItems__h4txt">GET THE</h4>
+                                            <h3 class="ritualItems__h3txt">ADVANCED</h3>
+                                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section02__swiperslide">
+                                        <div class="ritualItems ritualItems--imgFramestyle">
+                                            <div class="ritualItems__tonebg"></div>
+                                            <div class="ritualItems__bgimg"style='background-image:url("./img/main/ritualItem3.png");'></div>
+                                            <h4 class="ritualItems__h4txt">GET THE</h4>
+                                            <h3 class="ritualItems__h3txt">ESSENTIAL</h3>
+                                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section03">
+                        <div class="section03__inner">
+                            <!--<img src="img/main/findYourRitual1.png" class="section03__bannerbg"/>-->
+                            <div class="section03__bannerbg" style="background-image:url('./img/main/findYourRitualBg.png');"></div>
+                            <div class="findRitualFrame">
+                                <h3 class="findRitualFrame__h3txt">
+                                    Not sure What your skin needs?
+                                </h3>
+                                <h2 class="findRitualFrame__h2txt">
+                                    FIND YOUR
+                                </h2>
+                                <h2 class="findRitualFrame__h2txt">
+                                    RITUAL
+                                </h2>
+                                <div class="findRitualFrame__link">
+                                    <img src="img/main/section03link.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section02">
-        <div class="section02__inner">
-            <div class="section02__headTop">
-                <div class="section02__tit">
-                   <div class="sectiontit">
-                    Shop Rituals
-                   </div> 
-                </div>
-                <p class="section02__description">
-                    Indulge in skincare rituals that nourish your skin and nurture your well-being.
-                </p>
-            </div>
-            <div class="section02__swiperArea swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide section02__swiperslide">
-                        <div class="ritualItems ritualItems--imgFramestyle">
-                            <div class="ritualItems__tonebg"></div>
-                            <img class="ritualItems__bgimg" src="" alt="rituals이미지"/>
-                            <h4 class="ritualItems__h4txt">GET THE</h4>
-                            <h3 class="ritualItems__h3txt">SIGNATURE</h3>
-                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section02__swiperslide">
-                        <div class="ritualItems ritualItems--imgFramestyle">
-                            <div class="ritualItems__tonebg"></div>
-                            <img class="ritualItems__bgimg" src="" alt="rituals이미지"/>
-                            <h4 class="ritualItems__h4txt">GET THE</h4>
-                            <h3 class="ritualItems__h3txt">SIGNATURE</h3>
-                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section02__swiperslide">
-                        <div class="ritualItems ritualItems--imgFramestyle">
-                            <div class="ritualItems__tonebg"></div>
-                            <img class="ritualItems__bgimg" src="" alt="rituals이미지"/>
-                            <h4 class="ritualItems__h4txt">GET THE</h4>
-                            <h3 class="ritualItems__h3txt">SIGNATURE</h3>
-                            <p class="ritualItems__bottomtxt">RIMAN RITUAL</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section03">
-        <div class="section03__inner">
-            <div class="findRitualFrame">
-                <h3 class="findRitualFrame__h3txt">
-                    Not sure What your skin needs?
-                </h3>
-                <h2 class="findRitualFrame__h2txt">
-                    FIND YOUR
-                </h2>
-                <h2 class="findRitualFrame__h2txt">
-                    RITUAL
-                </h2>
-                <div class="findRitualFrame__exploreLink">
-                    <div class="explorelink">
-                        <span class="explorelink__txt--colorwhite">
-                            Take the QUIZ
-                        </span>
-                        <a href='#' class="explorelink__link">
-                            <div class="explorelink__svgframe">
-                                <span class="svgframe">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
-                                    <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
-                                    </svg>
-                                </span>                 
+                    <section class="section04">
+                        <div class="section04__inner">
+                            <div class="section04__headTop">
+                                <div class="section04__tit">
+                                    <div class="sectiontit">
+                                        <img src="img/main/section4Tit.png"/>
+                                    </div> 
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section04">
-        <div class="section04__inner">
-            <div class="section04__headTop">
-                <div class="section04__tit">
-                   <div class="sectiontit">
-                    About Ingredients
-                   </div> 
-                </div>
-            </div>
-            <div class="section04__swiperArea swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide section04__swiperslide">
-                        <div class="fullwideSlideItem">
-                            <div class="fullwideSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
+                            <div class="section04__swiperArea swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide section04__swiperslide">
+                                        <div class="fullwideSlideItem">
+                                            <div class="fullwideSlideItem__imgframe">
+                                                <img src="img/main/ingredientsBg.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                            <p class="fullwideSlideItem__category">
+                                                Trusted ingredients, 
+                                                unprecedented results 
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                35 Essential Oils
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                120 Whole Plant Extracts
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                12 Vitamins and Antioxidants
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                Nanoliposome Technology
+                                            </p>
+                                            <a href="#" class="fullwideSlideItem__link">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section04__swiperslide">
+                                        <div class="fullwideSlideItem">
+                                            <div class="fullwideSlideItem__imgframe">
+                                                <img src="img/main/ingredientsBg.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                            <p class="fullwideSlideItem__category">
+                                                Trusted ingredients, 
+                                                unprecedented results 
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                35 Essential Oils
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                120 Whole Plant Extracts
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                12 Vitamins and Antioxidants
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                Nanoliposome Technology
+                                            </p>
+                                            <a href="#" class="fullwideSlideItem__link">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section04__swiperslide">
+                                        <div class="fullwideSlideItem">
+                                            <div class="fullwideSlideItem__imgframe">
+                                                <img src="img/main/ingredientsBg.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                            <p class="fullwideSlideItem__category">
+                                                Trusted ingredients, 
+                                                unprecedented results 
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                35 Essential Oils
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                120 Whole Plant Extracts
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                12 Vitamins and Antioxidants
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                Nanoliposome Technology
+                                            </p>
+                                            <a href="#" class="fullwideSlideItem__link">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section04__swiperslide">
+                                        <div class="fullwideSlideItem">
+                                            <div class="fullwideSlideItem__imgframe">
+                                                <img src="img/main/ingredientsBg.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                            <p class="fullwideSlideItem__category">
+                                                Trusted ingredients, 
+                                                unprecedented results 
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                35 Essential Oils
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                120 Whole Plant Extracts
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                12 Vitamins and Antioxidants
+                                            </p>
+                                            <p class="fullwideSlideItem__txt">
+                                                Nanoliposome Technology
+                                            </p>
+                                            <a href="#" class="fullwideSlideItem__link">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-bulletStyle">
+                                    
+                                </div>
                             </div>
-                            <p class="fullwideSlideItem__category">
-                                Trusted ingredients, 
-                                unprecedented results 
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                35 Essential Oils
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                120 Whole Plant Extracts
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                12 Vitamins and Antioxidants
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                Nanoliposome Technology
-                            </p>
-                            <a href="#" class="fullwideSlideItem__link">
-                                Learn More
-                            </a>
                         </div>
-                    </div>
-                    <div class="swiper-slide section04__swiperslide">
-                        <div class="fullwideSlideItem">
-                            <div class="fullwideSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                            <p class="fullwideSlideItem__category">
-                                Trusted ingredients, 
-                                unprecedented results 
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                35 Essential Oils
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                120 Whole Plant Extracts
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                12 Vitamins and Antioxidants
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                Nanoliposome Technology
-                            </p>
-                            <a href="#" class="fullwideSlideItem__link">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section04__swiperslide">
-                        <div class="fullwideSlideItem">
-                            <div class="fullwideSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                            <p class="fullwideSlideItem__category">
-                                Trusted ingredients, 
-                                unprecedented results 
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                35 Essential Oils
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                120 Whole Plant Extracts
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                12 Vitamins and Antioxidants
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                Nanoliposome Technology
-                            </p>
-                            <a href="#" class="fullwideSlideItem__link">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section04__swiperslide">
-                        <div class="fullwideSlideItem">
-                            <div class="fullwideSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                            <p class="fullwideSlideItem__category">
-                                Trusted ingredients, 
-                                unprecedented results 
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                35 Essential Oils
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                120 Whole Plant Extracts
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                12 Vitamins and Antioxidants
-                            </p>
-                            <p class="fullwideSlideItem__txt">
-                                Nanoliposome Technology
-                            </p>
-                            <a href="#" class="fullwideSlideItem__link">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-bulletStyle">
+                    </section>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section05">
-        <div class="section05__inner">
-            <div class="section05__headTop">
-                <div class="section05__tit">
-                   <div class="sectiontit">
-                    Dive In
-                   </div> 
-                </div>
-                <p class="section05__description">
-                    Let’s get to know each other! Join the BYoungPool and get personalized ritual secrets
-                </p>
-            </div>
-            <div class="section05__swiperArea swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide section05__swiperslide">
-                        <div class="onlyImgSlideItem">
-                            <div class="onlyImgSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
+                    <section class="section05">
+                        <div class="section05__inner">
+                            <div class="section05__headTop">
+                                <div class="section05__tit">
+                                    <div class="sectiontit">
+                                        <img src="img/main/section5Tit.png"/>
+                                    </div> 
+                                </div>
+                                <p class="section05__description">
+                                    Let’s get to know each other! Join the BYoungPool and get personalized ritual secrets
+                                </p>
+                            </div>
+                            <div class="section05__swiperArea swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide section05__swiperslide">
+                                        <div class="onlyImgSlideItem">
+                                            <div class="onlyImgSlideItem__imgframe">
+                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section05__swiperslide">
+                                        <div class="onlyImgSlideItem">
+                                            <div class="onlyImgSlideItem__imgframe">
+                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section05__swiperslide">
+                                        <div class="onlyImgSlideItem">
+                                            <div class="onlyImgSlideItem__imgframe">
+                                                <img src="img/main/divein3.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section05__swiperslide">
+                                        <div class="onlyImgSlideItem">
+                                            <div class="onlyImgSlideItem__imgframe">
+                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide section05__swiperslide">
+                                        <div class="onlyImgSlideItem">
+                                            <div class="onlyImgSlideItem__imgframe">
+                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide section05__swiperslide">
-                        <div class="onlyImgSlideItem">
-                            <div class="onlyImgSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section05__swiperslide">
-                        <div class="onlyImgSlideItem">
-                            <div class="onlyImgSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section05__swiperslide">
-                        <div class="onlyImgSlideItem">
-                            <div class="onlyImgSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide section05__swiperslide">
-                        <div class="onlyImgSlideItem">
-                            <div class="onlyImgSlideItem__imgframe">
-                                <img src="" alt="관련재료이미지" class="IMG"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-bulletStyle">
+                    </section>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section06">
-        <div class="section06__inner">
-            <div class="section06__headTop">
-                <div class="section06__tit">
-                   <div class="sectiontit">
-                    BLOG
-                   </div> 
-                </div>
-            </div>
-            <div class="section06__columnList">
-                <ul class="columnList">
-                    <li class="columnList__item">
-                        <div class="columnList__itemimg">
-                            <img src="" alt="blog이미지" class="IMG"/>
+                    <section class="section06">
+                        <div class="section06__inner">
+                            <div class="section06__headTop">
+                                <div class="section06__tit">
+                                    <div class="sectiontit">
+                                        <img src="img/main/section6Tit.png"/>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="section06__columnList">
+                                <ul class="columnList">
+                                    <li class="columnList__item">
+                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg1.png");'>
+                                        </div></a>
+                                        <h3 class="columnList__itemtitle">
+                                            Korean Skincare
+                                        </h3>
+                                        <p class="columnList__itemstory">
+                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
+                                        </p>
+                                        <a class="columnList__itemlink" href="blogDetail.html">
+                                            Read More
+                                        </a>
+                                    </li>
+                                    <li class="columnList__item">
+                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg2.png");'>
+                                        </div></a>
+                                        <h3 class="columnList__itemtitle">
+                                            Korean Skincare
+                                        </h3>
+                                        <p class="columnList__itemstory">
+                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
+                                        </p>
+                                        <a class="columnList__itemlink"href="blogDetail.html">
+                                            Read More
+                                        </a>
+                                    </li>
+                                    <li class="columnList__item">
+                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg3.png");'>
+                                        </div></a>
+                                        <h3 class="columnList__itemtitle">
+                                            Korean Skincare
+                                        </h3>
+                                        <p class="columnList__itemstory">
+                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
+                                        </p>
+                                        <a class="columnList__itemlink"href="blogDetail.html">
+                                            Read More
+                                        </a>
+                                    </li>
+                                    <li class="columnList__item">
+                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg4.png");'>
+                                        </div></a>
+                                        <h3 class="columnList__itemtitle">
+                                            Korean Skincare
+                                        </h3>
+                                        <p class="columnList__itemstory">
+                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
+                                        </p>
+                                        <a class="columnList__itemlink"href="blogDetail.html">
+                                            Read More
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3 class="columnList__itemtitle">
-                            Korean Skincare
-                        </h3>
-                        <p class="columnList__itemstory">
-                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                        </p>
-                        <a class="columnList__itemlink">
-                            Read More
-                        </a>
-                    </li>
-                    <li class="columnList__item">
-                        <div class="columnList__itemimg">
-                            <img src="" alt="blog이미지" class="IMG"/>
+                    </section>
+                    <footer class="footer">
+                        <div class="footer__inner">
+                            <h2 class="footer__logo">
+                                <div class="logo">
+                                    <div class="logo__svgframe">
+                                        <span class="svgframe">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
+                                            <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="white"/>
+                                            <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="white"/>
+                                            <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="white"/>
+                                            <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="white"/>
+                                            <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <p class="footer__description">
+                                Join the BYoungPool and get personalized ritual secrets, the heads-up on new launches, and be the first to know about limited-run specials.
+                            </p>
+                            <div class="footer__email">
+                                <div class="emailForm">
+                                    <form action="" method="post">
+                                        <div class="emailForm__inputwrap">
+                                            <input type="email" placeholder="Enter your email" class="emailForm__inputfield"/>
+                                            <span class="emailForm__inputUnderline"></span>
+                                        </div>
+                                        <button class="emailForm__submit">
+                                            SUBMIT
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                    
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Explore
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Customer Service
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Business
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
                         </div>
-                        <h3 class="columnList__itemtitle">
-                            Korean Skincare
-                        </h3>
-                        <p class="columnList__itemstory">
-                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                        </p>
-                        <a class="columnList__itemlink">
-                            Read More
-                        </a>
-                    </li>
-                    <li class="columnList__item">
-                        <div class="columnList__itemimg">
-                            <img src="" alt="blog이미지" class="IMG"/>
-                        </div>
-                        <h3 class="columnList__itemtitle">
-                            Korean Skincare
-                        </h3>
-                        <p class="columnList__itemstory">
-                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                        </p>
-                        <a class="columnList__itemlink">
-                            Read More
-                        </a>
-                    </li>
-                    <li class="columnList__item">
-                        <div class="columnList__itemimg">
-                            <img src="" alt="blog이미지" class="IMG"/>
-                        </div>
-                        <h3 class="columnList__itemtitle">
-                            Korean Skincare
-                        </h3>
-                        <p class="columnList__itemstory">
-                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                        </p>
-                        <a class="columnList__itemlink">
-                            Read More
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__inner">
-            <h2 class="footer__logo">
-                <div class="logo">
-                    <div class="logo__svgframe">
-                        <span class="svgframe">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
-                            <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="white"/>
-                            <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="white"/>
-                            <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="white"/>
-                            <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="white"/>
-                            <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="white"/>
-                            </svg>
-                        </span>
+                    </footer>
+                    <div class="botmenuwrap">
+                        <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
-            </h2>
-            <p class="footer__description">
-                Join the BYoungPool and get personalized ritual secrets, the heads-up on new launches, and be the first to know about limited-run specials.
-            </p>
-            <div class="footer__email">
-                <div class="emailForm">
-                    <form action="" method="post">
-                        <div class="emailForm__inputwrap">
-                            <input type="email" placeholder="Enter your email" class="emailForm__inputfield"/>
-                            <span class="emailForm__inputUnderline"></span>
-                        </div>
-                        <button class="emailForm__submit">
-                            SUBMIT
-                        </button>
-                    </form>
-                </div>
             </div>
-
-            <div class="footer__explorelink">
-                <div class="explorelink">
-                    <span class="explorelink__txt--colorwhite">
-                        Explore
-                    </span>
-                    <a href='#' class="explorelink__link">
-                        <div class="explorelink__svgframe">
-                            <span class="svgframe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
-                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
-                                </svg>
-                            </span>                 
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="footer__linkUnderline"></div>
-            <div class="footer__explorelink">
-                <div class="explorelink">
-                    <span class="explorelink__txt--colorwhite">
-                        Customer Service
-                    </span>
-                    <a href='#' class="explorelink__link">
-                        <div class="explorelink__svgframe">
-                            <span class="svgframe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
-                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
-                                </svg>
-                            </span>                 
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="footer__linkUnderline"></div>
-            <div class="footer__explorelink">
-                <div class="explorelink">
-                    <span class="explorelink__txt--colorwhite">
-                        Business
-                    </span>
-                    <a href='#' class="explorelink__link">
-                        <div class="explorelink__svgframe">
-                            <span class="svgframe">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
-                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
-                                </svg>
-                            </span>                 
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="footer__linkUnderline"></div>
         </div>
-    </footer>
+    </div>
 </div>
+
 <script>
-//메인페이지
+//메인페이지 swiper관련 종속성들.
+var KVSection__swiperArea=new Swiper(".KVSection__swiperArea",{
+    slidesPerView:'auto',
+    autoResize:true,
+    pagination:{
+        el : '.swiper-pagination-basicstyle',
+        type: 'bullets'
+    }
+});
+
 var section01__swiperArea=new Swiper('.section01__swiperArea',{
     slidesPerView:'auto',
-    autoResize: true,
-    pagination:{
-        el :'.swiper-pagination-bulletStyle',
-        type :'bullets'
-    },
+    autoResize: true
     /*
     navigation:{
         nextEl : '.swiper-button-next2',
@@ -686,7 +617,7 @@ var section04__swiperArea=new Swiper('.section04__swiperArea',{
     slidesPerView:'auto',
     autoResize: true,
     pagination:{
-        el :'.swiper-pagination-bulletStyle',
+        el :'.swiper-pagination-bulletStyle', //볼렛 스타일 ingredients관련
         type :'bullets'
     },
     /*
@@ -697,16 +628,73 @@ var section04__swiperArea=new Swiper('.section04__swiperArea',{
 })
 var section05__swiperArea=new Swiper('.section05__swiperArea',{
     slidesPerView:'auto',
-    autoResize: true,
-    pagination:{
-        el :'.swiper-pagination-bulletStyle',
-        type :'bullets'
-    },
+    autoResize: true
     /*
     navigation:{
         nextEl : '.swiper-button-next2',
         prevEl : '.swiper-button-prev2'
     },*/
+})
+
+/*로컬 관련 제어 스크립트 */
+$(function(){
+    let botmenu=document.getElementById("botmenu");
+    let prevScrollTop=0;
+    $('.mo-content').scroll(function(){
+        console.log("스크롤 안됨???:");
+        let scrollTop=$('.mo-content').scrollTop(),
+        conTop=$(".mo-content").offset().top;
+
+        let scroll_distance=scrollTop - prevScrollTop;//지금값이 더 크다면 아래방향으로 스크롤링, 지금값이 더 작다면 위로 스크롤링
+
+        if(scroll_distance > 0){
+            console.log('아래로 스크롤링');
+            $('#'+botmenu.id).stop().animate({
+                top:'200%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'-100px'
+            },600,function(){
+                $('#topmenuwrap').css({"display":"none"});
+                $('#header').removeClass("on");
+            })
+        }else{
+            console.log("위로 스크롤링");
+            if(scrollTop > 400){
+                $('#header').addClass("on");
+                $('#topmenuwrap').css({"display":"block"});
+                $("#"+botmenu.id).stop().animate({
+                    top:'0%'
+                });
+                $("#topElementWrapping").stop().animate({
+                    top:'0'
+                },600);
+            }
+        }
+
+        /*if(scrollTop <=30){
+            $('#topElementWrapping').css({'padding-top':'30px'});
+        }else{
+            $('#topElementWrapping').css({'padding-top':0});
+        }*/
+        prevScrollTop=scrollTop;
+    });
+
+    function scrollgnb_dynamicPos(){
+        let scrollTop = $('.mo-content').scrollTop();
+        if(scrollTop==0){
+            $('#'+botmenu.id).stop().animate({
+                top:'0%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'0'
+            },600);
+            $('#header').addClass("on");
+            $('#topmenuwrap').css({'display':'block'});
+        }
+    }
+    window.setInterval(scrollgnb_dynamicPos,1200);
+
 })
 
 </script>
