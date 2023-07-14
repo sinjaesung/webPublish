@@ -12,6 +12,12 @@
     <script src="./common/jquery.counterup.min.js"></script>
     <style>
         .productThumbsViewSwiper__slider {background-color:transparent;}
+        .swiper-slide-thumb-active .thumbsActive_outline {border-width:2px !important;}
+        .accordCont {border-right:0 none;border-left:0 none;}
+        .pdsection02__accordList > li ~ li {margin-top:-1px;}
+        .pdsection01__buybutton.active .bagButton {position: fixed;bottom: 0;left: 51px;bottom: 160px;width: 335px;/*transition:none;*/transition-property:color, background-color, bottom;z-index:1000;cursor:pointer;}
+        .pdsection01__buybutton.active.up .bagButton {bottom:210px;}
+        .pdsection01__buybutton.active.down .bagButton {bottom:160px;}
     </style>
 </head>
 <body class="mo">
@@ -193,8 +199,9 @@
 
                      <section class="pdsection03">
                         <div class="pdsection03__inner">
-                            <h2 class="pdsection03__tit">COMPLETE</h2>
-                            <h2 class="pdsection03__tit">THE RITUAL</h2>
+                            <img src="./img/product/text03.jpg" alt="">
+                            <!-- <h2 class="pdsection03__tit">COMPLETE</h2>
+                            <h2 class="pdsection03__tit">THE RITUAL</h2> -->
                             <div class="pdsection03__swiperArea swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide pdsection03__swiperslide">
@@ -204,7 +211,7 @@
                                     </div>
                                     <div class="swiper-slide pdsection03__swiperslide">
                                         <div class="SlideItem">
-                                            <img src="img/product/pdSlider1.png"/>
+                                            <img src="img/product/img06.jpg"/>
                                         </div>
                                     </div>
                                     <div class="swiper-slide pdsection03__swiperslide">
@@ -212,11 +219,11 @@
                                             <img src="img/product/pdSlider1.png"/>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide pdsection03__swiperslide">
+                                    <!-- <div class="swiper-slide pdsection03__swiperslide">
                                         <div class="SlideItem">
                                             <img src="img/product/pdSlider1.png"/>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -224,7 +231,10 @@
 
                      <section class="pdsection04">
                         <div class="pdsection04__inner">
-                            <h2 class="pdsection04__tit">PRODUCT REVIEWS</h2>
+                            <h2 class="pdsection04__tit" style="text-align:left;">
+                                <img src="./img/product/text04.jpg"/>
+                                <!-- PRODUCT REVIEWS -->
+                            </h2>
                             <div class="pdsection04__reviewPercent">
                                 <img src="img/product/revPercent.png"/>
                             </div>
@@ -371,6 +381,7 @@
                         </div>
                     </footer>
                     <div class="botmenuwrap">
+                        <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
                         <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
@@ -416,7 +427,23 @@ $(function(){
 
         let scroll_distance=scrollTop - prevScrollTop;//지금값이 더 크다면 아래방향으로 스크롤링, 지금값이 더 작다면 위로 스크롤링
 
+        if (scrollTop >= 600) {
+            $('.pdsection01__buybutton').addClass('active');
+        } else {
+            $('.pdsection01__buybutton').removeClass('active');
+        }
+
+        if ($('.footer').offset().top  <= 750) {
+            $('.pdsection01__buybutton').css('opacity','0');
+        } else {
+            $('.pdsection01__buybutton').css('opacity','1');
+        }
+
         if(scroll_distance > 0){
+            $('.pdsection01__buybutton .bagButton').css('z-index','1000');
+            $('.pdsection01__buybutton').addClass('down');
+            $('.pdsection01__buybutton').removeClass('up');
+            $('#whitebackground').css({'display':'none'})
             console.log('아래로 스크롤링');
             $('#'+botmenu.id).stop().animate({
                 bottom:'-100%'
@@ -429,6 +456,9 @@ $(function(){
             })
         }else{
             console.log("위로 스크롤링");
+            $('.pdsection01__buybutton .bagButton').css('z-index','990');
+            $('.pdsection01__buybutton').addClass('up');
+            $('.pdsection01__buybutton').removeClass('down');
             if(scrollTop > 400){
                // $('#header').addClass("on");
                 $('#topmenuwrap').css({"display":"block"});
@@ -438,6 +468,7 @@ $(function(){
                 $("#topElementWrapping").stop().animate({
                     top:'0'
                 },300);
+                $('#whitebackground').css({'display':'block'})
             }
         }
 
@@ -460,6 +491,7 @@ $(function(){
             },300);
             //$('#header').addClass("on");
             $('#topmenuwrap').css({'display':'block'});
+            $('#whitebackground').css({'display':'block'})
         }
     }
     window.setInterval(scrollgnb_dynamicPos,1200);

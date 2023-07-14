@@ -10,17 +10,25 @@
     <script src="./common/jquery-latest.min.js"></script>
 	<script src="./common/jquery.easing.min.js"></script>
     <script src="./common/jquery.counterup.min.js"></script>
+    <style>
+          .productThumbsViewSwiper__slider {background-color:transparent;}
+        .swiper-slide-thumb-active .thumbsActive_outline {border-width:2px !important;}
+        .accordCont {border-right:0 none;border-left:0 none;}
+        .pdsection02__accordList > li ~ li {margin-top:-1px;}
+        .pdsection01__buybutton.active .bagButton {position: fixed;bottom: 0;left: 51px;bottom: 160px;width: 335px;/*transition:none;*/transition-property:color, background-color, bottom;z-index:1000;cursor:pointer;}
+        .pdsection01__buybutton.active.up .bagButton {bottom:210px;}
+        .pdsection01__buybutton.active.down .bagButton {bottom:160px;}
+    </style>
 </head>
 <body class="mo">
 <div class="mobile">
     <div class="mobilewrap">
         <div class="mo-content">
             <div class="mobox">
-                <div class="boxs"><!--boxs autoHeight container구조물-->
-                   
+                <div class="boxs">
                     <div class="topmenuwrap" id="topmenuwrap">
-                        <div id="topElementWrapping" style="position:relative;left:0;top:0">
-                            <header id='header'class="header">
+                        <div id="topElementWrapping" style="position:relative;top:0;left:0">
+                            <header class="header"id='header'>
                                 <div class="header__inner">
                                     <h2 class="header__logo">
                                         <div class="logo">
@@ -84,313 +92,205 @@
                                 </div>
                             </header>
                         </div>
-                    </div><!--gnb관련 덩어리-->
-                    <section class="KVsection">
-                        <div class="KVSection__swiperArea swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link--style2">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
+                    </div><!--header gnb 관련덩어리-->
+
+                    <!--<div>
+                        <img src="./img/product/radiansome_mobile.jpg" alt="">
+                    </div>-->
+                    <section class="productViewSwiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider1_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider2_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider3_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider4_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider5_.png')"></div>
+                        </div>
+                    </section>
+                    <section thumbsSlider="" class="productThumbsViewSwiper swiper-container">
+                        <div class='swiper-wrapper'>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider1_.png')">
+                                <div class="thumbsActive_outline">
+                 
                                 </div>
                             </div>
-                            <div class="swiper-pagination swiper-pagination-basicstyle">
-                                    
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider2_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider3_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider4_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider5_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
                             </div>
                         </div>
                     </section>
-                    <section class="section01">
-                        <div class="section01__inner">
-                            <div class="section01__headTop">
-                                <div class="section01__tit">
-                                    <span>SHOP</span><span style="font-weight:700">BESTSELLER</span>
-                                </div> 
+
+                    <section class="radianpdsection01">
+                        <div class="radianpdsection01__topPart">
+                            <img src="./img/radiansome/radiansomeReviewScore.png"/>
+                        </div>
+                        <div class="pdsection01__sepbar"></div>
+                        <div class="radianpdsection01__options">
+                            <img src="./img/radiansome/radiansomeColoroption.png"/>
+                        </div>
+                        <div class="pdsection01__buybutton">
+                            <div class="bagButton CSSHOVER_floating1">
+                                <span class="bagButton__price">$18</span><span class="bagButton__sepbar"></span>
+                                <span class="bagButton__txt">ADD TO BAG</span>
                             </div>
-                            <div class="section01__swiperArea swiper-container">
+                        </div>
+                        <div class="radianpdsection01__description">
+                            <img src="img/radiansome/radiansomeDescriotion.svg"/>
+                        </div>
+                    </section>
+
+                    <section class="pdsection02 radianpdsection02">
+                        <ul class="pdsection02__accordList radianpdsection02__accordList">
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont" id="accordCont">
+                                        <span class="accordCont__txt">HOW TO</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget" id="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                    <div class="radianpdsection02__accordSubchild" id="accordCont_subchild" style="display:none">
+                                        <div class="radianpdsection02__howtovideo">
+                                            <img src="img/radiansome/radiansomeVideoframe.png"/>
+                                        </div>
+                                        <div class="radianpdsection02__howtodesc">
+                                            <img src="img/radiansome/radiansome_howto.svg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont">
+                                        <span class="accordCont__txt">INGREDIENTS</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont">
+                                        <span class="accordCont__txt">SUSTAINABILITY</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pdsection03">
+                        <div class="pdsection03__inner">
+                            <div class="radionpdsection03__tit">
+                                <img src="img/radiansome/radiansome_sliderTit.png"/>
+                            </div>
+                            <div class="pdsection03__swiperArea swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 01.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 02.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 03.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 04.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section01__seeallBtn">
-                                <a href='./productList.html'><img src="img/main/seeall.png"/></a>
-                            </div>
-                         </div>
-                    </section>
-                    <section class="section02">
-                        <div class="section02__inner">
-                            <div class="section02__headTop">
-                                <div class="section02__tit">
-                                    <div class="sectiontit">
-                                        <span>SHOP</span><span style="font-weight:700">RITUALS</span>
-                                    </div> 
-                                </div>
-                                <p class="section02__description">
-                                   <img src="img/main/indulgeImg.png"/>
-                                </p>
-                            </div>
-                            <div class="section02__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem3new.png");'>
-                                            
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider1.png"/>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem2new.png");'>
-                                          
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider2.png"/>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem1new.png");'>
-                                           
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider1.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider2.png"/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="section03">
-                        <div class="section03__inner">
-                            <!--<img src="img/main/findYourRitual1.png" class="section03__bannerbg"/>-->
-                            <div class="findRitualFrame">
-                                <div class="section03__bannerbg" style="background-image:url('./img/main/section3Fullimg.png');"></div>
+
+                    <section class="radianpdsection04">
+                        <div class="radianpdsection04__inner">
+                            <h2 class="radianpdsection04__tit" style="text-align:left">
+                                <img src="./img/product/text04.jpg"/>
+                            </h2>
+                            <div class="radianpdsection04__reviewPercent">
+                                <img src="img/product/revPercent.png"/>
                             </div>
+                            <ul clcass="radianpdsection04__revList">
+                                <li class="radianpdsection04__revItem">
+                                    <div class="radianpdsection04__revscore">
+                                        <img src="img/radiansome/radiansome_revscoretit.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revcomment">
+                                        <img src="img/radiansome/radiansome_revcomment.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revdate">
+                                        <img src="img/radiansome/radiansome_revdate.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revPictures swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture1.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture2.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture3.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revFicture4.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture2.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture3.png')"></div>
+                                            </div>                             
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="radianpdsection04__revbar"></li>
+                                <li class="radianpdsection04__revItem">
+                                    <div class="radianpdsection04__revscore">
+                                        <img src="img/radiansome/radiansome_rev2scoretit.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revcomment">
+                                        <img src="img/radiansome/radiansome_rev2comment.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revdate">
+                                        <img src="img/radiansome/radiansome_rev2date.png"/>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </section>
-                    
-                    <section class="section04">
-                        <div class="section04__inner">
-                            <div class="section04__headTop">
-                                <div class="section04__tit">
-                                    <div class="sectiontit">
-                                        <img src="img/main/EXPLORERIMAN.png"/>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="section04__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination swiper-pagination-bulletStyle">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section05">
-                        <div class="section05__inner">
-                            <div class="section05__headTop">
-                                <div class="section05__tit">
-                                    <div class="sectiontit">
-                                        <span>DIVE</span><span style="font-weight:700">IN</span>
-                                    </div> 
-                                </div>
-                                <p class="section05__description">
-                                    Let’s get to know each other! Join the BYoungPool and get personalized ritual secrets
-                                </p>
-                            </div>
-                            <div class="section05__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein3.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section06">
-                        <div class="section06__inner">
-                            <div class="section06__headTop">
-                                <div class="section06__tit">
-                                    <div class="sectiontit">
-                                        <span>OUR</span><span style="font-weight:700">BLOG</span>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="section06__columnList">
-                                <ul class="columnList">
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg1.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Korean Skincare
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                                        </p>
-                                        <a class="columnList__itemlink" href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog2item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Innovation
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Experience the future of skincare with RIMAN Innovation. Our cutting Ex
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog3item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Rituals
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Discover the power of innovation and embrace a new era of radiant
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog4item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Giant BYoungPool
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unleash the power of Giant Byungpool. Our revolution skincare ease
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+
                     <footer class="footer">
                         <div class="footer__inner">
                             <h2 class="footer__logo">
@@ -424,7 +324,7 @@
                                     </form>
                                 </div>
                             </div>
-                    
+                
                             <div class="footer__explorelink">
                                 <div class="explorelink">
                                     <span class="explorelink__txt--colorwhite">
@@ -476,8 +376,8 @@
                                 </div>
                             </div>
                             <div class="footer__linkUnderline"></div>
-                        </div>
-                    </footer>
+                       </div>
+                   </footer>
                     <div class="botmenuwrap">
                         <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
                         <div class="botmenu" id="botmenu"></div>
@@ -489,65 +389,34 @@
 </div>
 
 <script>
-//메인페이지 swiper관련 종속성들.
-var KVSection__swiperArea=new Swiper(".KVSection__swiperArea",{
+var productThumbsViewSwiper=new Swiper(".productThumbsViewSwiper",{
     slidesPerView:'auto',
-    autoResize:true,
-    pagination:{
-        el : '.swiper-pagination-basicstyle',
-        type: 'bullets'
+    slidesPerView:4,
+    freeMode:true,
+    watchSlidesProgress:true,
+    autoResize: true
+});
+var productViewSwiper=new Swiper(".productViewSwiper",{
+    slidesPerView:'auto',
+    autoResize: true,
+   
+    thumbs:{
+        swiper: productThumbsViewSwiper
     }
 });
-
-var section01__swiperArea=new Swiper('.section01__swiperArea',{
+var pdsection03__swiperArea=new Swiper(".pdsection03__swiperArea",{
     slidesPerView:'auto',
-    autoResize: true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
+    autoResize:true
+});
+var radianpdsection04__revPictures=new Swiper(".radianpdsection04__revPictures",{
+    autoResize:true,
+    slidesPerView:3
 })
-var section02__swiperArea=new Swiper('.section02__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-   /* pagination:{
-        el :'.swiper-pagination2',
-        type :'progressbar'
-    }
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
-var section04__swiperArea=new Swiper('.section04__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    pagination:{
-        el :'.swiper-pagination-bulletStyle', //볼렛 스타일 ingredients관련
-        type :'bullets'
-    },
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-var section05__swiperArea=new Swiper('.section05__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    loop:true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
+</script>
+<script>
 /*로컬 관련 제어 스크립트 */
 $(function(){
-     let botmenu=document.getElementById("botmenu");
+    let botmenu=document.getElementById("botmenu");
     let prevScrollTop=0;
     $('.mo-content').scroll(function(){
         //console.log("스크롤 안됨???:");
@@ -556,9 +425,25 @@ $(function(){
 
         let scroll_distance=scrollTop - prevScrollTop;//지금값이 더 크다면 아래방향으로 스크롤링, 지금값이 더 작다면 위로 스크롤링
 
+        if (scrollTop >= 600) {
+            $('.pdsection01__buybutton').addClass('active');
+        } else {
+            $('.pdsection01__buybutton').removeClass('active');
+        }
+
+        if ($('.footer').offset().top  <= 750) {
+            $('.pdsection01__buybutton').css('opacity','0');
+        } else {
+            $('.pdsection01__buybutton').css('opacity','1');
+        }
+
         if(scroll_distance > 0){
-            console.log('아래로 스크롤링');
+            $('.pdsection01__buybutton .bagButton').css('z-index','1000');
+            $('.pdsection01__buybutton').addClass('down');
+            $('.pdsection01__buybutton').removeClass('up');
             $('#whitebackground').css({'display':'none'})
+
+            console.log('아래로 스크롤링');
             $('#'+botmenu.id).stop().animate({
                 bottom:'-100%'
             });
@@ -570,6 +455,9 @@ $(function(){
             })
         }else{
             console.log("위로 스크롤링");
+            $('.pdsection01__buybutton .bagButton').css('z-index','990');
+            $('.pdsection01__buybutton').addClass('up');
+            $('.pdsection01__buybutton').removeClass('down');
             if(scrollTop > 400){
                // $('#header').addClass("on");
                 $('#topmenuwrap').css({"display":"block"});
@@ -607,8 +495,20 @@ $(function(){
     }
     window.setInterval(scrollgnb_dynamicPos,1200);
 
+    let accordion_status='close';
+    let accordCont=document.getElementById("accordCont");
+    accordCont.onclick=function(){
+        if(accordion_status=='close'){
+            $('#accordCont__verticalTarget').css({"transform":"translateX(-50%)translateY(-50%)rotateZ(90deg)"});
+            $('#accordCont_subchild').slideDown();
+            accordion_status='open';
+        }else{
+            $('#accordCont__verticalTarget').css({"transform":"translateX(-50%)translateY(-50%)rotateZ(0deg)"});
+            $('#accordCont_subchild').slideUp();
+            accordion_status='close';
+        }
+    }
 })
-
 </script>
 </body>
 </html>
