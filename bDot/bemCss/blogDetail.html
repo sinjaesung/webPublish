@@ -19,7 +19,7 @@
                 <div class="boxs">
                     <div class="topmenuwrap" id="topmenuwrap">
                         <div id="topElementWrapping" style="position:relative;top:0;left:0">
-                            <header class="header">
+                            <header class="header"id='header'>
                                 <div class="header__inner">
                                     <h2 class="header__logo">
                                         <div class="logo">
@@ -183,6 +183,7 @@
                         </div>
                     </footer>
                     <div class="botmenuwrap">
+                        <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
                         <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
@@ -222,7 +223,7 @@ $(function(){
     let botmenu=document.getElementById("botmenu");
     let prevScrollTop=0;
     $('.mo-content').scroll(function(){
-        console.log("스크롤 안됨???:");
+        //console.log("스크롤 안됨???:");
         let scrollTop=$('.mo-content').scrollTop(),
         conTop=$(".mo-content").offset().top;
 
@@ -230,26 +231,28 @@ $(function(){
 
         if(scroll_distance > 0){
             console.log('아래로 스크롤링');
+            $('#whitebackground').css({'display':'none'})
             $('#'+botmenu.id).stop().animate({
-                top:'200%'
+                bottom:'-100%'
             });
             $('#topElementWrapping').stop().animate({
                 top:'-100px'
-            },100,function(){
+            },300,function(){
                 $('#topmenuwrap').css({"display":"none"});
-                $('#header').removeClass("on");
+               // $('#header').removeClass("on");
             })
         }else{
             console.log("위로 스크롤링");
             if(scrollTop > 400){
-                $('#header').addClass("on");
+               // $('#header').addClass("on");
                 $('#topmenuwrap').css({"display":"block"});
                 $("#"+botmenu.id).stop().animate({
-                    top:'0%'
+                    bottom:'0%'
                 });
                 $("#topElementWrapping").stop().animate({
                     top:'0'
-                },100);
+                },300);
+                $('#whitebackground').css({'display':'block'})
             }
         }
 
@@ -265,13 +268,14 @@ $(function(){
         let scrollTop = $('.mo-content').scrollTop();
         if(scrollTop==0){
             $('#'+botmenu.id).stop().animate({
-                top:'0%'
+                bottom:'0%'
             });
             $('#topElementWrapping').stop().animate({
                 top:'0'
-            },100);
-            $('#header').addClass("on");
+            },300);
+            //$('#header').addClass("on");
             $('#topmenuwrap').css({'display':'block'});
+            $('#whitebackground').css({'display':'block'})
         }
     }
     window.setInterval(scrollgnb_dynamicPos,1200);

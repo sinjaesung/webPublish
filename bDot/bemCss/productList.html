@@ -10,7 +10,18 @@
     <script src="./common/jquery-latest.min.js"></script>
 	<script src="./common/jquery.easing.min.js"></script>
     <script src="./common/jquery.counterup.min.js"></script>
-
+    <style>
+        .cartbtn__cartTxt {font-weight:400;}
+        .proListSection01__inner {padding-top:65px;}
+        .proListSection01__visualImg {height:180px;}
+        .proListSection04__inner {cursor:pointer}
+        .listControl__sort {position:relative;}
+        .listControl__sub {position: absolute;top: 41px;z-index: 10;left: -1px;right: 0;}
+        .proListSection03 {background:none;}
+        .ProductListWrap__itemtit {font-weight:600;}
+        .eventpoint__txt {font-weight:600;}
+        .proListSection02__viewmore {padding:10px 0;}
+    </style>
 </head>
 <body class="mo">
 <div class="mobile">
@@ -20,13 +31,13 @@
                 <div class="boxs">
                     <div class="filterbg"id='filterbg'></div>
                     <div class="filterpopupwrap"id='filterpopupwrap'>
-                        <div class="filterpopupwrap__filter"id='filterTarget'>
+                        <div class="filterpopupwrap__filter"id='filterTarget'style='bottom:-100%'>
                             <img src="img/common/popupArea.png"/>
                         </div>
                     </div>
                     <div class="topmenuwrap" id="topemnuwrap">
                         <div id="topElementWrapping" style="position:relative;left:0;top:0">
-                            <header class="header on"id='header'>
+                            <header class="header"id='header'>
                                 <div class="header__inner">
                                     <h2 class="header__logo">
                                         <div class="logo">
@@ -97,7 +108,9 @@
                             <div class="proListSection01__visualImg"style='background-image:url("./img/product/proListTopbg2.png");'>
                             </div>
                             <div class="proListSection01__titArea">
-                                <h2 class="proListSection01__title">
+                                <img src="./img/product/text01.jpg" alt="">
+
+                                <!-- <h2 class="proListSection01__title">
                                     MAKING DIFFERENT
                                 </h2>
                                 <h2 class="proListSection01__title">
@@ -109,7 +122,7 @@
                                 <p class="proListSection01__description">
                                     The secret to bringing out<br/>
                                     your best glow-from-within skin, unlocked
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </section>
@@ -118,7 +131,8 @@
                         <div class="proListSection02__inner">
                             <div class="proListSection02__headTop">
                                 <div class="proListSection02__tit">
-                                    Shop All
+                                    <img src="./img/product/text02.jpg" alt="">
+                                    <!-- Shop All -->
                                 </div>
                                 <div class="proListSection02__cont">
                                     <ul class="listControl">
@@ -137,7 +151,7 @@
                                                 </span>
                                             </div>
                                         </li>
-                                        <li class="listControl__sort">
+                                        <li class="listControl__sort" style="cursor:pointer;">
                                             <span class="listControl__sorttxt">
                                                 Sort
                                             </span>
@@ -148,13 +162,18 @@
                                                     </svg>
                                                 </span>
                                             </div>
+
+                                            <div class="listControl__sub">
+                                                <img src="./img/product/sortlist.jpg" alt="">
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="proListSection02__catFrame"style='background-image:url("./img/product/summerdeal.png")'>
-                                <div class="blurfade"></div>
-                                <div class="proListcatFrame">
+                                <!-- <div class="blurfade"></div> -->
+                                <img src="./img/product/img01.jpg" alt="">
+                                <!-- <div class="proListcatFrame">
                                     <h2 class="proListcatFrame__tit">
                                         Summer Deals!
                                     </h2>
@@ -162,13 +181,13 @@
                                         Beat the heat with our scorching <br/>
                                         summer promotions
                                     </p>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="proListSection02__catProList">
                                 <ul class="ProductListWrap">
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/proitem1.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/proitem1.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
@@ -219,13 +238,13 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/proitem2.png"  alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/proitem2.png"  alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            ACTIVE CREAM EX
                                         </p>
                                         <p class="ProductListWrap__price">
                                             <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
@@ -270,13 +289,13 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/proitem3.png"  alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_radiansome.html'><img src="./img/product/proitem3.png"  alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            RADIANSOME™100 MICROFLUDIZED AMPOULE
                                         </p>
                                         <p class="ProductListWrap__price">
                                             <span>$20 </span>  <span class="sepbar"></span><span class="ProductListWrap__point">10P</span>
@@ -321,13 +340,13 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/proitem4.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/proitem4.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY<br/> FISRT PACKAGE EX
+                                            VIETON MULTI STICK BALM
                                         </p>
                                         <p class="ProductListWrap__price">
                                            <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
@@ -373,7 +392,9 @@
                                 </ul>
                             </div>
                             <div class="proListSection02__catFrame"style='background-image:url("./img/product/spect.png")'>
-                                <div class="blurfade"></div>
+
+                                <img src="./img/product/img02.jpg" alt="">
+                                <!-- <div class="blurfade"></div>
                                 <div class="proListcatFrame">
                                     <h2 class="proListcatFrame__tit">
                                         Spectacular Beauty
@@ -382,13 +403,13 @@
                                         llluminate your beauty with<br/>
                                         our shimmering cosmetics promotion
                                     </p>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="proListSection02__catProList">
                                 <ul class="ProductListWrap">
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/ritualItem1.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/ritualItem1.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             EXFOLIATOR
@@ -440,16 +461,16 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/ritualItem2.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_radiansome.html'><img src="./img/product/img03.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
-                                            MOISTURIZER
+                                            CLEANSER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            PURECELL CLEANSING OIL
                                         </p>
                                         <p class="ProductListWrap__price">
-                                            <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
+                                            <span>$22 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">11P</span>
                                          </p>
                                         <div class="ProductListWrap__cartbtn">
                                             <div class="cartbtn">
@@ -491,16 +512,68 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/ritualItem3.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/ritualItem3.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            CALMING BALANCE GEL
                                         </p>
                                         <p class="ProductListWrap__price">
-                                            <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
+                                            <span>$18 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">9P</span>
+                                         </p>
+                                        <div class="ProductListWrap__cartbtn">
+                                            <div class="cartbtn">
+                                                <div class="cartbtn__svgframe">
+                                                    <div class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 15" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.50026 2.34082C4.56072 2.34082 3.79908 3.10246 3.79908 4.042V4.97718H7.20144V4.042C7.20144 3.10246 6.43979 2.34082 5.50026 2.34082ZM5.50026 0.84082C7.26822 0.84082 8.70144 2.27404 8.70144 4.042V4.97718H9.09622C10.0627 4.97718 10.8462 5.76069 10.8462 6.72718V12.409C10.8462 13.3755 10.0627 14.159 9.09622 14.159H1.9043C0.937797 14.159 0.154297 13.3755 0.154297 12.409V6.72718C0.154297 5.76068 0.937799 4.97718 1.9043 4.97718H2.29908V4.042C2.29908 2.27404 3.73229 0.84082 5.50026 0.84082ZM1.9043 6.47718C1.76623 6.47718 1.6543 6.58911 1.6543 6.72718V12.409C1.6543 12.5471 1.76623 12.659 1.9043 12.659H9.09622C9.23429 12.659 9.34622 12.5471 9.34622 12.409V6.72718C9.34622 6.58911 9.23429 6.47718 9.09622 6.47718H7.95144H3.04908H1.9043ZM3.95262 7.72198C3.95262 8.1362 3.61683 8.47198 3.20262 8.47198C2.78841 8.47198 2.45262 8.1362 2.45262 7.72198C2.45262 7.30777 2.78841 6.97198 3.20262 6.97198C3.61683 6.97198 3.95262 7.30777 3.95262 7.72198ZM8.15725 8.47198C8.57146 8.47198 8.90725 8.1362 8.90725 7.72198C8.90725 7.30777 8.57146 6.97198 8.15725 6.97198C7.74303 6.97198 7.40725 7.30777 7.40725 7.72198C7.40725 8.1362 7.74303 8.47198 8.15725 8.47198Z" fill="white"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="cartbtn__cartTxt">
+                                                    ADD TO BAG
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="ProductListWrap__eventpoint">
+                                            <div class="eventpoint">
+                                                <div class="eventpoint__svgframe">
+                                                    <div class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+                                                        <g clip-path="url(#clip0_82_2052)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69501 1.09704L10.695 2.95488C11.0348 3.11175 11.2498 3.43377 11.25 3.78627V8.21257C11.2498 8.56507 11.0348 8.8871 10.695 9.04396L6.69501 10.9018C6.41333 11.0327 6.0817 11.0327 5.80001 10.9018L1.80002 9.04396C1.46052 8.88505 1.24738 8.56106 1.25002 8.20793V3.78627C1.25023 3.43377 1.46519 3.11175 1.80502 2.95488L5.80501 1.09704C6.08533 0.967652 6.4147 0.967652 6.69501 1.09704Z" stroke="#718496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.25 3L6.25 5L10.25 3" stroke="#718496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.25 10V5" stroke="#718496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_82_2052">
+                                                        <rect width="12" height="12" fill="white"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="eventpoint__txt">
+                                                    Autoship + 5P
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- radiansome 상세 이동 -->
+                                    <li class="ProductListWrap__item">
+                                        <div class="ProductListWrap__itemimg">
+                                            <a href='./productDetail_radiansome.html'><img src="./img/product/ritualItem4.png" alt="상품이미지" class="IMG"/></a>
+                                        </div>
+                                        <h4 class="ProductListWrap__itemcategory">
+                                            MOISTURIZER
+                                        </h4>
+                                        <p class="ProductListWrap__itemtit">
+                                            RADIANSOME™100 AMPOULE CUSHION...
+                                        </p>
+                                        <p class="ProductListWrap__price">
+                                            <span>$18 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">9P</span>
                                          </p>
                                         <div class="ProductListWrap__cartbtn">
                                             <div class="cartbtn">
@@ -542,16 +615,16 @@
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/ritualItem4.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/ritualItem5.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            DAILY AQUA BB
                                         </p>
                                         <p class="ProductListWrap__price">
-                                            <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
+                                            <span>$24 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">12P</span>
                                          </p>
                                         <div class="ProductListWrap__cartbtn">
                                             <div class="cartbtn">
@@ -586,23 +659,23 @@
                                                     </div>
                                                 </div>
                                                 <span class="eventpoint__txt">
-                                                    Autoship + 5P
+                                                    Autoship + 6P
                                                 </span>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="ProductListWrap__item">
                                         <div class="ProductListWrap__itemimg">
-                                            <a href='./productDetail.html'><img src="./img/product/ritualItem5.png" alt="상품이미지" class="IMG"/></a>
+                                            <a href='./productDetail_deserticola.html'><img src="./img/product/img04.png" alt="상품이미지" class="IMG"/></a>
                                         </div>
                                         <h4 class="ProductListWrap__itemcategory">
                                             MOISTURIZER
                                         </h4>
                                         <p class="ProductListWrap__itemtit">
-                                            DERMATOLOGY FISRT PACKAGE EX
+                                            VIETON OILMIST
                                         </p>
                                         <p class="ProductListWrap__price">
-                                            <span>$20 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">10P</span>
+                                            <span>$15 </span> <span class="sepbar"></span> <span class="ProductListWrap__point">7P</span>
                                          </p>
                                         <div class="ProductListWrap__cartbtn">
                                             <div class="cartbtn">
@@ -637,7 +710,7 @@
                                                     </div>
                                                 </div>
                                                 <span class="eventpoint__txt">
-                                                    Autoship + 5P
+                                                    Autoship + 4P
                                                 </span>
                                             </div>
                                         </div>
@@ -661,7 +734,8 @@
                     </section>
                 
                     <section class="proListSection03"style='background-image:url("./img/main/findYourRitualBg.png");'>
-                        <div class="findRitualFrame">
+                        <img src="./img/product/img07.jpg" alt="">
+                        <!-- <div class="findRitualFrame">
                             <h3 class="findRitualFrame__h3txt">
                                 Not sure What your skin needs?
                             </h3>
@@ -674,12 +748,14 @@
                             <div class="findRitualFrame__link">
                                 <img src="img/main/section03link.png"/>
                             </div>
-                        </div>
+                        </div> -->
                     </section>
                 
                     <section class="proListSection04">
-                        <div class="proListSection04__inner">
-                            <div class="proListSection04__headTop">
+                        <div class="proListSection04__inner" onclick="location.href='./blogDetail.html'">
+                            <img src="./img/product/img05.jpg"/>
+
+                            <!-- <div class="proListSection04__headTop">
                                 <div class="proListSection04__tit">
                                    <div class="sectiontit">
                                     BLOG
@@ -717,7 +793,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </section>
                 
@@ -809,8 +885,8 @@
                         </div>
                     </footer>
                     <div class="botmenuwrap">
-                        <div class="botmenu" id="botmenu">
-                        </div>
+                        <div class="botmenuwrap__whitebackground" id="whitebackground"></div>
+                        <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
             </div>
@@ -820,10 +896,10 @@
 <script>
 /*로컬 관련 제어 스크립트 */
 $(function(){
-    let botmenu=document.getElementById("botmenu");
+     let botmenu=document.getElementById("botmenu");
     let prevScrollTop=0;
     $('.mo-content').scroll(function(){
-        console.log("스크롤 안됨???:");
+        //console.log("스크롤 안됨???:");
         let scrollTop=$('.mo-content').scrollTop(),
         conTop=$(".mo-content").offset().top;
 
@@ -831,26 +907,28 @@ $(function(){
 
         if(scroll_distance > 0){
             console.log('아래로 스크롤링');
+            $('#whitebackground').css({'display':'none'})
             $('#'+botmenu.id).stop().animate({
-                top:'200%'
+                bottom:'-100%'
             });
             $('#topElementWrapping').stop().animate({
                 top:'-100px'
-            },100,function(){
+            },300,function(){
                 $('#topmenuwrap').css({"display":"none"});
-                $('#header').removeClass("on");
+               // $('#header').removeClass("on");
             })
         }else{
             console.log("위로 스크롤링");
             if(scrollTop > 400){
-                $('#header').addClass("on");
+               // $('#header').addClass("on");
                 $('#topmenuwrap').css({"display":"block"});
                 $("#"+botmenu.id).stop().animate({
-                    top:'0%'
+                    bottom:'0%'
                 });
                 $("#topElementWrapping").stop().animate({
                     top:'0'
-                },100);
+                },300);
+                $('#whitebackground').css({'display':'block'})
             }
         }
 
@@ -866,19 +944,19 @@ $(function(){
         let scrollTop = $('.mo-content').scrollTop();
         if(scrollTop==0){
             $('#'+botmenu.id).stop().animate({
-                top:'0%'
+                bottom:'0%'
             });
             $('#topElementWrapping').stop().animate({
                 top:'0'
-            },100);
-            $('#header').addClass("on");
+            },300);
+            //$('#header').addClass("on");
             $('#topmenuwrap').css({'display':'block'});
+            $('#whitebackground').css({'display':'block'})
         }
     }
     window.setInterval(scrollgnb_dynamicPos,1200);
 
 
-    //필터관련 제어 처리. 필터 bg클릭시 필터요소 없어지게처리
     let filterbg=document.getElementById("filterbg");
     let filterTarget=document.getElementById("filterTarget");
     let filterOpen=document.getElementById("filterOpen");
@@ -887,12 +965,17 @@ $(function(){
     filterOpen.onclick=function(event){
         console.log("filteropen버튼 클릭:");
         filterpopupwrap.style.display='block';
+        filterTarget.style.display='block'
         filterbg.style.display='block';
-        $('#'+filterTarget.id).slideDown();
+        $('#'+filterTarget.id).animate({
+            'bottom':0
+        },300);
         $('.mo-content').css({'overflow-y':'hidden'});
     }
     filterbg.onclick=function(event){
-        $('#'+filterTarget.id).slideUp(300, 'swing',function(){
+        $('#'+filterTarget.id).animate({
+            'bottom':'-100%'
+        },300, 'swing',function(){
             filterTarget.style.display='none';
             filterbg.style.display='none';
             filterpopupwrap.style.display='none';
@@ -900,13 +983,20 @@ $(function(){
         });
     }
     filterTarget.onclick=function(event){
-        $('#'+filterTarget.id).slideUp(300, 'swing',function(){
+        $('#'+filterTarget.id).animate({
+            'bottom':'-100%'
+        },300, 'swing',function(){
             filterTarget.style.display='none';
             filterbg.style.display='none';
             filterpopupwrap.style.display='none';
             $('.mo-content').css({'overflow-y':'scroll'});
         });
     }
+
+    $('.listControl__sub').slideUp();
+    $('.listControl__sort').on('click', function() {
+        $('.listControl__sub').slideToggle('fast');
+    })
 })
 </script>
 </body>

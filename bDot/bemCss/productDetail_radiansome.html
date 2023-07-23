@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./js/library/swiper-4.5.0/dist/css/swiper.min.css"/>
+    <script src="./js/library/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <script src="./common/jquery-latest.min.js"></script>
+	<script src="./common/jquery.easing.min.js"></script>
+    <script src="./common/jquery.counterup.min.js"></script>
+    <style>
+          .productThumbsViewSwiper__slider {background-color:transparent;}
+        .swiper-slide-thumb-active .thumbsActive_outline {border-width:2px !important;}
+        .accordCont {border-right:0 none;border-left:0 none;}
+        .pdsection02__accordList > li ~ li {margin-top:-1px;}
+        .pdsection01__buybutton.active .bagButton {position: fixed;bottom: 0;left: 51px;bottom: 160px;width: 335px;/*transition:none;*/transition-property:color, background-color, bottom;z-index:1000;cursor:pointer;}
+        .pdsection01__buybutton.active.up .bagButton {bottom:210px;}
+        .pdsection01__buybutton.active.down .bagButton {bottom:160px;}
+    </style>
+</head>
+<body class="mo">
+<div class="mobile">
+    <div class="mobilewrap">
+        <div class="mo-content">
+            <div class="mobox">
+                <div class="boxs">
+                    <div class="topmenuwrap" id="topmenuwrap">
+                        <div id="topElementWrapping" style="position:relative;top:0;left:0">
+                            <header class="header"id='header'>
+                                <div class="header__inner">
+                                    <h2 class="header__logo">
+                                        <div class="logo">
+                                            <a href="#" class="logo__link">
+                                                <div class="logo__svgframe">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
+                                                        <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="#04263F"/>
+                                                        <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="#04263F"/>
+                                                        <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="#04263F"/>
+                                                        <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="#04263F"/>
+                                                        <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="#04263F"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </h2>
+                                    <div class="header__utilList">
+                                        <ul class="utilList">
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3667 5.53071C12.3667 6.44765 12.0024 7.32703 11.3541 7.97541C10.7057 8.6238 9.82629 8.98805 8.90935 8.98805C7.99241 8.98805 7.11302 8.6238 6.46465 7.97541C5.81626 7.32703 5.45201 6.44765 5.45201 5.53071C5.45201 4.61377 5.81626 3.73437 6.46465 3.086C7.11302 2.43762 7.99241 2.07337 8.90935 2.07337C9.82629 2.07337 10.7057 2.43762 11.3541 3.086C12.0024 3.73437 12.3667 4.61377 12.3667 5.53071ZM12.451 9.78047C13.3241 9.05255 13.9517 8.07335 14.2486 6.97607C14.5454 5.87878 14.4968 4.71671 14.1097 3.64795C13.7227 2.57919 13.0157 1.65562 12.0851 1.00289C11.1545 0.350173 10.0454 0 8.90866 0C7.77195 0 6.66284 0.350173 5.73222 1.00289C4.8016 1.65562 4.09464 2.57919 3.70756 3.64795C3.32046 4.71671 3.272 5.87878 3.56879 6.97607C3.86558 8.07335 4.4932 9.05255 5.36626 9.78047C4.00489 10.4241 2.84416 11.4258 2.00836 12.6784C1.17255 13.9311 0.693127 15.3873 0.621408 16.8915C0.614742 17.1626 0.714452 17.4255 0.899212 17.6238C1.08396 17.8223 1.33906 17.9405 1.60989 17.9531C1.88071 17.9658 2.14572 17.8719 2.34817 17.6916C2.55062 17.5112 2.67442 17.2588 2.69305 16.9883C2.76845 15.3904 3.45629 13.8828 4.61382 12.7787C5.77134 11.6744 7.30962 11.0584 8.90935 11.0584C10.5091 11.0584 12.0474 11.6744 13.2049 12.7787C14.3624 13.8828 15.0503 15.3904 15.1256 16.9883C15.1291 17.1265 15.1599 17.2624 15.2166 17.3884C15.2733 17.5144 15.3547 17.6278 15.4558 17.7219C15.5568 17.816 15.6758 17.889 15.8054 17.9366C15.9351 17.9842 16.073 18.0054 16.211 17.9989C16.349 17.9925 16.4842 17.9585 16.609 17.899C16.7336 17.8395 16.8452 17.7559 16.937 17.6527C17.029 17.5495 17.0992 17.4291 17.1439 17.2984C17.1887 17.1677 17.2068 17.0293 17.1973 16.8915C17.1254 15.3872 16.6458 13.9308 15.8098 12.6781C14.9737 11.4255 13.8127 10.4239 12.451 9.78047Z" fill="#04263F"/>
+                                                            </svg>
+                                                        </span>                       
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1002 1.9001C6.53539 1.9001 5.26686 3.16862 5.26686 4.73343V6.4001H10.9335V4.73343C10.9335 3.16862 9.665 1.9001 8.1002 1.9001ZM8.1002 0.100098C10.6591 0.100098 12.7335 2.17451 12.7335 4.73343V6.4001H14.1002C15.1495 6.4001 16.0002 7.25076 16.0002 8.3001V18.0001C16.0002 19.0494 15.1495 19.9001 14.1002 19.9001H2.1002C1.05086 19.9001 0.200195 19.0494 0.200195 18.0001V8.3001C0.200195 7.25075 1.05086 6.4001 2.1002 6.4001H3.46686V4.73343C3.46686 2.17451 5.54128 0.100098 8.1002 0.100098ZM2.1002 8.2001C2.04497 8.2001 2.0002 8.24487 2.0002 8.3001V18.0001C2.0002 18.0553 2.04497 18.1001 2.1002 18.1001H14.1002C14.1554 18.1001 14.2002 18.0553 14.2002 18.0001V8.3001C14.2002 8.24487 14.1554 8.2001 14.1002 8.2001H11.8335H4.36686H2.1002ZM5.45841 10.1961C5.45841 10.7484 5.0107 11.1961 4.45841 11.1961C3.90613 11.1961 3.45841 10.7484 3.45841 10.1961C3.45841 9.64379 3.90613 9.19607 4.45841 9.19607C5.0107 9.19607 5.45841 9.64379 5.45841 10.1961ZM12.0047 11.1961C12.557 11.1961 13.0047 10.7484 13.0047 10.1961C13.0047 9.64379 12.557 9.19607 12.0047 9.19607C11.4524 9.19607 11.0047 9.64379 11.0047 10.1961C11.0047 10.7484 11.4524 11.1961 12.0047 11.1961Z" fill="#04263F"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <span class="utilList__countnum">
+                                                        0
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="utilList__item">
+                                                <a href='#' class="link">
+                                                    <div class="utilList__svgframe">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="none">
+                                                            <path d="M1 15H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M1 8H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M1 1H19" stroke="#04263F" stroke-width="2" stroke-linecap="round"/>
+                                                            </svg>
+                                                        </span>                   
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div><!--header gnb 관련덩어리-->
+
+                    <!--<div>
+                        <img src="./img/product/radiansome_mobile.jpg" alt="">
+                    </div>-->
+                    <section class="productViewSwiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider1_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider2_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider3_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider4_.png')"></div>
+                            <div class="swiper-slide productViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider5_.png')"></div>
+                        </div>
+                    </section>
+                    <section thumbsSlider="" class="productThumbsViewSwiper swiper-container">
+                        <div class='swiper-wrapper'>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider1_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider2_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider3_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider4_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide productThumbsViewSwiper__slider" style="background-image:url('./img/radiansome/radiansomeSlider5_.png')">
+                                <div class="thumbsActive_outline">
+                 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="radianpdsection01">
+                        <div class="radianpdsection01__topPart">
+                            <img src="./img/radiansome/radiansomeReviewScore.png"/>
+                        </div>
+                        <div class="pdsection01__sepbar"></div>
+                        <div class="radianpdsection01__options">
+                            <img src="./img/radiansome/radiansomeColoroption.png"/>
+                        </div>
+                        <div class="pdsection01__buybutton">
+                            <div class="bagButton CSSHOVER_floating1">
+                                <span class="bagButton__price">$18</span><span class="bagButton__sepbar"></span>
+                                <span class="bagButton__txt">ADD TO BAG</span>
+                            </div>
+                        </div>
+                        <div class="radianpdsection01__description">
+                            <img src="img/radiansome/radiansomeDescriotion.svg"/>
+                        </div>
+                    </section>
+
+                    <section class="pdsection02 radianpdsection02">
+                        <ul class="pdsection02__accordList radianpdsection02__accordList">
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont" id="accordCont">
+                                        <span class="accordCont__txt">HOW TO</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget" id="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                    <div class="radianpdsection02__accordSubchild" id="accordCont_subchild" style="display:none">
+                                        <div class="radianpdsection02__howtovideo">
+                                            <img src="img/radiansome/radiansomeVideoframe.png"/>
+                                        </div>
+                                        <div class="radianpdsection02__howtodesc">
+                                            <img src="img/radiansome/radiansome_howto.svg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont">
+                                        <span class="accordCont__txt">INGREDIENTS</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="radianpdsection02__accordItem">
+                                <div class="radianpdsection02__accordCont">
+                                    <div class="accordCont">
+                                        <span class="accordCont__txt">SUSTAINABILITY</span>
+                                        <div class="accordCont__iconwrap">
+                                            <span class="accordCont__verticalTarget"></span>
+                                            <span class="accordCont__horizontal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="pdsection03">
+                        <div class="pdsection03__inner">
+                            <div class="radionpdsection03__tit">
+                                <img src="img/radiansome/radiansome_sliderTit.png"/>
+                            </div>
+                            <div class="pdsection03__swiperArea swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider1.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider2.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider1.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide pdsection03__swiperslide">
+                                        <div class="slideItem">
+                                            <img src="img/radiansome/radianrevSlider2.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="radianpdsection04">
+                        <div class="radianpdsection04__inner">
+                            <h2 class="radianpdsection04__tit" style="text-align:left">
+                                <img src="./img/product/text04.jpg"/>
+                            </h2>
+                            <div class="radianpdsection04__reviewPercent">
+                                <img src="img/product/revPercent.png"/>
+                            </div>
+                            <ul clcass="radianpdsection04__revList">
+                                <li class="radianpdsection04__revItem">
+                                    <div class="radianpdsection04__revscore">
+                                        <img src="img/radiansome/radiansome_revscoretit.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revcomment">
+                                        <img src="img/radiansome/radiansome_revcomment.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revdate">
+                                        <img src="img/radiansome/radiansome_revdate.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revPictures swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture1.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture2.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture3.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revFicture4.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture2.png')"></div>
+                                            </div>
+                                            <div class="swiper-slide pdsection04__revPictureitem">
+                                                <div class="revPictureframe" style="background-image:url('./img/radiansome/radiansome_revPicture3.png')"></div>
+                                            </div>                             
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="radianpdsection04__revbar"></li>
+                                <li class="radianpdsection04__revItem">
+                                    <div class="radianpdsection04__revscore">
+                                        <img src="img/radiansome/radiansome_rev2scoretit.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revcomment">
+                                        <img src="img/radiansome/radiansome_rev2comment.png"/>
+                                    </div>
+                                    <div class="radianpdsection04__revdate">
+                                        <img src="img/radiansome/radiansome_rev2date.png"/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <footer class="footer">
+                        <div class="footer__inner">
+                            <h2 class="footer__logo">
+                                <div class="logo">
+                                    <div class="logo__svgframe">
+                                        <span class="svgframe">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" fill="none">
+                                            <path d="M22.8213 0C22.8213 0 24.1506 1.86267 24.1506 4.05694V18H27.8039V0H22.8213Z" fill="white"/>
+                                            <path d="M52.8895 0L46.3854 13.752L39.5708 0H34.4258C34.4258 0 35.7545 1.86267 35.7545 4.05694V18H37.6883V4.03681L44.3771 18H46.3106L52.8906 4.08783V18H56.5442V0H52.8895Z" fill="white"/>
+                                            <path d="M100.665 0V11.9234L90.3839 0H85.2383C85.2383 0 86.5675 1.86267 86.5675 4.05694V18H88.5011V3.86364L100.666 18H102.597V0H100.665Z" fill="white"/>
+                                            <path d="M16.226 5.22436C16.226 1.16743 12.6691 0 9.78211 0H0C0 0 1.32926 1.8621 1.32926 4.05665V17.9994H4.9826V10.5652H6.15711C7.65728 10.5652 8.70793 11.057 10.2713 13.1342L13.9334 18H18.7344L12.3389 10.2438C14.4121 9.56359 16.226 8.03083 16.226 5.22436ZM4.9826 9.02934V1.53531H8.49083C10.5077 1.53531 12.3933 2.53155 12.3933 5.34028C12.3933 8.14902 10.3492 9.02934 8.71303 9.02934H4.9826Z" fill="white"/>
+                                            <path d="M68.0021 0C68.0021 0 69.7168 2.15403 68.1495 5.3023L61.5049 17.9997H63.5546C65.8914 14.0275 68.1628 13.7699 70.5096 14.5825L77.5133 18H81.6552L72.5026 0H68.0021ZM67.1541 11.1207L70.6337 4.47102L76.2404 15.4962L67.1541 11.1207Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </h2>
+                            <p class="footer__description">
+                                Join the BYoungPool and get personalized ritual secrets, the heads-up on new launches, and be the first to know about limited-run specials.
+                            </p>
+                            <div class="footer__email">
+                                <div class="emailForm">
+                                    <form action="" method="post">
+                                        <div class="emailForm__inputwrap">
+                                            <input type="email" placeholder="Enter your email" class="emailForm__inputfield"/>
+                                            <span class="emailForm__inputUnderline"></span>
+                                        </div>
+                                        <button class="emailForm__submit">
+                                            SUBMIT
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Explore
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Customer Service
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
+                            <div class="footer__explorelink">
+                                <div class="explorelink">
+                                    <span class="explorelink__txt--colorwhite">
+                                        Business
+                                    </span>
+                                    <a href='#' class="explorelink__link">
+                                        <div class="explorelink__svgframe">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" fill="none">
+                                                <path d="M12.7549 0.268057C12.5857 0.445585 12.4901 0.686066 12.4889 0.937217C12.4876 1.18837 12.5808 1.42988 12.7482 1.60925L16.9695 6.04996H0.902783C0.66335 6.04996 0.433724 6.14984 0.264419 6.32763C0.0951146 6.50541 0 6.74654 0 6.99797C0 7.2494 0.0951146 7.49054 0.264419 7.66832C0.433724 7.84611 0.66335 7.94599 0.902783 7.94599H16.9628L12.7416 12.3867C12.5758 12.5669 12.4836 12.8081 12.4849 13.0587C12.4861 13.3093 12.5806 13.5495 12.7482 13.7279C12.9178 13.9036 13.1469 14.0015 13.3851 14C13.6233 13.9985 13.8512 13.8978 14.0188 13.7199L19.7405 7.66757C19.8196 7.57983 19.8839 7.47859 19.9306 7.3682C19.9774 7.25313 20.0011 7.12911 20 7.00396C20.0002 6.75608 19.9081 6.51793 19.7434 6.34035L14.0188 0.290011C13.9378 0.200278 13.8406 0.128418 13.7328 0.0786409C13.6251 0.0288641 13.5089 0.00217169 13.3912 0.000127085C13.2735 -0.00191753 13.1566 0.0207274 13.0473 0.0667344C12.9381 0.112741 12.8387 0.181186 12.7549 0.268057Z" fill="white"/>
+                                                </svg>
+                                            </span>                 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__linkUnderline"></div>
+                       </div>
+                   </footer>
+                    <div class="botmenuwrap">
+                        <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
+                        <div class="botmenu" id="botmenu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var productThumbsViewSwiper=new Swiper(".productThumbsViewSwiper",{
+    slidesPerView:'auto',
+    slidesPerView:4,
+    freeMode:true,
+    watchSlidesProgress:true,
+    autoResize: true
+});
+var productViewSwiper=new Swiper(".productViewSwiper",{
+    slidesPerView:'auto',
+    autoResize: true,
+   
+    thumbs:{
+        swiper: productThumbsViewSwiper
+    }
+});
+var pdsection03__swiperArea=new Swiper(".pdsection03__swiperArea",{
+    slidesPerView:'auto',
+    autoResize:true
+});
+var radianpdsection04__revPictures=new Swiper(".radianpdsection04__revPictures",{
+    autoResize:true,
+    slidesPerView:3
+})
+</script>
+<script>
+/*로컬 관련 제어 스크립트 */
+$(function(){
+    let botmenu=document.getElementById("botmenu");
+    let prevScrollTop=0;
+    $('.mo-content').scroll(function(){
+        //console.log("스크롤 안됨???:");
+        let scrollTop=$('.mo-content').scrollTop(),
+        conTop=$(".mo-content").offset().top;
+
+        let scroll_distance=scrollTop - prevScrollTop;//지금값이 더 크다면 아래방향으로 스크롤링, 지금값이 더 작다면 위로 스크롤링
+
+        if (scrollTop >= 600) {
+            $('.pdsection01__buybutton').addClass('active');
+        } else {
+            $('.pdsection01__buybutton').removeClass('active');
+        }
+
+        if ($('.footer').offset().top  <= 750) {
+            $('.pdsection01__buybutton').css('opacity','0');
+        } else {
+            $('.pdsection01__buybutton').css('opacity','1');
+        }
+
+        if(scroll_distance > 0){
+            $('.pdsection01__buybutton .bagButton').css('z-index','1000');
+            $('.pdsection01__buybutton').addClass('down');
+            $('.pdsection01__buybutton').removeClass('up');
+            $('#whitebackground').css({'display':'none'})
+
+            console.log('아래로 스크롤링');
+            $('#'+botmenu.id).stop().animate({
+                bottom:'-100%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'-100px'
+            },300,function(){
+                $('#topmenuwrap').css({"display":"none"});
+               // $('#header').removeClass("on");
+            })
+        }else{
+            console.log("위로 스크롤링");
+            $('.pdsection01__buybutton .bagButton').css('z-index','990');
+            $('.pdsection01__buybutton').addClass('up');
+            $('.pdsection01__buybutton').removeClass('down');
+            if(scrollTop > 400){
+               // $('#header').addClass("on");
+                $('#topmenuwrap').css({"display":"block"});
+                $("#"+botmenu.id).stop().animate({
+                    bottom:'0%'
+                });
+                $("#topElementWrapping").stop().animate({
+                    top:'0'
+                },300);
+                $('#whitebackground').css({'display':'block'})
+            }
+        }
+
+        /*if(scrollTop <=30){
+            $('#topElementWrapping').css({'padding-top':'30px'});
+        }else{
+            $('#topElementWrapping').css({'padding-top':0});
+        }*/
+        prevScrollTop=scrollTop;
+    });
+
+    function scrollgnb_dynamicPos(){
+        let scrollTop = $('.mo-content').scrollTop();
+        if(scrollTop==0){
+            $('#'+botmenu.id).stop().animate({
+                bottom:'0%'
+            });
+            $('#topElementWrapping').stop().animate({
+                top:'0'
+            },300);
+            //$('#header').addClass("on");
+            $('#topmenuwrap').css({'display':'block'});
+            $('#whitebackground').css({'display':'block'})
+        }
+    }
+    window.setInterval(scrollgnb_dynamicPos,1200);
+
+    let accordion_status='close';
+    let accordCont=document.getElementById("accordCont");
+    accordCont.onclick=function(){
+        if(accordion_status=='close'){
+            $('#accordCont__verticalTarget').css({"transform":"translateX(-50%)translateY(-50%)rotateZ(90deg)"});
+            $('#accordCont_subchild').slideDown();
+            accordion_status='open';
+        }else{
+            $('#accordCont__verticalTarget').css({"transform":"translateX(-50%)translateY(-50%)rotateZ(0deg)"});
+            $('#accordCont_subchild').slideUp();
+            accordion_status='close';
+        }
+    }
+})
+</script>
+</body>
+</html>

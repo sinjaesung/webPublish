@@ -113,7 +113,7 @@ body{ -ms-overflow-style: none; }
 .mo-content{overflow-y:scroll;overflow-x:hidden;position:absolute;top:0;left:0;width:100%;height:100%;background:#fff}
 .mobox{ position:relative; font-size:16px; text-align:center; transition:backgronud-color 0.4s ease; -webkit-transition:backgronud-color 0.4s ease; -moz-transition:backgronud-color 0.4s ease; -ms-transition:backgronud-color 0.4s ease; -o-transition:backgronud-color 0.4s ease; }
 .topmenuwrap{
-    position:fixed;top:107px;left:31px;right:30px;height:auto;z-index:998;overflow:hidden;min-height:166px;
+    position:fixed;top:107px;left:31px;right:30px;height:65px;z-index:998;overflow:hidden;min-height:65px;
 }
 
 
@@ -317,7 +317,7 @@ body::-webkit-scrollbar-track {
 /*header*/
 .header{
     width:100%;position:relative;z-index:990;height:65px;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0);
     &__inner{
         padding-left:calc(375px * (20/375));padding-right:calc(375px * (20/375));padding-bottom:calc(630px * (25/630));
         padding-top:calc(630px * (22/630)); 
@@ -332,7 +332,7 @@ body::-webkit-scrollbar-track {
         align-items:center;
     }
 }
-.header.on ,.header:hover{box-shadow:0 0 15px rgba(0,0,0,0.08);background-color:#fff}
+.header.on {box-shadow:0 0 15px rgba(0,0,0,0.08);background-color:rgba(255,255,255,1)}
 .logo{
     width:100%;height:100%;
     &__link{
@@ -391,12 +391,15 @@ body::-webkit-scrollbar-track {
     }
 }
 .botmenuwrap{
-    height:97px;width:375px;position:fixed;left:31px;bottom:101px;overflow:hidden;z-index:999
+    height:97px;width:375px;position:fixed;left:31px;bottom:105px;overflow:hidden;z-index:999;
+    &__whitebackground{
+        height:80px;width:100%;position:absolute;bottom:0;left:0;background-color:white;
+    }
 }
 .botmenu{
-    height:100%;width:100%;position:absolute;top:0%;position:absolute;left:0;
-    background-size:cover;background-repeat:no-repeat;background-position:center;
-    background-image:url('../img/main/botMenuUse.png');
+    height:100%;width:100%;position:absolute;bottom:0%;position:absolute;left:0;
+    background-repeat:no-repeat;background-position:center;
+    background-image:url('../img/main/floating.svg');
 }
 
 .filterbg{
@@ -484,10 +487,10 @@ body::-webkit-scrollbar-track {
         display:block;padding-left:calc(375px * (20/375));
     }
     &__headTop{
-        display:block;position:relative;
+        display:block;position:relative;padding-right:20px;
     }
     &__tit{
-        display:block;margin-left:38px;width:258px;height:19px;
+        display:block;height:auto;text-align:center;font-size:28px;font-weight:100;line-height:22px;color:#212121;
         img{
             width:100%;height:auto;display:block;
         }
@@ -563,20 +566,20 @@ body::-webkit-scrollbar-track {
     }
     &__tit{
         display:block;padding-right:calc(375px * (20/375));
-        width:201px;height:19px;margin:0 auto;
-        .img{
-            display:block;width:100%;height:auto;
-        }
+        width:100%;text-align:center;font-size:28px;font-weight:100;line-height:22px;color:#212121
     }
     &__description{
-        display:block;padding-top:calc(630px * (20/630));color:#04263f;font-size:calc(375px * (16/375));font-weight:475;line-height:calc(375px * (22/375));padding-right:calc(375px * (20/375));text-align:center;
+        display:block;margin-top:calc(630px * (20/630));color:#04263f;font-size:calc(375px * (16/375));font-weight:475;line-height:calc(375px * (22/375));margin-right:calc(375px * (20/375));text-align:center; width:335px;height:auto;
+        img{
+            display:block;width:100%;height:auto;
+        }
     }
     &__swiperArea{
         display:block;
         padding-top:calc(630px * (40/630)) !important;padding-bottom:calc(630px * (66/630)) !important;
     }   
     &__swiperslide{
-        display:block;width:calc(375px * (265/375)) !important;margin-right:calc(375px * (15/375));
+        display:block;width:calc(375px * (265/375)) !important;height:318px !important;margin-right:calc(375px * (15/375));
         
     } 
 }
@@ -585,7 +588,7 @@ body::-webkit-scrollbar-track {
 }
 
 .ritualItems{
-    display:block;position:relative;
+    display:block;position:relative;background-size:cover;background-repeat:no-repeat;background-position:center;
     padding-bottom:calc(630px * (23/630));padding-left:calc(375px * (20/375));padding-right:calc(375px * (20/375));
     padding-top:calc(630px * (225/630));background-color:#d7d7d7;overflow:hidden;
     &__tonebg{
@@ -625,6 +628,7 @@ body::-webkit-scrollbar-track {
 .findRitualFrame{
     display:block;position:relative;padding-left:calc(375px * (20/375));padding-right:calc(375px * (20/375));z-index:5;
     padding-top:calc(375px * (50/375));padding-bottom:calc(375px * (37/375));text-align:left;
+    width:100%;height:260px;overflow:hidden;
     &__h3txt{
         font-size:calc(375px * (16/375));line-height:calc(375px * (11/375));font-weight:400;color:#fff;
         padding-bottom:calc(375px * (20/375));
@@ -650,10 +654,10 @@ body::-webkit-scrollbar-track {
         display:block;
     }
     &__tit{
-        margin:0 auto;display:block;margin-bottom:calc(630px * (30/630));width:294px;height:19px;
+        margin:0 auto;display:block;margin-bottom:calc(630px * (30/630));width:223px;height:auto;
     }
     &__swiperArea{
-        width:100%;padding-bottom:calc(375px * (110/375)) !important;display:block;background-color:#f5f5f5;
+        width:100%;padding-bottom:calc(375px * (80/375)) !important;display:block;background-color:#f5f5f5;
     }
     &__swiperslide{
         width:100%;height:auto;
@@ -664,8 +668,14 @@ body::-webkit-scrollbar-track {
     &__imgframe{
         display:block;position:relative;margin-bottom:calc(375px * (30/375));background-color:#d7d7d7;
         height:calc(375px * (170/375));
-        .IMG{
+        video{
             width:100%;height:100%;display:block;
+        }
+    }
+    &__ingredientTxt{
+        display:block;margin-top:30px;margin-left:20px;width:223px;height:auto;
+        img{
+            width:100%;height:auto;display:block;
         }
     }
     &__category{
@@ -692,7 +702,7 @@ body::-webkit-scrollbar-track {
         display:block;
     }
     &__tit{
-        display:block;width:96px;height:19px;margin:0 auto;
+        display:block;text-align:center;font-size:28px;line-height:22px;color:#212121;font-weight:100;
     }
     &__description{
         padding-top:calc(630px * (21/630));padding-bottom:calc(630px * (23/630));text-align:center;margin:0 auto;
@@ -708,9 +718,12 @@ body::-webkit-scrollbar-track {
 .onlyImgSlideItem{
     width:100%;height:100%;display:block;background-color:#a7a7a7;
     &__imgframe{
-        width:100%;height:100%;display:block;
+        width:100%;height:100%;display:block;position:relative;
         .IMG{
             width:100%;height:100%;display:block;
+        }
+        .instaicon{
+            position:absolute;right:9px;top:11px;display:block;width:20px;height:20px;display:block;
         }
     }
 }
@@ -726,7 +739,8 @@ body::-webkit-scrollbar-track {
         display:block;
     }
     &__tit{
-        display:block;width:145px;height:19px;margin:0 auto;
+        display:block; display:block;text-align:center;font-size:28px;line-height:22px;color:#212121;font-weight:100;
+
     }
     &__columnList{
         padding-top:calc(375px * (50/375));
@@ -746,6 +760,7 @@ body::-webkit-scrollbar-track {
     }
     &__itemstory{
         font-size:calc(375px * (14/375));line-height:calc(375px * (16/375));color:#123250;text-overflow:ellipsis;overflow:hidden;height:calc(375px * (49/375));font-weight:400;
+        word-wrap:break-word;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
     }
     &__itemlink{
         padding-top:calc(375px * (25/375));font-size:calc(375px * (14/375));font-weight:550; color:#123250;line-height:calc(375px * (18/375));text-decoration:underline;display:block;
@@ -992,7 +1007,7 @@ body::-webkit-scrollbar-track {
 .productThumbsViewSwiper{
     padding-left:calc(375px * (20/375)) !important;padding-bottom:calc(630px * (40/630)) !important;
     &__slider{
-        width:calc(375px * (75/375)) !important;height:calc(375px * (75/375)) !important;background-color:#a7a7a7;margin-right:calc(375px * (8/375));
+        width:calc(375px * (75/375)) !important;height:calc(375px * (75/375)) !important;background-color:white;margin-right:calc(375px * (8/375));
         background-size:cover;background-repeat:no-repeat;background-position:center;
         .thumbsActive_outline{
             border:none;
@@ -1188,6 +1203,152 @@ body::-webkit-scrollbar-track {
     }
     &__revscore:nth-child(2){
         width:158px;height:auto;display:block;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    &__revcomment{
+        padding-top:24px;width:100%;padding-right:20px;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    &__revdate{
+        margin-top:26px;width:100%;padding-right:20px;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    /*swiper-container*/
+    &__revPictures{
+        padding-top:30px !important;padding-bottom:31px !important;
+    }
+    /*swiper-slide*/
+    &__revPictureitem{
+        width:100px !important;height:100px  !important;overflow:hidden;position:relative;margin-right:10px  !important;
+    }
+    &__revbar{
+        width:335px;height:1px;background-color:#212121;display:block;margin-bottom:50px;
+    }
+}
+.revPictureframe{
+    width:100%;height:100%;display:block;background-size:cover;background-repeat:no-repeat;background-position:center;
+}
+
+
+.radianpdsection01{
+    display:block;padding-left:20px;padding-right:20px;
+    &__topPart{
+        width:100%;height:auto;display:block;
+        img{
+            width:100%;height:auto;display:block;
+        }
+    }
+    &__options{
+        width:100%;height:auto;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    &__buybutton{
+        margin-top:10px;width:100%;height:auto;
+    }
+    &__description{
+        margin-top:70px;padding-bottom:70px;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }   
+}
+.radianpdsection02{
+    display:block;padding-bottom:50px;
+    &__accordList{
+        display:block;
+    }
+    &__accordItem{
+        display:block;
+    }
+    &__accordCont{
+        display:block;
+    }
+    &__accordSubchild{
+        display:block;padding-top:40px;
+    }
+    &__howtovideo{
+        display:block;height:auto;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    &__howtodesc{
+        display:block;margin-top:40px;padding-left:20px;padding-right:20px;padding-bottom:70px;
+        img{
+            width:100%;height:auto;display:block;
+        }
+    }
+}
+
+.pdsection03{
+    display:block;margin-top:50px;text-align:left;
+    &__inner{
+        width:100%;height:auto;padding-left:20px;
+    }
+    &__tit{
+        padding-right:20px;width:100%;height:auto;font-size:32px;font-weight:700;line-height:40px;color:#212121;
+    }
+    &__swiperArea{
+       padding-top:40px !important;padding-bottom:70px !important;
+    }
+    &__swiperslide{
+        width:196px !important;height:auto;display:block;margin-right:12px;
+        img{
+            width:100%;height:auto;display:block;
+        }
+    }
+}
+.radionpdsection03{
+    &__tit{
+        width:323px;height:auto;
+        img{
+            width:100%;height:auto;
+        }
+    }
+}
+.SlideItem{
+    width:100%;height:auto;display:block;
+    img{
+        width:100%;height:auto;display:block;
+    }
+}
+
+.radianpdsection04{
+    display:block;
+    &__inner{
+        width:100%;height:auto;display:block;padding-left:20px;padding-bottom:60px;
+    }
+    &__tit{
+        padding-bottom:40px;font-size:32px;font-weight:700;line-height:36px;color:#212121;
+    }
+    &__reviewPercent{
+        padding-right:20px;width:100%;display:block;padding-bottom:40px;
+        img{
+            width:100%;height:auto;display:block;
+        }
+    }
+    &__revList{
+        width:100%;height:auto;
+    }
+    &__revItem{
+        display:block;height:auto;
+    }
+    &__revscore:nth-child(1){
+        width:215px;height:auto;display:block;
+        img{
+            display:block;width:100%;height:auto;
+        }
+    }
+    &__revscore:nth-child(2){
+        width:174px;height:auto;display:block;
         img{
             display:block;width:100%;height:auto;
         }
