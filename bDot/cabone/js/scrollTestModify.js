@@ -78,8 +78,14 @@ function scroll_trigger(){
                 let item_target=javascript_scroll_response_elements[e];
                 //console.log("========스크롤반응 요소들html offsetTop상태:======start=====",item_target.offsetTop);
                 //let target_offsetTop=item_target.offsetTop;
+<<<<<<< HEAD
                 let target_offsetTop=$(`[originid=${item_target.getAttribute("originid")}]`).offset().top();
                 console.log("관련 타깃요소의 offsetTop값 jquery이용자로 relative여부 부모종속관계상관없이 문서에서의 페이지좌표출력가능:",target_offsetTop);
+=======
+                let item_originid=item_target.getAttribute("OriginId").split("~").join("\\~");
+                let target_offsetTop=$(`[OriginId=${item_originid}]`).offset().top;
+                console.log("target offsetTop:",item_target,target_offsetTop);
+>>>>>>> 5788cd64b8fcdea04143945068eea84ba0be1978
 
                 let trigger_data=JSON.parse(item_target.getAttribute("scrollresponse_data"));
                 if(trigger_data){

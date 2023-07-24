@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en"OriginId='HTMLROOT'targetindex="javascript_scrollContaineronly">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icons" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/test.css"/>
+
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<div class="header">
+    <div class="header__inner">
+        <div class="tabzilla">
+            <a href="#" class="tabzilla__link">
+                <span class="blind">mozilla</span>
+            </a>
+        </div>
+        <div class="header__logo">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <h1 class="blind">MDN</h1>
+                </a>
+            </div>
+        </div>
+        <div class="header__auth header__auth--opened">
+            <div class="auth">
+                <div class="auth-means">
+                    <p class="auth-means__text">Sigin in with</p>
+                    <ul class="auth-means__list">
+                        <li class="auth-means__item auth-means__item--persona">
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                <span class="blind">Persona</span>
+                            </a>
+                        </li>
+                        <li class="auth-means__item auth-means__item--github">
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                                <span class="blind">Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auth-picker">
+                    <ul class="auth-picker__list">
+                        <li class="auth-picker__item">
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                <span>Persona</span>
+                            </a>
+                        </li>
+                        <li class="auth-picker__item">
+                            <i class="fab fa-github"></i>
+                            <span>Github</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span>Web Platform</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="nav__submenu nav__submenu--col2">
+                        <div class="nav-submenu">
+                            <div class="nav-submenu__column">
+                                <strong class="nav-submenu__title">Column 01</strong>
+                                <ul class="nav-submenu__list">
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">HTML</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">CSS</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">Javascript</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">HTML</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">CSS</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">Javascript</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-submenu__column">
+                                <strong class="nav-submenu__title">Column 02</strong>
+                                <ul class="nav-submenu__list">
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">Anne</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">NYKIM</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">Nana</a>
+                                    </li>
+                                    <li class="nav-submenu__item">
+                                      <a href="#" class="nav-submenu__link">...more</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="nav-submenu__close">
+                                <span class="blind">Close submenu</span>
+                                <i class="fa fa-times-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      <span>Nav Menu 02</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      <span>Nav Menu 03</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      <span>Nav Menu 04</span>
+                    </a>
+                  </li>
+            </ul>
+        </div>
+        <div class="header__search">
+            <div class="search">
+                <form>
+                    <div class="search__inner">
+                        <div class="search__title">
+                            <label for="main-search">
+                                <i class="fa fa-search"></i>
+                                <span class="blind">Search</span>
+                            </label>
+                        </div>
+                        <input type="text" id="main-search" class="search__input search__input--extend"/>
+                        <input type="submit" class="search__button blind" value="Search"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>search를 별도 분리한 경우</h2>
+<div class="search">
+    <form>
+      <div class="search__inner">
+        <div class="search__title">
+          <label for="main-search">
+            <i class="fa fa-search"></i>
+            <span class="blind">Search</span>
+          </label>
+        </div>
+        <input type="text" id="main-search" class="search__input "> <!--focus시 .search__input--extend 클래스를
+  추가합니다-->
+        <input type="submit" class="search__button blind" value="Search">
+      </div>
+    </form>
+  </div>
+  
+<div id='javascript_contentContainer'>
+    <div class="bgcolor_green"style='height:100vh'>
+
+    </div>
+    <div class="bgcolor_green"style='height:100vh'id='scrollinit'>
+    
+    </div>
+    <div class="javascript_mouseAndTouchArea javascript_mouseAndTouchArea_group1 position_relative_normal  overflow_hidden"style='height:60vh'>
+        <div class="contentWrappingTarget javascript_mousetouch_horizontalMoving">
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+        </div>
+    
+        <div class="visualField position_absolute javascript_Css_define"javascript_Css_define="
+        0~9999|1920*1080$width:100%;height:100%;perspective:4000px;perspective-origin:50% 50%;left:0;top:0">
+            <p id='generalScrollTarget1-1'class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$font-size:48responmax;color:rgb(242,160,50);font-weight:900;left:80response;top:400responmax;z-index:8^
+            961~1400|1400*1080$font-size:60responmin;color:rgb(242,160,50);font-weight:900;top:400responmin;left:120response;z-index:8^
+            1401~9999|1920*1080$font-size:70responmin;color:rgba(242,160,50);font-weight:900;left:120response;top:400responmin;z-index:8">
+                <span>V</span><span id="generalScrollTarget1-1-1">ISUALIZATION OF</span>
+            </p>
+            <p id='generalScrollTarget1-2'class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$font-size:48responmax;color:rgb(242,160,50);font-weight:900;left:80response;top:540responmax;z-index:8^
+            961~1400|1400*1080$font-size:60responmin;color:rgb(242,160,50);font-weight:900;top:540responmin;left:120response;z-index:8^
+            1401~9999|1920*1080$font-size:70responmin;color:rgba(242,160,50);font-weight:900;left:120response;top:540responmin;z-index:8">
+                <span id="generalScrollTarget1-2-1">E</span>NT<span id="generalScrollTarget1-2-2">ERTAINMENT</span>
+            </p>  
+        
+    
+            <div class="verticalMove javascript_Css_define position_absolute"javascript_Css_define="
+            0~960|960*1100$top:0;left:0;width:50%;height:60px;background-color:#509020^
+            961~1400|1400*1080$top:0;left:0;width:50%;height:60px;background-color:#509020^
+            1401~9999|1920*1080$top:0;left:0;width:50%;height:60px;background-color:#509020"id='movescrollTarget1'>
+            </div>
+            <span class="display_block javascript_Css_define position_absolute  javascript_inlinestyle_responsive_elements"id="movescrollTarget2" javascript_Css_define="
+            0~960|960*1100$width:80%;height:12%;background-color:#fe8040;bottom:0;left:0;transform:translateZ=200px@rotateY=20deg^
+            961~1400|1400*1080$width:100%;height:12%;background-color:#fe8040;bottom:0;left:0;transform:translateZ=100responmax@rotateY=23deg^
+            1401~9999|1920*1080$width:90%;height:12%;background-color:#fe8040;bottom:0;left:0;transform:translateZ=100responmin@rotateY=40deg
+            "response_properties="transform"></span> 
+        </div>
+        
+    </div>
+    <div class="javascript_Css_define javascript_mouseAndTouchArea javascript_mouseAndTouchArea_group2 position_relative_normal overflow_hidden"style='height:108vh'>
+        <div class="contentWrappingTarget javascript_mousetouch_horizontalMoving position_relative_zindex3">
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+            <div class="imgframebox javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:420responmax;height:420responmax;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            961~1400|1400*1080$width:380responmin;height:380responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh^
+            1401~9999|1920*1080$width:420responmin;height:420responmin;background-color:#802070;margin-right:20response;margin-bottom:20responh">
+                <img src="imgs/deco1.gif" class="javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:100%;height:100%;display:block"/>
+            </div>
+        </div>
+    
+        <div class="visualField position_absolute javascript_Css_define"javascript_Css_define="
+        0~9999|1920*1080$width:100%;height:100%;perspective:4000px;perspective-origin:50% 50%;left:0;top:0">
+            <p id='generalScrollTarget2-1'class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$font-size:48responmax;color:rgb(242,160,50);font-weight:900;left:80response;top:400responmax;z-index:8^
+            961~1400|1400*1080$font-size:60responmin;color:rgb(242,160,50);font-weight:900;top:400responmin;left:120response;z-index:8^
+            1401~9999|1920*1080$font-size:70responmin;color:rgba(242,160,50);font-weight:900;left:120response;top:400responmin;z-index:8">
+                <span>V</span><span id="generalScrollTarget2-1-1"class='javascript_Css_define'javascript_Css_define="
+                0~9999|1920*1080$opacity:100%">ISUALIZATION OF</span>
+            </p>
+            <p id='generalScrollTarget2-2'class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$font-size:48responmax;color:rgb(242,160,50);font-weight:900;left:80response;top:540responmax;z-index:8^
+            961~1400|1400*1080$font-size:60responmin;color:rgb(242,160,50);font-weight:900;top:540responmin;left:120response;z-index:8^
+            1401~9999|1920*1080$font-size:70responmin;color:rgba(242,160,50);font-weight:900;left:120response;top:540responmin;z-index:8">
+                <span id="generalScrollTarget2-2-1"class='javascript_Css_define'javascript_Css_define="
+                0~9999|1920*1080$opacity:100%">E</span>NT<span id="generalScrollTarget2-2-2"class='javascript_Css_define'javascript_Css_define="
+                0~9999|1920*1080$opacity:100%">ERTAINMENT</span>
+            </p>
+    
+            <div id='javascript_touchmoveTrigger_layoutVerBghorizontal'class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~960|960*1100$width:500%;height:100%;top:0;left:0%;background:linear-gradient(80deg,#2080ef,#8020ef,#406005)^
+            961~1400|1400*1080$width:500%;height:100%;top:0;left:0%;background:linear-gradient(80deg,#2080ef,#8020ef,#406005)^
+            1401~9999|1920*1080$width:500%;height:100%;top:0;left:0%;background:linear-gradient(80deg,#2080ef,#8020ef,#406005)">
+            </div>
+            <div id="javascript_touchmoveTrigger_autoheightTarget1" class="display_block position_absolute javascript_Css_define" javascript_Css_define="
+            0~960|960*1100$width:260px;height:400%;top:0%;right:10%;background-image:url('imgs/verticallyLongtest1.jpg');background-repeat:repeat-y;background-size:100% auto^
+            961~1400|1400*1080$width:300px;height:500%;top:0%;right:10%;background-image:url('imgs/verticallyLongtest1.jpg');background-repeat:repeat-y;background-size:100% auto^
+            1401~9999|1920*1080$width:300px;height:500%;top:0%;right:10%;background-image:url('imgs/verticallyLongtest1.jpg');background-repeat:repeat-y;background-size:100% auto">
+            </div>
+            <div id="javascript_touchmoveTrigger_autowidthTarget1"class="display_block position_absolute javascript_Css_define" javascript_Css_define="
+            0~960|960*1100$width:4200px;height:20%;bottom:10%;left:0%;background-image:url('imgs/horizontalLongbg.webp');background-repeat:repeat-x;background-size:auto 100%^
+            961~1400|1400*1080$width:5000px;height:20%;bottom:10%;left:0%;background-image:url('imgs/horizontalLongbg.webp');background-repeat:repeat-x;background-size:auto 100%^
+            1401~9999|1920*1080$width:5000px;height:20%;bottom:10%;left:0%;background-image:url('imgs/horizontalLongbg.webp');background-repeat:repeat-x;background-size:auto 100%">
+            </div> 
+            <div class="verticalMove javascript_Css_define position_absolute"javascript_Css_define="
+            0~960|960*1100$top:0;left:0;width:50%;height:60px;background-color:#8020ee;z-index:6^
+            961~1400|1400*1080$top:0;left:0;width:50%;height:60px;background-color:#8020ee;z-index:6^
+            1401~9999|1920*1080$top:0;left:0;width:50%;height:60px;background-color:#8020ee;z-index:6"id='movescrollTarget1-1'>
+            </div>
+            <span class="display_block javascript_Css_define position_absolute  javascript_inlinestyle_responsive_elements"id="movescrollTarget2-1" javascript_Css_define="
+            0~960|960*1100$width:100%;height:12%;background-color:#fe8040;bottom:0;left:0^
+            961~1400|1400*1080$width:100%;height:12%;background-color:#fe8040;bottom:0;left:0^
+            1401~9999|1920*1080$width:90%;height:12%;background-color:#fe8040;bottom:0;left:0
+            "style='width:0%'response_properties="width"></span> 
+            <div id="transformAnimateTarget1" class="javascript_Css_define position_absolute"javascript_Css_define="
+            0~960|960*1100$width:120px;height:120px;background-color:#fe8010;bottom:10%;left:10%^
+            961~1400|1400*1080$width:160responmax;height:160responmax;background-color:#fe8010;bottom:10%;left:10%^
+            1401~9999|1920*1080$width:200responmin;height:200responmin;background-color:#fe8010;bottom:10%;left:10%">
+            </div> 
+            <div id="transformAnimateTarget2" class="javascript_Css_define position_absolute"javascript_Css_define="
+            0~960|960*1100$width:120px;height:120px;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center^
+            961~1400|1400*1080$width:160responmax;height:160responmax;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center^
+            1401~9999|1920*1080$width:200responmin;height:200responmin;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center
+            ">
+            </div>
+            <div id="transformAnimateTarget3" class="javascript_Css_define position_absolute javascript_inlinestyle_responsive_elements"javascript_Css_define="
+            0~960|960*1100$width:120px;height:120px;background-color:#fe8010;bottom:10%;right:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center;transform:rotateX=20deg@rotateY=30deg@translateX=-60%@translateZ=150responmax^
+            961~1400|1400*1080$width:160responmax;height:160responmax;background-color:#fe8010;bottom:10%;right:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center;transform:rotateX=20deg@rotateY=30deg@translateX=-60%@translateZ=160responmax^
+            1401~9999|1920*1080$width:200responmin;height:200responmin;background-color:#fe8010;bottom:10%;right:40%;background-image:url('imgs/section6hover234.jpg');background-size:cover;background-position:center;transform:rotateX=30deg@rotateY=40deg@translateX=-60%@translateZ=160responmin
+            "response_properties="transform">
+            </div>
+        </div>
+    </div>
+    <div class="bgcolor_green javascript_Css_define position_relative_normal  overflow_hidden"javascript_Css_define="
+    0~9999|1920*1080$width:100%;height:100vh;perspective:4000px;perspective-origin:50% 50%;left:0;top:0">
+        <div class="transformCssDefineTest javascript_Css_define position_absolute javascript_inlinestyle_responsive_elements"
+        javascript_Css_define="
+        0~960|960*1100$width:60px;height:60px;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/deco1.gif');background-size:cover;background-position:center;transform:rotateY=60deg@scaleX=2@translateX=100response@skewY=40deg^
+        961~1400|1400*1080$width:60px;height:60px;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/deco1.gif');background-size:cover;background-position:center;transform:rotateY=60deg@scaleX=2@translateX=100response@skewY=60deg^
+        1401~9999|1920*1080$width:60px;height:60px;background-color:#fe8010;bottom:10%;left:40%;background-image:url('imgs/deco1.gif');background-size:cover;background-position:center;transform:rotateY=60deg@scaleX=2@translateX=100response@skewY=70deg
+        "response_properties='transform'responsevalue_rate='0.5' inlineresponsive_allow="true">
+        </div>
+
+        <div class="javascript_touchdefaultevent_safeArea">
+            <div class="imgFrame position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_imgswapgroup0"javascript_Css_define="
+            0~768|768*1040$width:372responmax;height:372responmax^
+            769~1024|1024*1280$width:391responmax;height:391responmax^
+            1025~1419|1420*1080$width:391responmax;height:391responmax^
+            1420~9999|1920*1080$width:381responmax;height:381responmax">
+                <img src="imgs/section6hover234.jpg" class="position_absolute display_block javascript_Css_define"javascript_Css_define="
+                0~1024|1024*1280$width:auto;height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                1025~9999|1920*1080$width:auto;height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%" targetindex="styleEffect_imgswapgroup0_zindexShow1"/>
+                <img src="imgs/section6default2.jpg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+                0~1024|1024*1090$width:100%;height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                1025~9999|1920*1080$width:100%;height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%"/>
+                <div class="flex_horizontal_flexStart javascript_Css_define position_absolute"javascript_Css_define="
+                0~768|768*1040$left:8responmax;top:6responmax;z-index:4^
+                769~1024|1024*1280$left:10responmax;top:8responmax;z-index:4^
+                1025~9999|1920*1080$left:10responmax;top:8responmax;z-index:4">
+                    <span class="flex_horizontal_Center badge  javascript_Css_define"javascript_Css_define="
+                    0~768|768*1040$width:46px;height:27px;background-color:#111;font-size:12response;font-weight:800;color:#f5e2e2;margin-right:4response^
+                    769~1024|1024*1280$width:46px;height:27px;background-color:#111;font-size:12px;font-weight:800;color:#f5e2e2;margin-right:4response^
+                    1025~9999|1920*1080$width:46responmin;height:27responmin;background-color:#111;font-size:12responmin;font-weight:800;color:#f5e2e2;margin-right:4responmin">
+                    NEW
+                    </span>
+                    <span class="flex_horizontal_Center badge javascript_Css_define"javascript_Css_define="
+                    0~768|768*1040$padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;font-size:12response;font-weight:800;background-color:#8070ef^
+                    769~1024|1024*1280$padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;font-size:12px;font-weight:800;background-color:#8070ef^
+                    1025~9999|1920*1080$padding-left:10responmin;padding-right:10responmin;padding-top:5responmin;padding-bottom:5responmin;font-size:12responmin;font-weight:800;background-color:#8070ef">
+                    ETUDE
+                    </span>
+                </div>
+            </div>
+            <a href="https://www.naver.com" class="javascript_clickTarget"target="_blank">이동</a>
+        </div>
+       
+        <div targetindex="coloreffectTarget1"class="position_absolute display_block javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+        0~1024|1024*1280$width:90px;height:90px;left:50%;top:50%;transform:scale=1@translateZ=400responmax@rotateZ=1deg;background-color:red^
+        1025~9999|1920*1080$width:90px;height:90px;left:50%;top:50%;transform:scale=1@translateZ=480responmin@rotateZ=1deg;background-color:red" response_properties='transform'></div> 
+        <div targetindex="coloreffectTarget2"class="position_absolute display_block javascript_Css_define"javascript_Css_define="
+        0~1024|1024*1280$width:90px;height:90px;left:50%;top:50%;background-color:blue^
+        1025~9999|1920*1080$width:90px;height:90px;left:50%;top:50%;background-color:blue" ></div>
+    </div>
+    
+    <div class="bgcolor_green"style='height:100vh;position:relative'>
+        <div class="position_relative_normal javascript_scroll_response javascript_scroll_response_group1 javascript_Css_define"javascript_Css_define="
+        0~1024|1024*1280$width:50%;height:200px;background-color:red^
+        1025~9999|1920*1080$width:50%;height:400px;background-color:red">
+        scrollTirgerTargget
+            <div targetindex="coloreffectTarget_scrollresponse1" class="position_absolute display_block javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+            0~1024|1024*1280$width:90px;height:90px;left:50%;top:50%;transform:scale=1@translateZ=400responmax@rotateZ=40deg;background-color:red^
+            1025~9999|1920*1080$width:90px;height:90px;left:50%;top:50%;transform:scale=1@translateZ=480responmin@rotateZ=40deg;background-color:red" response_properties='transform'></div> 
+            <div targetindex="coloreffectTarget_scrollresponse1-1"class="position_absolute display_block javascript_Css_define"javascript_Css_define="
+            0~1024|1024*1280$width:90px;height:90px;left:50%;top:200%;background-color:blue;opacity:0%^
+            1025~9999|1920*1080$width:90px;height:90px;left:50%;top:200%;background-color:blue;opacity:0%" ></div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="social-list-widget">
+    <ul class="text-right">
+        
+        <li><a target="_blank" href="https://www.instagram.com/metaverse.ent_official/"><i class="icofont-instagram"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/people/Metaverse-Entertainment/100085442252859/"><i class="icofont-facebook"></i></a></li>
+        <li><i class="icofont-youtube-play" style="color: #444; padding-left: 7px"></i></li>
+        <li><i class="icofont-vimeo" style="color: #444; padding: 0 5px 0 17px"></i></li>
+    </ul>
+</div>-->
+
+<script src="https://sinjaesung.github.io/SINJAweb/js/transformanimate$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/common_function$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/CssStyleDefine_layout$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/inputkeyboard_validate.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/styleEffectAnimate$p.js"></script>
+<!--<script src="https://sinjaesung.github.io/SINJAweb/js/scrollTest$p.js"></script>-->
+<script src="https://sinjaesung.github.io/SINJAweb/js/scrollNormalResponse_.js"></script>
+
+<script src="https://sinjaesung.github.io/SINJAweb/js/scrollContainerVisual$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/accordionGroup.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/javascript_tabMenuAndToggles.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/screentouch_scrollprevent$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/mouseTouchMoveControl$p.js"></script>
+
+<!--이를 적용하면 모바일브라우저에서의 관성스크롤링을 없애고(기본이벤트) 터치이벤트에의한(터치기기에 터치이벤트발생했던것에 한하여) 터치로인한 스크롤을 방지하고,터치이벤트에의해 주도되는 스크롤이동처리됨.-->
+<!--로컬 스크립트 처리-->
+<script>
+    update_allHtmlElements_toOriginId(document.body);//domcontenteloaded이전 html요소가 BrowserhtmlParser에 의해 랜더링되기 이전에 요소들을 추상적으로 구조화는 되어있는 상태에서 이러한 요소들에 개별적 부모자식계층id고유id를 부여한다.
+</script>
+<!--<script src="scrollContainerVisualControl.js"></script>
+<script src="scrollContainerGeneralGroupControls.js"></script>
+<script src="scrollresponseNormalControls.js"></script>
+<script src="javascript_styleEffectTriggerControls.js"></script>-->
+
+<script>
+let scrollinit=document.getElementById("scrollinit");
+scrollinit.onclick=scroll_initialize;
+/*
+mouse : 컴퓨터와 연결된 mouse와 관련된 이벤트 들이에요. 마우스의 up, down, move, whell 이벤트 들이 이쪽에 포함 되요.
+click : touch up & down, mouse up & down 을 묶은 이벤트 에요.
+touch : display를 touch 했을 때 일어나는 up, down, move 등의 이벤트 들이에요.
+*/
+
+//기본 이벤트는 mousedragdrop (좌우상하 등방향으로 끌기 pc) / 터치좌우상하방향으로 끄는것 인식하여서 움직인 방향에 따라서 좌우로 요소를 최종적 이동시킴. mousedown mousemove mouseoup down일때 drag상태로간주하고,move일때 move한 위치로 moving위치로 처리. option에 가로모드,세로모드기준으로 가로모드라면 가로방향만 인식,세로모드라면 세로방향만 인식처리. 컨텐츠를 전체적으로 좌우or 상하로 이동시키는것이 기본적 기능. 1.이동계산되는 형태 2.이동될때 같이 부가적으로 발생할 타깃들과타깃이펙트들이 주력이다.
+
+
+let javascript_StyleEffectTrigger2_imgswapgroup0=document.getElementsByClassName("javascript_StyleEffectTrigger2_imgswapgroup0");
+for(let s=0; s<javascript_StyleEffectTrigger2_imgswapgroup0.length; s++){
+    let item=javascript_StyleEffectTrigger2_imgswapgroup0[s];
+
+    let triggerdatas_custom={
+        "mouseenter":{
+            "0~1024":{
+                "style_datas":[
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"instantstyle":{"z-index":2}}},
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"animstyle":{"opacity":"100%"},"duration":400}},
+                    {
+                        "target":`coloreffectTarget1`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[240,240,240,0.9],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"false","responsevalue_rate":5}
+                    },
+                    {
+                        "target":`coloreffectTarget2`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[150,90,220,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1100',"","%","%"],"limitvalue":[{"rotateZ":90},{"translateZ":-900},{"scale":0.5},{"translateX":-50},{"translateY":-50}],"duration":1200}}
+                    }
+                ]
+            },
+            "1025~9999":{
+                "style_datas":[
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"instantstyle":{"z-index":2}}},
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"animstyle":{"opacity":"100%"},"duration":400}},
+                    {
+                        "target":`coloreffectTarget1`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[200,120,90,0.9],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"false","responsevalue_rate":4}
+                    },
+                    {
+                        "target":`coloreffectTarget2`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[50,160,100,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080',"","%","%"],"limitvalue":[{"rotateZ":140},{"translateZ":-500},{"scale":0.7},{"translateX":-30},{"translateY":-30}],"duration":1200}}
+                    }
+                ]
+            }
+        },
+        "mouseleave":{
+            "0~1024":{
+                "style_datas":[
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"instantstyle":{"z-index":2}}},
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"animstyle":{"opacity":"0%"},"duration":400}
+                    },
+                    {
+                        "target":`coloreffectTarget1`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":1}
+                    },
+                    {
+                        "target":`coloreffectTarget2`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[20,20,20,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1400*1100',"","%","%"],"limitvalue":[{"rotateZ":0},{"translateZ":0},{"scale":1},{"translateX":0},{"translateY":0}],"duration":1200}}
+                    }
+                ]
+            },
+            '1025~9999':{
+                "style_datas":[
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"instantstyle":{"z-index":2}}},
+                    {"target":`styleEffect_imgswapgroup0_zindexShow${s+1}`,"styleoption":{"animstyle":{"opacity":"0%"},"duration":400}
+                    },
+                    {
+                        "target":`coloreffectTarget1`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":1}
+                    },
+                    {
+                        "target":`coloreffectTarget2`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[20,20,20,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080',"","%","%"],"limitvalue":[{"rotateZ":0},{"translateZ":0},{"scale":1},{"translateX":0},{"translateY":0}],"duration":1200}}
+                    }
+                ]
+            }
+        }
+    }
+    item.setAttribute("triggerdata",JSON.stringify(triggerdatas_custom));
+
+    for(let events in triggerdatas_custom){
+        item.addEventListener(events,styleEffect_adapt_trigger2,false);
+    }
+}
+let javascript_scroll_response_group1=document.getElementsByClassName("javascript_scroll_response_group1");
+for(let e=0; e<javascript_scroll_response_group1.length; e++){
+    let item_target=javascript_scroll_response_group1[e];
+    console.log("스크롤반응 요소들html offsetTop상태:",item_target,item_target.offsetTop);
+
+    let addpos_flag=0;
+    if((e % 3)==0){
+        addpos_flag=80;
+    }else if((e %3)==1){
+        addpos_flag=20;
+    }else if((e % 3)==2){
+        addpos_flag=40;
+    }   
+
+    let scrollTargets_adaptdata={
+        "0~1024":{
+            "forward":{
+                "style_datas":[
+                    {"target":`coloreffectTarget_scrollresponse${e+1}`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[240,200,50,0.9],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":5}},
+                    {
+                        "target":`coloreffectTarget_scrollresponse${e+1}-1`,"styleoption":{"animstyle":{"top":"10%","opacity":"100%"},"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[128,50,240,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1100',"responmax|1400*1100","deg"],"limitvalue":[{"rotateX":40},{"translateZ":400},{"translateY":-100},{"rotateZ":70}],"duration":1200}}
+                    }
+                ]
+            },
+            "reset":{
+                "style_datas":[
+                    {"target":`coloreffectTarget_scrollresponse${e+1}`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":1}},
+                    {
+                        "target":`coloreffectTarget_scrollresponse${e+1}-1`,"styleoption":{"animstyle":{"top":"200%","opacity":"0%"},"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1100',"responmax|1400*1100","deg"],"limitvalue":[{"rotateX":0},{"translateZ":0},{"translateY":0},{"rotateZ":0}],"duration":1200}}
+                    }
+                ]
+            },
+            "responsepos":150+(addpos_flag)//정수값 px단위.
+        },
+        "1025~9999":{
+            "forward":{
+                "style_datas":[
+                    {"target":`coloreffectTarget_scrollresponse${e+1}`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[160,50,200,0.9],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":4}},
+                    {
+                        "target":`coloreffectTarget_scrollresponse${e+1}-1`,"styleoption":{"animstyle":{"top":"10%","opacity":"100%"},"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[128,50,240,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responh|1920*1080',"responh|1920*1080","deg"],"limitvalue":[{"rotateX":32},{"translateZ":500},{"translateY":-180},{"rotateZ":80}],"duration":1200}}
+                    }
+                ]
+            },
+            "reset":{
+                "style_datas":[
+                    {"target":`coloreffectTarget_scrollresponse${e+1}`,"styleoption":{"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"css_responsive","duration":1200},"inlineresponsive_allow":"true","responsevalue_rate":1}},
+                    {
+                        "target":`coloreffectTarget_scrollresponse${e+1}-1`,"styleoption":{"animstyle":{"top":"200%","opacity":"0%"},"coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responh|1920*1080',"responh|1920*1080","deg"],"limitvalue":[{"rotateX":0},{"translateZ":0},{"translateY":0},{"rotateZ":0}],"duration":1200}}
+                    }
+                ]
+            },
+            "responsepos":120+addpos_flag//정수값 px단위.
+        }
+    }
+    item_target.setAttribute("scrollresponse_data",JSON.stringify(scrollTargets_adaptdata));
+}
+
+
+
+let javascript_mouseAndTouchArea_group1=document.getElementsByClassName("javascript_mouseAndTouchArea_group1");
+let targetdata={
+    'calc_method':'basic',//'basic:rate_delay', realtime:즉시적 이동되고있는 있는량만큼 실시간적으로 처음량비례하여 이동(touchup or mouseup발생시까지)
+    //basic에선 dynamic,autoheight,autowidth,goalPercent등은 별로 의미가 없고, scrollRateCond 가 의미있다.
+    '0~960':{
+        'speedamount':1,
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget1-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmax|960*1100",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[13,95,205,0],"units":"rgba","calculate":["add","add","add","add"],"limitvalue":[255,255,255,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget1-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmax|960*1100",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[13,95,205,0],"units":"rgba","calculate":["add","add","add","add"],"limitvalue":[255,255,255,1]}]
+            },
+            {
+                'targetid' : 'movescrollTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{
+                    "adapt":{"animstyle":{"top":"50%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|960*1200'],"limitvalue":[{"rotateZ":90},{"translateZ":900}],"duration":1200},"duration":400,"complete":{}},
+                    "reset":{"animstyle":{"top":"0%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|960*1200'],"limitvalue":[{"rotateZ":0},{"translateZ":0}],"duration":1200},"duration":400,"complete":{}}
+                }
+            },
+            {
+                'targetid': 'movescrollTarget2', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{
+                    "adapt":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1},
+                    "reset":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":0.5}
+                }
+            }
+        ]
+    },
+    '961~1400':{
+        'speedamount':1, 
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget1-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmin|1400*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[162,95,205,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[80,255,255,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget1-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmin|1400*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[162,95,205,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[80,255,255,1]}]
+            },
+            {
+                'targetid' : 'movescrollTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{
+                    "adapt":{"animstyle":{"top":"50%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1100'],"limitvalue":[{"rotateZ":100},{"translateZ":600}],"duration":1200},"duration":400,"complete":{}},
+                    "reset":{"animstyle":{"top":"0%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1100'],"limitvalue":[{"rotateZ":0},{"translateZ":0}],"duration":1200},"duration":400,"complete":{}}
+                }
+            },
+            {
+                'targetid': 'movescrollTarget2', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{
+                    "adapt":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":2},
+                    "reset":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":0.6}
+                }
+            }
+        ]
+    },
+    '1401~9999':{
+        'speedamount':1,
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget1-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmin|1920*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[192,85,50,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[50,245,100,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget1-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmin|1920*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[192,85,50,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[50,245,100,1]}]
+            },
+            {
+                'targetid' : 'movescrollTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{
+                    "adapt":{"animstyle":{"top":"50%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080'],"limitvalue":[{"rotateZ":120},{"translateZ":1000}],"duration":1200},"duration":400,"complete":{}},
+                    "reset":{"animstyle":{"top":"0%"},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080'],"limitvalue":[{"rotateZ":0},{"translateZ":0}],"duration":1200},"duration":400,"complete":{}}
+                }
+            },
+            {
+                'targetid': 'movescrollTarget2', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{
+                    "adapt":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":3},
+                    "reset":{"transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":0.7}
+                }
+            }
+        ]
+    },
+}
+for(let g1=0; g1<javascript_mouseAndTouchArea_group1.length; g1++){
+    let item=javascript_mouseAndTouchArea_group1[g1];
+    item.setAttribute("targetdata",JSON.stringify(targetdata));
+}
+
+let javascript_mouseAndTouchArea_group2=document.getElementsByClassName("javascript_mouseAndTouchArea_group2");
+let targetdata2={
+    'calc_method':'realtime',//'basic:rate_delay', realtime:즉시적 이동되고있는 있는량만큼 실시간적으로 처음량비례하여 이동(touchup or mouseup발생시까지)
+
+    '0~960':{
+        'speedamount':1,
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget2-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmax|960*1100",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[242,120,195,0],"units":"rgba","calculate":["subtract","subtract","add","add"],"limitvalue":[0,40,245,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget2-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmax|960*1100",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[242,120,195,0],"units":"rgba","calculate":["subtract","subtract","add","add"],"limitvalue":[0,40,245,1]}]
+            },
+            {
+                'targetid':"generalScrollTarget2-1-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-2","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                "targetid":"javascript_touchmoveTrigger_layoutVerBghorizontal","effectStyle":"dynamic","styleoption":[{"property":"left","originvalue":0,"effectspeed":450,"units":"%","direction":"forward","calculate":"subtract","limitvalue":-400}]
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autoheightTarget1","effectStyle":"autoheight"
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autowidthTarget1","effectStyle":"autowidth"
+            },
+            {
+                'targetid' : 'movescrollTarget1-1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{"adapt":{"animstyle":{"top":"-100%"},"duration":400,"complete":{}},"reset":{"animstyle":{"top":"0%"},"duration":400,"complete":{}}}
+            },
+            {
+                'targetid': 'movescrollTarget2-1', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{"adapt":{"animstyle":{"width":"css_responsive"},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1},"reset":{"animstyle":{"width":"0%"},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":1}}
+            },
+            {
+                'targetid':'transformAnimateTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[150,90,220,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|960*1200',"","deg"],"limitvalue":[{"rotateZ":90},{"translateZ":900},{"scale":2},{"rotateX":50}],"duration":1200}
+                    },
+                    "reset":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|960*1200',"","deg"],"limitvalue":[{"rotateZ":0},{"translateZ":0},{"scale":1},{"rotateX":0}],"duration":1200}
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget3','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1
+                    },
+                    "reset":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":0
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget2','effectStyle':"transformdynamic","styleoption":{"property":"transform","originvalue":[{'rotateY':0},{"scale":1},{"translateX":80}],"effectspeed":[120,2,200],"units":["deg","","responmin|960*1100"],"calculate":["add","add","add"],"limitvalue":[{"rotateY":100},{"scale":3},{"translateX":280}]}
+            }
+        ]
+    },
+    '961~1400':{
+        'speedamount':1, 
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget2-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmax|1400*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[192,95,190,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[50,255,240,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget2-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmax|1400*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[192,95,190,0],"units":"rgba","calculate":["subtract","add","add","add"],"limitvalue":[50,255,240,1]}]
+            },
+            {
+                'targetid':"generalScrollTarget2-1-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-2","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                "targetid":"javascript_touchmoveTrigger_layoutVerBghorizontal","effectStyle":"dynamic","styleoption":[{"property":"left","originvalue":0,"effectspeed":450,"units":"%","direction":"forward","calculate":"subtract","limitvalue":-400}]
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autoheightTarget1","effectStyle":"autoheight"
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autowidthTarget1","effectStyle":"autowidth"
+            },
+            {
+                'targetid' : 'movescrollTarget1-1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{"adapt":{"animstyle":{"top":"-100%"},"duration":400,"complete":{}},"reset":{"animstyle":{"top":"0%"},"duration":400,"complete":{}}}
+            },
+            {
+                'targetid': 'movescrollTarget2-1', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{"adapt":{"animstyle":{"width":"css_responsive"},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1},"reset":{"animstyle":{"width":"0%"},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":1}}
+            },
+            {
+                'targetid':'transformAnimateTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[60,190,220,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1080',"","deg"],"limitvalue":[{"rotateZ":100},{"translateZ":900},{"scale":2},{"rotateX":40}],"duration":1200}
+                    },
+                    "reset":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmax|1400*1080',"","deg"],"limitvalue":[{"rotateZ":0},{"translateZ":0},{"scale":1},{"rotateX":0}],"duration":1200}
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget3','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1.2
+                    },
+                    "reset":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":0
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget2','effectStyle':"transformdynamic","styleoption":{"property":"transform","originvalue":[{'rotateY':0},{"scale":1},{"translateX":80}],"effectspeed":[120,2,320],"units":["deg","","responmin|1400*1080"],"calculate":["add","add","add"],"limitvalue":[{"rotateY":100},{"scale":3},{"translateX":380}]}
+            }
+        ]
+    },
+    '1401~9999':{
+        'speedamount':1,
+        'styledata':[
+            {
+                'targetid':'generalScrollTarget2-1','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":400,"effectspeed":340,"units":"responmin|1920*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[13,95,210,0],"units":"rgba","calculate":["add","add","add","add"],"limitvalue":[255,255,255,1]}]
+            },
+            {
+                'targetid':'generalScrollTarget2-2','effectStyle':"dynamic","styleoption":[{"property":"top","originvalue":540,"effectspeed":480,"units":"responmin|1920*1080",'direction':"forward","calculate":'subtract',"limitvalue":80},{"property":"color","originvalue":[242,160,50,1],"effectspeed":[13,95,210,0],"units":"rgba","calculate":["add","add","add","add"],"limitvalue":[255,255,255,1]}]
+            },
+            {
+                'targetid':"generalScrollTarget2-1-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-1","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                'targetid':"generalScrollTarget2-2-2","effectStyle":"dynamic","styleoption":[{"property":"opacity","originvalue":100,"effectspeed":100,"units":"%","direction":"forward","calculate":"subtract","limitvalue":0}]
+            },
+            {
+                "targetid":"javascript_touchmoveTrigger_layoutVerBghorizontal","effectStyle":"dynamic","styleoption":[{"property":"left","originvalue":0,"effectspeed":450,"units":"%","direction":"forward","calculate":"subtract","limitvalue":-400}]
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autoheightTarget1","effectStyle":"autoheight"
+            },
+            {
+                'targetid':"javascript_touchmoveTrigger_autowidthTarget1","effectStyle":"autowidth"
+            },
+            {
+                'targetid' : 'movescrollTarget1-1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.3,"styleoption":{"adapt":{"animstyle":{"top":"-100%"},"duration":400,"complete":{}},"reset":{"animstyle":{"top":"0%"},"duration":400,"complete":{}}}
+            },
+            {
+                'targetid': 'movescrollTarget2-1', 'effectStyle':"scrollRateCond_instantAdapt","condValue":0.6,"styleoption":{"adapt":{"animstyle":{"width":"css_responsive"},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1},"reset":{"animstyle":{"width":"0%"},"duration":400,"complete":{},"inlineresponsive_allow":"false","responsevalue_rate":1}}
+            },
+            {
+                'targetid':'transformAnimateTarget1','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[20,220,60,0.9],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080',"","deg"],"limitvalue":[{"rotateZ":110},{"translateZ":700},{"scale":2},{"rotateX":50}],"duration":1200}
+                    },
+                    "reset":{
+                        "coloranimstyle":{"property":"background-color","units":"rgba","limitvalue":[0,0,0,0.8],"duration":800},"transformanimstyle":{"property":"transform_inlinescript","units":['deg','responmin|1920*1080',"","deg"],"limitvalue":[{"rotateZ":0},{"translateZ":0},{"scale":1},{"rotateX":0}],"duration":1200}
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget3','effectStyle':"scrollRateCond_instantAdapt","condValue":0.5,"styleoption":{
+                    "adapt":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":1.5
+                    },
+                    "reset":{
+                        "transformanimstyle":{"property":"css_responsive","duration":1200},"duration":400,"complete":{},"inlineresponsive_allow":"true","responsevalue_rate":0
+                    }
+                }
+            },
+            {
+                'targetid':'transformAnimateTarget2','effectStyle':"transformdynamic","styleoption":{"property":"transform","originvalue":[{'rotateY':0},{"scale":1},{"translateX":80}],"effectspeed":[120,3,400],"units":["deg","","responmin|1920*1080"],"calculate":["add","add","add"],"limitvalue":[{"rotateY":100},{"scale":4},{"translateX":400}]}
+            }
+        ]
+    },
+}
+for(let g2=0; g2<javascript_mouseAndTouchArea_group2.length; g2++){
+    let item=javascript_mouseAndTouchArea_group2[g2];
+    item.setAttribute("targetdata",JSON.stringify(targetdata2));
+}
+mouseTouchMoveControlModule();
+</script>
+
+</body>
+</html>

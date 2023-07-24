@@ -564,6 +564,7 @@
     }
     section.section07 .inner{
         width:100%;padding-left:calc(100vw * (260/1920));padding-right:calc(100vw * (260/1920));padding-top:calc(100vmin * (260 / 1080));padding-bottom:calc(100vmin * (300/1080));
+        perspective: 4000px; perspective-origin: center;
     }
 
     section.section07 .inner .floatRightRow{
@@ -1350,6 +1351,7 @@
     }
     section.section07 .inner{
         width:100%;padding-left:calc(100vw * (90/1500));padding-right:calc(100vw * (90/1500));padding-top:calc(100vmin * (260 / 1080));padding-bottom:calc(100vmin * (300/1080));
+        perspective: 4000px; perspective-origin: center;
     }
 
     section.section07 .inner .floatRightRow{
@@ -2088,6 +2090,7 @@
     }
     section.section07 .inner{
         width:100%;padding-left:calc(100vw * (40/800));padding-right:calc(100vw * (40/800));padding-top:calc(100vh * (40 / 812));padding-bottom:calc(100vh * (150/812));
+        perspective: 4000px; perspective-origin: center;
     }
     section.section07 .inner .floatRightRow{
         display:flex;flex-flow:row nowrap;justify-content:flex-end;align-items:center;
