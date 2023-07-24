@@ -6,6 +6,7 @@
     text-decoration: none;
     box-sizing: border-box;
     vertical-align:top;
+    font-family:'Campton';
 }
 html,body{
     height:100%;width:100%;
@@ -72,7 +73,8 @@ input,select,textarea {
     font: inherit;
     border: 0 none;
     background: rgba(0, 0, 0, 0);
-    outline: none
+    outline: none;
+    
 }
 
 q,blockquote {
@@ -116,6 +118,10 @@ body{ -ms-overflow-style: none; }
     position:fixed;top:107px;left:31px;right:30px;height:65px;z-index:998;overflow:hidden;min-height:65px;
 }
 
+.rightNavMenuWrap{
+    position:fixed;top:107px;right:30px;height:666px;
+    width:235px;z-index:9999;overflow:hidden;
+}
 
 /*swiper관련*/
 .swiper-pagination-bulletStyle{
@@ -136,13 +142,17 @@ body{ -ms-overflow-style: none; }
 }
 
 .swiper-pagination-basicstyle{
-    bottom:38px !important;left:20px !important; display:inline-flex;width:auto !important;align-items:center;
+    bottom:38px !important;left:20px !important; display:inline-flex;width:auto !important;align-items:center;justify-content:center;align-items:center;
 }
 .swiper-pagination-basicstyle .swiper-pagination-bullet{
     margin-right:7px !important;background-color:#a0a0a0;opacity:0.7
 }
 .swiper-pagination-basicstyle .swiper-pagination-bullet-active{
     background-color:#666;opacity:1
+}
+
+.swiper-pagination-basicstyle_navi{
+    bottom:40px !important;left:auto !important;display:flex !important;width:100% !important
 }
 
 @import url('https://fonts.cdnfonts.com/css/campton');
@@ -399,7 +409,7 @@ body::-webkit-scrollbar-track {
 .botmenu{
     height:100%;width:100%;position:absolute;bottom:0%;position:absolute;left:0;
     background-repeat:no-repeat;background-position:center;
-    background-image:url('../img/main/floating.svg');
+    background-image:url('../img/main/botMenubg.png');background-size:contain;
 }
 
 .filterbg{
@@ -414,6 +424,113 @@ body::-webkit-scrollbar-track {
         }
     }
 }
+
+/*rightmenu navi관련*/
+.rightNavBg{
+    width:375px;height:100%;display:block;position:absolute;z-index:1008;background-color:rgba(0,0,0,0.7);right:0;top:0;
+}
+.rightnavi{
+    width:235px;height:666px;position:absolute;right:0;top:0;background-color:white;color:#212121;position:relative;z-index:9;
+    &__inner{
+        padding-left:20px;padding-right:20px;overflow-y:auto;height:100%;
+    }
+    &__tit{
+        padding-top:70px;font-size:24px;font-weight:700;line-height:18px;padding-bottom:50px;
+    }
+    &__close{
+        width:20px;height:20px;right:20px;top:20px;position:absolute;display:block;z-index:90
+    }
+    &__menulist{
+        padding-bottom:5px;
+    }
+    &__menuitem{
+        padding-bottom:40px;
+    }
+    &__usermenu{
+        display:block;
+    }
+    &__usermenuitem{
+        padding-bottom:20px;display:flex;align-items:center;
+    }
+    &__usermenuicon{
+        width:12px;height:12px;margin-right:7px;
+    }
+    &__uermenutxt{
+        font-size:14px;font-weight:500;line-height:13px;
+    }
+    &__navibanner{
+        display:block;
+    }
+
+    &__prevRootlink{
+        display:flex;flex-flow:row nowrap;align-items:center;padding-bottom:50px;padding-top:70px;
+    }
+    &__prevRooticon{
+        width:5px;height:10px;display:block;
+    }
+    &__prevMenutxt{
+        padding-left:10px;font-size:14px;line-height:12px;font-weight:700;
+    }
+    &__depth2Tit{
+        font-size:24px;font-weight:700;line-height:20px;padding-bottom:24px;
+    }
+    &__depth2menuList{
+        display:block;
+    }
+    &__depth2menuitem{
+        padding-bottom:25px;
+    }
+    
+    &__depth2{
+        position:absolute;width:100%;height:100%;right:0;top:0;padding-left:20px;padding-right:20px;overflow-y:auto;z-index:5;
+        background-color:white;text-align:left;
+    }
+}
+.navihorizontalmenuaccordion{
+    display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;
+    &__txt{
+        font-size:16px;line-height:14px;font-weight:500;
+    }
+    &__icon{
+        width:9px;height:5px;
+    }
+    &__subchild{
+        padding-left:10px;padding-right:10px;padding-top:20px;
+    }
+    &__subchilditem{
+        padding-bottom:20px;font-size:12px;line-height:1.2;letter-spacing:-0.24px;font-weight:400;
+    }
+    &__subchilditem:last-child{
+        padding-bottom:0;
+    }
+}
+
+/*rightmenu하위 관련 related styless*/
+.navihorizontalmenu{
+    display:flex;justify-content:space-between;align-items:center;
+}
+.navihorizontalmenu__txt{
+    font-size:18px;font-weight:700;line-height:14px;
+}
+.navihorizontalmenu__linkicon{
+    width:5px;height:10px;display:block;
+}
+.rightmenuSwiper{
+    padding-top:50px !important;padding-bottom:80px !important;
+}
+.rightmenuSwiper__slide{
+    width:100%;height:auto;
+}
+.rightmenuSwiper__imgframe{
+    width:100%;height:145px;background-size:cover;background-repeat:no-repeat;background-position:center;
+}
+.rightmenuSwiper__tit{
+    margin-top:25px;font-size:20px;font-weight:700;line-height:16px;padding-bottom:15px;
+}   
+.rightmenuSwiper__desc{
+    font-size:14px;font-weight:400;letter-spacing:-0.28px;line-height:1.1;
+}
+
 
 /*=========mainpage group styles=======================*/
 /*메인비주얼*/

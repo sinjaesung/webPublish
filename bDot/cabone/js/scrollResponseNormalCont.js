@@ -73,7 +73,9 @@ for(let e=0; e<javascript_scroll_response_section01.length; e++){
 let javascript_scroll_response_section07=document.getElementsByClassName("javascript_scroll_response_section07");
 for(let e=0; e<javascript_scroll_response_section07.length; e++){
     let item_target=javascript_scroll_response_section07[e];
-    console.log("타깃 스크롤포스관련 로드시점관련 추적:",item_target,item_target.offsetTop);
+    console.log("타깃 스크롤포스관련 로드시점관련 추적:",item_target,$(`[originid=${item_target.getAttribute("originid")}`));
+    let originId=item_target.getAttribute("originid").split('~').join('\\~');
+    console.log("targetoriginid:",originId);
 
     let addpos_flag=0;
     if((e % 3)==0){

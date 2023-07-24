@@ -66,7 +66,7 @@
                                                     </span>
                                                 </a>
                                             </li>
-                                            <li class="utilList__item">
+                                            <li class="utilList__item"id='rightNavOpen'>
                                                 <a href='#' class="link">
                                                     <div class="utilList__svgframe">
                                                         <span class="svgframe">
@@ -85,6 +85,276 @@
                             </header>
                         </div>
                     </div><!--gnb관련 덩어리-->
+                    <div class="rightNavBg"id='rightNavBg'style='display:none'></div>
+                    <div class="rightNavMenuWrap" id="rightNavMenuWrap"style='width:0'>
+                        <nav class="rightnavi" id="rightnavi"style='right:-150%'>
+                            <div class="rightnavi__inner">
+                                <div class="rightnavi__close"id='rightnavi__close'>
+                                    <span class="svgframe">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_420_6491)">
+                                        <rect x="2.7168" y="3.28247" width="1" height="20" transform="rotate(-45 2.7168 3.28247)" fill="#212121"/>
+                                        <rect x="3.42383" y="17.4246" width="1" height="20" transform="rotate(-135 3.42383 17.4246)" fill="#212121"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_420_6491">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="rightnavi__depth1"id='rightnavi__depth1'>
+                                    <h3 class="rightnavi__tit">
+                                        Welcome RIMAN
+                                    </h3>
+                                    <ul class="rightnavi__menulist">
+                                        <li class="rightnavi__menuitem">
+                                            <div class="navihorizontalmenu javascript_navidepth2_open"style='cursor:pointer'>
+                                                <span class="navihorizontalmenu__txt">Skincare</span>
+                                                <div class="navihorizontalmenu__linkicon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                                                        <path d="M1 1.5L4 5L1 8.5" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rightnavi__menuitem">
+                                            <div class="navihorizontalmenu javascript_navidepth2_open"style='cursor:pointer'>
+                                                <span class="navihorizontalmenu__txt">Personal care</span>
+                                                <div class="navihorizontalmenu__linkicon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                                                        <path d="M1 1.5L4 5L1 8.5" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rightnavi__menuitem">
+                                            <div class="navihorizontalmenu javascript_navidepth2_open"style='cursor:pointer'>
+                                                <span class="navihorizontalmenu__txt">Nutrition</span>
+                                                <div class="navihorizontalmenu__linkicon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                                                        <path d="M1 1.5L4 5L1 8.5" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="rightnavi__menuitem">
+                                            <div class="navihorizontalmenu"style='cursor:pointer'>
+                                                <span class="navihorizontalmenu__txt">Find Your Ritual</span>
+                                            </div>
+                                        </li>
+                                        <li class="rightnavi__menuitem">
+                                            <div class="navihorizontalmenu javascript_navidepth2_open"style='cursor:pointer'>
+                                                <span class="navihorizontalmenu__txt">Explore RIMAN</span>
+                                                <div class="navihorizontalmenu__linkicon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 10" fill="none">
+                                                        <path d="M1 1.5L4 5L1 8.5" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="rightnavi__usermenu">
+                                        <li class="rightnavi__usermenuitem">
+                                            <div class="rightnavi__usermenuicon">
+                                                <span class="svgframe">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73053 3.07262C6.73053 3.58203 6.52179 4.07057 6.15026 4.43078C5.77873 4.791 5.27481 4.99336 4.74938 4.99336C4.22395 4.99336 3.72004 4.791 3.34851 4.43078C2.97696 4.07057 2.76824 3.58203 2.76824 3.07262C2.76824 2.5632 2.97696 2.07465 3.34851 1.71444C3.72004 1.35423 4.22395 1.15187 4.74938 1.15187C5.27481 1.15187 5.77873 1.35423 6.15026 1.71444C6.52179 2.07465 6.73053 2.5632 6.73053 3.07262ZM6.77887 5.4336C7.27914 5.0292 7.63876 4.48519 7.8089 3.8756C7.97896 3.26599 7.95115 2.6204 7.72934 2.02664C7.50753 1.43288 7.10243 0.919791 6.56918 0.557162C6.0359 0.194541 5.40035 0 4.74898 0C4.09762 0 3.46207 0.194541 2.9288 0.557162C2.39553 0.919791 1.99043 1.43288 1.76862 2.02664C1.5468 2.6204 1.51904 3.26599 1.68911 3.8756C1.85918 4.48519 2.21882 5.0292 2.7191 5.4336C1.939 5.79116 1.27387 6.34768 0.794936 7.04357C0.315998 7.73949 0.0412768 8.54851 0.000179889 9.38419C-0.00363976 9.53477 0.0534965 9.68083 0.159369 9.791C0.265233 9.90125 0.41141 9.96694 0.566605 9.97393C0.721792 9.981 0.873651 9.92883 0.989659 9.82865C1.10567 9.72846 1.17661 9.58825 1.18728 9.43797C1.23049 8.5502 1.62464 7.71268 2.28794 7.09927C2.95122 6.4858 3.8327 6.14356 4.74938 6.14356C5.66606 6.14356 6.54755 6.4858 7.21083 7.09927C7.87412 7.71268 8.26829 8.5502 8.31148 9.43797C8.31346 9.51472 8.33113 9.59024 8.36362 9.66024C8.39611 9.73023 8.44271 9.79323 8.50064 9.84547C8.55857 9.89779 8.62672 9.93836 8.70097 9.96479C8.77531 9.99122 8.85431 10.003 8.9334 9.99936C9.01249 9.99583 9.08999 9.97693 9.16147 9.94389C9.23287 9.91085 9.29682 9.86437 9.34944 9.80706C9.40214 9.74974 9.4424 9.68282 9.46799 9.61022C9.49367 9.53761 9.50405 9.46071 9.49858 9.38419C9.45737 8.54843 9.18255 7.73934 8.70351 7.04341C8.22439 6.34753 7.55912 5.79105 6.77887 5.4336Z" fill="#212121"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="rightnavi__usermenutxt">Sign In</span>
+                                        </li>
+                                        <li class="rightnavi__usermenuitem">
+                                            <div class="rightnavi__usermenuicon">
+                                                <span class="svgframe">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none">
+                                                    <path d="M6.405 5.14C6.72149 4.80012 6.89978 4.35439 6.905 3.89C6.905 3.38874 6.70588 2.90801 6.35143 2.55357C5.99699 2.19912 5.51626 2 5.015 2C4.51374 2 4.03301 2.19912 3.67857 2.55357C3.32412 2.90801 3.125 3.38874 3.125 3.89C3.13022 4.35439 3.30851 4.80012 3.625 5.14C3.18433 5.35944 2.80511 5.68497 2.52146 6.08732C2.23781 6.48967 2.05861 6.95622 2 7.445C1.98541 7.57761 2.0241 7.71058 2.10756 7.81466C2.19101 7.91875 2.31239 7.98541 2.445 8C2.57761 8.01459 2.71058 7.9759 2.81466 7.89244C2.91875 7.80899 2.98541 7.68761 3 7.555C3.05967 7.07057 3.29442 6.62468 3.66004 6.30133C4.02566 5.97798 4.49691 5.79949 4.985 5.79949C5.47309 5.79949 5.94434 5.97798 6.30996 6.30133C6.67558 6.62468 6.91033 7.07057 6.97 7.555C6.98391 7.68321 7.04681 7.80108 7.14557 7.88401C7.24434 7.96693 7.37132 8.00849 7.5 8H7.555C7.68607 7.98492 7.80586 7.91865 7.88828 7.81563C7.9707 7.7126 8.00906 7.58118 7.995 7.45C7.94073 6.96379 7.76719 6.49852 7.48981 6.09552C7.21242 5.69253 6.83978 5.3643 6.405 5.14ZM5 4.78C4.82397 4.78 4.6519 4.7278 4.50554 4.63001C4.35918 4.53221 4.24511 4.39321 4.17775 4.23059C4.11039 4.06796 4.09276 3.88901 4.1271 3.71637C4.16144 3.54373 4.24621 3.38514 4.37068 3.26067C4.49514 3.13621 4.65373 3.05144 4.82637 3.0171C4.99901 2.98276 5.17796 3.00039 5.34059 3.06775C5.50321 3.13511 5.64221 3.24918 5.74001 3.39554C5.8378 3.5419 5.89 3.71397 5.89 3.89C5.89 4.12604 5.79623 4.35242 5.62932 4.51933C5.46242 4.68623 5.23604 4.78 5 4.78ZM8.5 0H1.5C1.10218 0 0.720644 0.158035 0.43934 0.43934C0.158035 0.720644 0 1.10218 0 1.5V8.5C0 8.89782 0.158035 9.27936 0.43934 9.56066C0.720644 9.84196 1.10218 10 1.5 10H8.5C8.89782 10 9.27936 9.84196 9.56066 9.56066C9.84196 9.27936 10 8.89782 10 8.5V1.5C10 1.10218 9.84196 0.720644 9.56066 0.43934C9.27936 0.158035 8.89782 0 8.5 0ZM9 8.5C9 8.63261 8.94732 8.75979 8.85355 8.85355C8.75979 8.94732 8.63261 9 8.5 9H1.5C1.36739 9 1.24021 8.94732 1.14645 8.85355C1.05268 8.75979 1 8.63261 1 8.5V1.5C1 1.36739 1.05268 1.24021 1.14645 1.14645C1.24021 1.05268 1.36739 1 1.5 1H8.5C8.63261 1 8.75979 1.05268 8.85355 1.14645C8.94732 1.24021 9 1.36739 9 1.5V8.5Z" fill="#212121"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="rightnavi__usermenutxt">Sign Up</span>
+                                        </li>
+                                    </ul>
+                                    <div class="rightnavi__navibanner">
+                                        <div class="rightmenuSwiper swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="rightmenuSwiper__imgframe"style='background-image:url("./img/common/rightmenuBanner.png");'>
+                                                    </div>
+                                                    <h3 class="rightmenuSwiper__tit">
+                                                        Summer Deals!
+                                                    </h3>
+                                                    <p class="rightmenuSwiper__desc">
+                                                        Beat the heat with our<br/>
+                                                        scorching summer
+                                                    </p>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="rightmenuSwiper__imgframe"style='background-image:url("./img/common/rightmenuBanner.png");'>
+                                                    </div>
+                                                    <h3 class="rightmenuSwiper__tit">
+                                                        Summer Deals!
+                                                    </h3>
+                                                    <p class="rightmenuSwiper__desc">
+                                                        Beat the heat with our<br/>
+                                                        scorching summer
+                                                    </p>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="rightmenuSwiper__imgframe"style='background-image:url("./img/common/rightmenuBanner.png");'>
+                                                    </div>
+                                                    <h3 class="rightmenuSwiper__tit">
+                                                        Summer Deals!
+                                                    </h3>
+                                                    <p class="rightmenuSwiper__desc">
+                                                        Beat the heat with our<br/>
+                                                        scorching summer
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination swiper-pagination-basicstyle swiper-pagination-basicstyle_navi">
+                                                    
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                                <div class="rightnavi__depth2"id='rightnavi__depth2'style='right:-150%'>
+                                    <div class="rightnavi__prevRootlink javascript_navidepth2_close"style='cursor:pointer'>
+                                        <div class="rightnavi__prevRooticon">
+                                            <span class="svgframe">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                                                <path d="M4 8.5L1 5L4 1.5" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <span class="rightnavi__prevMenutxt">
+                                            All Menu
+                                        </span>
+                                    </div>
+                                    <h4 class="rightnavi__depth2Tit"id='depth2TitTarget'>
+                                        Skincare
+                                    </h4>
+                                    <ul class="rightnavi__depth2menuList">
+                                        <li class="rightnavi__depth2menuitem">
+                                            <div class="navihorizontalmenuaccordion javascript_accordionStart"style='cursor:pointer'>
+                                                <span class="navihorizontalmenuaccordion__txt">Shop Products</span>
+                                                <div class="navihorizontalmenuaccordion__icon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
+                                                        <path d="M8 1L4.5 4L1 1" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="navihorizontalmenuaccordion__subchild"style='display:none'>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Cleansers & Exfoliators 
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Moisturizer
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Serums & Toners
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                     Ampoules
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Makeup
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Rituals
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Shop All
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="rightnavi__depth2menuitem">
+                                            <div class="navihorizontalmenuaccordion javascript_accordionStart"style='cursor:pointer'>
+                                                <span class="navihorizontalmenuaccordion__txt">Shop Skin</span>
+                                                <div class="navihorizontalmenuaccordion__icon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
+                                                        <path d="M8 1L4.5 4L1 1" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="navihorizontalmenuaccordion__subchild"style='display:none'>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Cleansers & Exfoliators 
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Moisturizer
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Serums & Toners
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                     Ampoules
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Makeup
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Rituals
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Shop All
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="rightnavi__depth2menuitem">
+                                            <div class="navihorizontalmenuaccordion javascript_accordionStart"style='cursor:pointer'>
+                                                <span class="navihorizontalmenuaccordion__txt">Best Sellers</span>
+                                                <div class="navihorizontalmenuaccordion__icon">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
+                                                        <path d="M8 1L4.5 4L1 1" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="navihorizontalmenuaccordion__subchild"style='display:none'>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Cleansers & Exfoliators 
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Moisturizer
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Serums & Toners
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                     Ampoules
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Makeup
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Rituals
+                                                </li>
+                                                <li class="navihorizontalmenuaccordion__subchilditem">
+                                                    Shop All
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                     <section class="KVsection">
                         <div class="KVSection__swiperArea swiper-container">
                             <div class="swiper-wrapper">
@@ -281,42 +551,32 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide section05__swiperslide">
                                         <div class="onlyImgSlideItem">
+                                            <a href="https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA%3D%3D"target="_blank">
                                             <div class="onlyImgSlideItem__imgframe">
                                                 <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
                                                 <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide section05__swiperslide">
                                         <div class="onlyImgSlideItem">
+                                            <a href="https://www.instagram.com/p/CuGlouWvREc/"target="_blank">
                                             <div class="onlyImgSlideItem__imgframe">
                                                 <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
                                                 <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide section05__swiperslide">
                                         <div class="onlyImgSlideItem">
+                                            <a href="https://www.instagram.com/p/Cui5-kkP68D/" target="_blank">
                                             <div class="onlyImgSlideItem__imgframe">
                                                 <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
                                                 <img src="img/main/divein3.png" alt="관련재료이미지" class="IMG"/>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -494,10 +754,19 @@ var KVSection__swiperArea=new Swiper(".KVSection__swiperArea",{
     slidesPerView:'auto',
     autoResize:true,
     pagination:{
-        el : '.swiper-pagination-basicstyle',
+        el : '.swiper-pagination-basicstyle_navi',
         type: 'bullets'
     }
 });
+//우측메뉴 배너스와이퍼 관련 
+var rightmenubanner=new Swiper(".rightmenuSwiper",{
+    slidesPervView:'auto',
+    autoResize:true,
+    pagination:{
+        el : '.swiper-pagination-basicstyle',
+        type: 'bullets'
+    }
+})
 
 var section01__swiperArea=new Swiper('.section01__swiperArea',{
     slidesPerView:'auto',
@@ -609,6 +878,185 @@ $(function(){
 
 })
 
+/*아코디언 관련 공통스크립트(rightmenu전체메뉴 관련)*/
+let javascript_accordionStart=document.getElementsByClassName("javascript_accordionStart");
+for(let s=0; s<javascript_accordionStart.length; s++){
+    let accorditem=javascript_accordionStart[s];
+    accorditem.onclick=accordionEffect_function;
+}
+function accordionEffect_function(event){
+    let target=event.target;
+
+    console.log("accordionEffect targetsss:",event.target,target.className);
+    if(!target.className || !target.className.indexOf || (target.className&&target.className.indexOf&&target.className.indexOf("javascript_accordionStart")==-1) ){
+        console.log("stringparetnfind호출:")
+        target=StringParentFind(target,"javascript_accordionStart")
+    }
+    console.log("찾아낸 타깃:",target);
+
+    let nextElement_subchild=target.nextElementSibling;
+    console.log("다음 형제 요소 타깃 subchild:",nextElement_subchild);
+    let child_accordicon;
+    for(let c=0; c<target.children.length; c++){
+        let child_item=target.children[c];
+        if(child_item.className.indexOf("icon")!=-1){
+            child_accordicon=child_item;
+            break;
+        }
+    }
+    console.log("관련 rotate타깃:",child_accordicon);
+    if(!target.getAttribute("status") || target.getAttribute("status")=='closed'){
+        target.setAttribute("status",'opened');
+        console.log('열기액션진행');
+        let matching_target_OriginId=child_accordicon.getAttribute("OriginId").split("~").join('\\~');
+        let subchild_OriginId=nextElement_subchild.getAttribute("OriginId").split("~").join("\\~");
+        $(`[OriginId=${matching_target_OriginId}]`).animateRotate('Z',50,0,180,500,'swing');
+        $(`[OriginId=${subchild_OriginId}]`).slideDown(500,'swing');
+    }else if(target.getAttribute("status") && target.getAttribute("status")=='opened'){
+        target.setAttribute("status","closed");
+        console.log("닫기액션진행");
+        let matching_target_OriginId=child_accordicon.getAttribute("OriginId").split("~").join('\\~');
+        let subchild_OriginId=nextElement_subchild.getAttribute("OriginId").split("~").join("\\~");
+
+        $(`[OriginId=${matching_target_OriginId}]`).animateRotate('Z',50,180,0,500,'swing');
+        $(`[OriginId=${subchild_OriginId}]`).slideUp(500,'swing');
+    }
+}
+
+function StringParentFind(target,findString){
+    let target_parent=target;
+
+    for(let i=0; i<1000;i++){
+
+        if(target_parent.className && target_parent.className.indexOf && target_parent.className.indexOf(findString)!=-1){
+            console.log("관련 findString관련 타깃 자신포함 상위모든 요소로부터 찾아내면 종료:",findString,target_parent);
+            return target_parent;
+        }else if(!target_parent.className || !target_parent.className.indexOf){
+            console.log("targetparent classname이 없는경우",target_parent)
+            target_parent=target_parent.parentElement;
+        }else{
+            console.log("나머지 사항:",target_parent)
+            target_parent=target_parent.parentElement;
+        }
+    }
+}
+
+/*rightNavi 우측메뉴 depth1~2 간 전환 관련 로컬스크립트 공통*/
+let javascript_navidepth2_open=document.getElementsByClassName('javascript_navidepth2_open');
+
+let javascript_navidepth2_close=document.getElementsByClassName("javascript_navidepth2_close");
+
+for(let o=0; o<javascript_navidepth2_open.length; o++){
+    let open_item=javascript_navidepth2_open[o];
+
+    open_item.onclick=openRightNavi_depth2;
+}
+for(let c=0;c<javascript_navidepth2_close.length; c++){
+    let close_item=javascript_navidepth2_close[c];
+
+    close_item.onclick=closeRightNavi_depth2;
+}
+function openRightNavi_depth2(event){
+    //아코디언은 새로 갱신 모두 닫은 초기상태로 처리하는기능.
+    let navihorizontalmenuaccordion=document.getElementsByClassName("navihorizontalmenuaccordion");
+    for(let n=0; n<navihorizontalmenuaccordion.length;n++){
+        let accorditem=navihorizontalmenuaccordion[n];
+        accorditem.setAttribute("status","closed");
+
+        let icon_childtarget;
+        for(let a=0;a<accorditem.children.length;a++){
+            let child_local=accorditem.children[a];
+            if(child_local.className.indexOf("__icon")!=-1){
+                icon_childtarget=child_local;
+                break;
+            }
+        }
+        if(icon_childtarget){
+            icon_childtarget.style.transform='none'
+        }
+        let target_subchild_reset=accorditem.nextElementSibling;
+        console.log("관련 아코디언 타깃들 모두 초기화:",accorditem,icon_childtarget,target_subchild_reset);
+        let target_originId=target_subchild_reset.getAttribute('OriginId').split("~").join('\\~');
+
+        $(`[OriginId=${target_originId}]`).css({"display":"none"})
+    }
+
+    console.log("depth1메뉴 클릭 관련 이벤트처리:",event.target);
+    let target=event.target;
+
+    if(!target.className || !target.className.indexOf || (target.className&&target.className.indexOf&&target.className.indexOf("javascript_navidepth2_open")==-1) ){
+        console.log("stringparetnfind호출:")
+        target=StringParentFind(target,"javascript_navidepth2_open")
+    }
+    console.log("찾아낸 타깃:",target);
+
+    let real_target=target;
+
+    let find_depth1_txt;
+    for(let d=0; d<real_target.children.length; d++){
+        let children_local=real_target.children[d];
+        if(children_local.className && children_local.className.indexOf && children_local.className.indexOf("navihorizontalmenu__txt")!=-1){
+            find_depth1_txt= children_local;
+            break;
+        }
+    }
+    let depth2TitTarget=document.getElementById("depth2TitTarget");
+    console.log('찾아낸 depth1제목관련:',find_depth1_txt,find_depth1_txt.innerText);
+    depth2TitTarget.innerText = find_depth1_txt.innerText;
+    $(`[OriginId=${rightnavi__depth2.getAttribute("OriginId").split("~").join("\\~")}]`).css({
+        right : '0%'
+    });
+}
+function closeRightNavi_depth2(event){
+    console.log("depth2에서 다시 depth1전환관련 메소드 로컬함수관련처리:",event.target);
+    let target=event.target;
+
+    if(!target.className || !target.className.indexOf || (target.className&&target.className.indexOf&&target.className.indexOf("javascript_navidepth2_close")==-1)){
+        console.log("stringparentfind호출:");
+        target=StringParentFind(target,"javascript_navidepth2_close");
+    }
+    console.log('찾아낸 타깃:',target);
+
+    $(`[OriginId=${rightnavi__depth2.getAttribute("OriginId").split("~").join("\\~")}]`).css({
+        right : '-150%'
+    });
+}
+
+//네비게이션 여닫기전체적
+let rightnavi_close=document.getElementById("rightnavi__close");
+let rightNavMenuWrap=document.getElementById("rightNavMenuWrap");
+let rightNavBg=document.getElementById("rightNavBg");
+let rightNavi=document.getElementById("rightNavi");
+
+rightnavi_close.onclick=function(event){
+    console.log("rightnavi closess:",'온클릭');
+    $('#rightnavi').animate({
+        right : "-150%"
+    },300,function(){
+        $('.mo-content').css({'overflow-y':'auto'});
+        rightNavMenuWrap.style.width=0;
+        rightNavBg.style.display='none';
+    })
+}
+let rightNavOpen=document.getElementById("rightNavOpen");
+rightNavOpen.onclick=function(event){
+    console.log("rightnavi open",'온클릭');
+
+    $('.mo-content').css({'overflow-y':'hidden'});
+    rightNavMenuWrap.style.width='235px';
+    rightNavBg.style.display='block';
+
+    $('#rightnavi').animate({
+        right:'0%'
+    },300)
+}
+</script>
+
+<script src="https://sinjaesung.github.io/SINJAweb/js/common_function$p.js"></script>
+<script src="https://sinjaesung.github.io/SINJAweb/js/transformanimate$p.js"></script>
+
+<script>
+    update_allHtmlElements_toOriginId(document.body);
 </script>
 </body>
 </html>
