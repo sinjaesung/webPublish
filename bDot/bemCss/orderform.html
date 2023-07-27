@@ -10,15 +10,23 @@
     <script src="./common/jquery-latest.min.js"></script>
 	<script src="./common/jquery.easing.min.js"></script>
     <script src="./common/jquery.counterup.min.js"></script>
+    <style>
+       
+    </style>
 </head>
 <body class="mo">
 <div class="mobile">
     <div class="mobilewrap">
         <div class="mo-content">
             <div class="mobox">
-                <div class="boxs"><!--boxs autoHeight container구조물-->
-                   
-                    <div class="topmenuwrap" id="topmenuwrap">
+                <div class="boxs">
+                    <div class="filterbg"id='filterbg'></div>
+                    <div class="filterpopupwrap"id='filterpopupwrap'>
+                        <div class="filterpopupwrap__filter"id='filterTarget'style='bottom:-100%'>
+                            <img src="img/common/popupArea.png"/>
+                        </div>
+                    </div>
+                    <div class="topmenuwrap" id="topemnuwrap">
                         <div id="topElementWrapping" style="position:relative;left:0;top:0">
                             <header id='header'class="header">
                                 <div class="header__inner">
@@ -84,7 +92,7 @@
                                 </div>
                             </header>
                         </div>
-                    </div><!--gnb관련 덩어리-->
+                    </div><!--topmenu gnb관련덩어리-->
                     <div class="rightNavBg"id='rightNavBg'style='display:none'></div>
                     <div class="rightNavMenuWrap" id="rightNavMenuWrap"style='width:0'>
                         <nav class="rightnavi" id="rightnavi"style='right:-150%'>
@@ -327,302 +335,151 @@
                             </div>
                         </nav>
                     </div>
-                    <section class="KVsection">
-                        <div class="KVSection__swiperArea swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
+                    <section class="pageWrap">
+                        <div class="pageWrap__inner--nopadding">                        
+                            <div class="cartPage">
+                                <div class="cartPage__titarea">
+                                    Order form
+                                </div>
+                                <div class="pageWrap__sepLine--style1"></div>
+
+                                <div class="cartPage__typeofOrder">
+                                    <h3 class="cartPage__typeofOrdertxt">Type of order</h3>
+                                    <div class="radioCheckTwo">
+                                        <div class="radioCheckTwo__item">
+                                            <input type="radio" name='ordertype'value="personal" id="personal"class="radioCheckTwo__radio"checked/>
+                                            <label for="personal" class="radioCheckTwo__checklabel"></label>
+                                            <label for='personal' class="radioCheckTwo__checktxt">Personal order</label>
+                                        </div>
+                                        <div class="radioCheckTwo__item">
+                                            <input type="radio" name='ordertype' value="customer" id="customer"class="radioCheckTwo__radio"/>
+                                            <label for="customer" class="radioCheckTwo__checklabel"></label>
+                                            <label for='customer' class="radioCheckTwo__checktxt">Customer Order</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link--style2">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination swiper-pagination-basicstyle">
+                                <div class="pageWrap__sepLine--style2"></div>
+
+                                <ul class="generalAccordList">
+                                   <li class="generalAccordItem">
+                                        <div class="generalAccordCont">
+                                            <span class="generalAccordCont__txt">Shipping address</span>
+                                            <div class="generalAccordCont__iconwrap">
+                                                <span class="generalAccordCont__verticalTarget"></span>
+                                                <span class="generalAccordCont__horizontal"></span>
+                                            </div>
+                                        </div>
+                                        <div class="generalAccordsubchild">
+                                            <div class="inputGroupwrap">
+                                                <input type="text" class="inputText--widthfull"placeholder='Shipping address name  *'/>
+                                                <input type="text" class="inputText--widthhalf"placeholder='First name *'/>
+                                                <input type="text" class="inputText--widthhalf"placeholder='Last name *'/>
+                                                <input type="text" class="inputText--widthfull"placeholder='Address *'/>
+                                                <input type="text" class="inputText--widthfull"placeholder='Apt/Floor/Suite *'/>
+                                                <input type="text" class="inputText--widthfull"placeholder='City *'/>
+                                                <div class="inputSelect--widthfull">
+                                                    <select>
+                                                        <option value="option1">State *</option>
+                                                        <option value="option2">option1 *</option>
+                                                        <option value="option3">option1 *</option>
+                                                        <option value="option4">option1 *</option>
+                                                        <option value="option5">option1 *</option>
+                                                        <option value="option6">option1 *</option>
+                                                        <option value="option7">option1 *</option>
+                                                    </select>
+                                                    <div class="inputSelect__dropdownicon">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none">
+                                                            <path d="M9 1L5 5L1 1" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>                                            
+                                                <input type="text" class="inputText--widthfull"placeholder='Zip code *'/>
+                                                <div class="inputSelect--widthfull">
+                                                    <select>
+                                                        <option value="option1">Country *</option>
+                                                        <option value="option2">option1 *</option>
+                                                        <option value="option3">option1 *</option>
+                                                        <option value="option4">option1 *</option>
+                                                        <option value="option5">option1 *</option>
+                                                        <option value="option6">option1 *</option>
+                                                        <option value="option7">option1 *</option>
+                                                    </select>
+                                                    <div class="inputSelect__dropdownicon">
+                                                        <span class="svgframe">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none">
+                                                            <path d="M9 1L5 5L1 1" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>   
+                                             
+                                                <input type="text" class="inputText--widthfull"placeholder='Cell phone *'/>
+                                                <input type="text" class="inputText--widthfull"placeholder='Telephone'/>
+                                                <input type="text" class="inputText--widthfull"placeholder='Message'/>
+                                                <div class="checkListcond">
+                                                    <input type="checkbox" class="checkListcond__checkbox" value="check1" id="check1" name="defaultshipaddress">
+                                                    <label for="check1" class="checkListcond__checklabel checkListcond__checklabel--size2"></label>
+                                                    <label for="check1" class="checkListcond__txt checkListcond__txt--size2">Make this my default Shipping address</label>
+                                                </div>
+                                                <div class="cartPage__button cartPage__button--nomargin">
+                                                    Save & Continue
+                                                 </div>
+                                            </div>
+                                        </div>
+                                   </li>
+                                   <li class="generalAccordItem">
+                                        <div class="generalAccordCont">
+                                            <span class="generalAccordCont__txt">Payment method</span>
+                                            <div class="generalAccordCont__iconwrap">
+                                                <span class="generalAccordCont__verticalTarget"></span>
+                                                <span class="generalAccordCont__horizontal"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="generalAccordItem">
+                                        <div class="generalAccordCont">
+                                            <span class="generalAccordCont__txt">Point & Coupon
+                                            </span>
+                                            <div class="generalAccordCont__iconwrap">
+                                                <span class="generalAccordCont__verticalTarget"></span>
+                                                <span class="generalAccordCont__horizontal"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="generalAccordItem">
+                                        <div class="generalAccordCont">
+                                            <span class="generalAccordCont__txt">Order summary
+                                            </span>
+                                            <div class="generalAccordCont__iconwrap">
+                                                <span class="generalAccordCont__verticalTarget"></span>
+                                                <span class="generalAccordCont__horizontal"></span>
+                                            </div>
+                                        </div>
+                                    </li>
                                     
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section01">
-                        <div class="section01__inner">
-                            <div class="section01__headTop">
-                                <div class="section01__tit">
-                                    <span>SHOP</span><span style="font-weight:700">BESTSELLER</span>
-                                </div> 
-                            </div>
-                            <div class="section01__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 01.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 02.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 03.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 04.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section01__seeallBtn">
-                                <a href='./productList.html'><img src="img/main/seeall.png"/></a>
-                            </div>
-                         </div>
-                    </section>
-                    <section class="section02">
-                        <div class="section02__inner">
-                            <div class="section02__headTop">
-                                <div class="section02__tit">
-                                    <div class="sectiontit">
-                                        <span>SHOP</span><span style="font-weight:700">RITUALS</span>
-                                    </div> 
-                                </div>
-                                <p class="section02__description">
-                                   <img src="img/main/indulgeImg.png"/>
-                                </p>
-                            </div>
-                            <div class="section02__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem3new.png");'>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem2new.png");'>
-                                          
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem1new.png");'>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section03">
-                        <div class="section03__inner">
-                            <!--<img src="img/main/findYourRitual1.png" class="section03__bannerbg"/>-->
-                            <div class="findRitualFrame">
-                                <div class="section03__bannerbg" style="background-image:url('./img/main/section3Fullimg.png');"></div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section04">
-                        <div class="section04__inner">
-                            <div class="section04__headTop">
-                                <div class="section04__tit">
-                                    <div class="sectiontit">
-                                        <img src="img/main/EXPLORERIMAN.png"/>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="section04__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination swiper-pagination-bulletStyle">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section05">
-                        <div class="section05__inner">
-                            <div class="section05__headTop">
-                                <div class="section05__tit">
-                                    <div class="sectiontit">
-                                        <span>DIVE</span><span style="font-weight:700">IN</span>
-                                    </div> 
-                                </div>
-                                <p class="section05__description">
-                                    Let’s get to know each other! Join the BYoungPool and get personalized ritual secrets
-                                </p>
-                            </div>
-                            <div class="section05__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA%3D%3D"target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/CuGlouWvREc/"target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/Cui5-kkP68D/" target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein3.png" alt="관련재료이미지" class="IMG"/>
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section06">
-                        <div class="section06__inner">
-                            <div class="section06__headTop">
-                                <div class="section06__tit">
-                                    <div class="sectiontit">
-                                        <span>OUR</span><span style="font-weight:700">BLOG</span>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="section06__columnList">
-                                <ul class="columnList">
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg1.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Korean Skincare
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
-                                        </p>
-                                        <a class="columnList__itemlink" href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog2item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Innovation
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Experience the future of skincare with RIMAN Innovation. Our cutting Ex
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog3item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Rituals
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Discover the power of innovation and embrace a new era of radiant
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog4item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Giant BYoungPool
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unleash the power of Giant Byungpool. Our revolution skincare ease
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
                                 </ul>
+
+                                <div class="cartPage__agreewrap">
+                                    <div class="checkListcond">
+                                        <input type="checkbox" class="checkListcond__checkbox" value="agreeterm" id="agreeterm" name="agreeterms"/>
+                                        <label for="agreeterm" class="checkListcond__checklabel checkListcond__checklabel--size2"></label>
+                                        <label for="agreeterm" class="checkListcond__txt checkListcond__txt--size2">Agree to terms
+                                        </label>
+                                    </div>
+                                    <p class="cartPage__agreetxt">
+                                        I have read and agree to the terms and conditions relating to the purchase of the product.
+                                    </p>
+                                    <p class="underlineText">
+                                        View terms
+                                        <span class="underlineText__underline"></span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </section>
+                
                     <footer class="footer">
                         <div class="footer__inner">
                             <h2 class="footer__logo">
@@ -656,7 +513,7 @@
                                     </form>
                                 </div>
                             </div>
-                    
+                
                             <div class="footer__explorelink">
                                 <div class="explorelink">
                                     <span class="explorelink__txt--colorwhite">
@@ -711,7 +568,7 @@
                         </div>
                     </footer>
                     <div class="botmenuwrap">
-                        <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
+                        <div class="botmenuwrap__whitebackground" id="whitebackground"></div>
                         <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
@@ -719,73 +576,7 @@
         </div>
     </div>
 </div>
-
 <script>
-//메인페이지 swiper관련 종속성들.
-var KVSection__swiperArea=new Swiper(".KVSection__swiperArea",{
-    slidesPerView:'auto',
-    autoResize:true,
-    pagination:{
-        el : '.swiper-pagination-basicstyle_navi',
-        type: 'bullets'
-    }
-});
-//우측메뉴 배너스와이퍼 관련 
-var rightmenubanner=new Swiper(".rightmenuSwiper",{
-    slidesPervView:'auto',
-    autoResize:true,
-    pagination:{
-        el : '.swiper-pagination-basicstyle',
-        type: 'bullets'
-    }
-})
-
-var section01__swiperArea=new Swiper('.section01__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-var section02__swiperArea=new Swiper('.section02__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-   /* pagination:{
-        el :'.swiper-pagination2',
-        type :'progressbar'
-    }
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
-var section04__swiperArea=new Swiper('.section04__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    pagination:{
-        el :'.swiper-pagination-bulletStyle', //볼렛 스타일 ingredients관련
-        type :'bullets'
-    },
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-var section05__swiperArea=new Swiper('.section05__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    loop:true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
 /*로컬 관련 제어 스크립트 */
 $(function(){
      let botmenu=document.getElementById("botmenu");
@@ -1029,13 +820,18 @@ rightNavOpen.onclick=function(event){
         right:'0%'
     },300)
 }
+
+
+let radioCheckTwo__radio=document.getElementsByClassName("raidoCheckTwo__radio");
+for(let r=0; r<radioCheckTwo__radio.length; r++){
+    let item=radioCheckTwo__radio[r];
+    item.onchange=function(event){
+        console.log("라디오 변화 관련 이벤트 발생:",event.target);
+    }
+}
 </script>
 
 <script src="https://sinjaesung.github.io/SINJAweb/js/common_function$p.js"></script>
 <script src="https://sinjaesung.github.io/SINJAweb/js/transformanimate$p.js"></script>
-
-<script>
-    update_allHtmlElements_toOriginId(document.body);
-</script>
 </body>
 </html>

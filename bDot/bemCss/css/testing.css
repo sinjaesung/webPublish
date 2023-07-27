@@ -1,0 +1,41 @@
+.radioCheckTwo {
+  display: flex;
+  background-color: #dfdfdf;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.radioCheckTwo__item {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.radioCheckTwo__radio {
+  display: block;
+}
+.radioCheckTwo__radio + .radioCheckTwo__checklabel {
+  background-color: red;
+}
+.radioCheckTwo__radio:checked + .radioCheckTwo__checklabel {
+  background-color: #5020df;
+}
+.radioCheckTwo__checklabel {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #dfdfdf;
+  border: 1px solid #202020;
+}
+.radioCheckTwo__checktxt {
+  color: #202020;
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 1.2;
+}/*# sourceMappingURL=testing.css.map */

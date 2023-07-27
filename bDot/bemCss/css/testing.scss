@@ -1,0 +1,30 @@
+.radioCheckTwo{
+    display:flex;background-color:#dfdfdf;
+    flex-flow:row nowrap;justify-content:center;align-items:center;
+    &__item{
+        width:auto;height:auto;display:inline-flex;flex-flow:row nowrap;justify-content:center;
+    }
+    &__radio{   
+        display:block;
+    }
+    &__radio + &__checklabel{
+        background-color:red;
+    }
+    &__radio:checked + &__checklabel{
+        background-color:#5020df;
+    }
+    &__checklabel{
+        width:40px;
+        height:40px;
+        display:block;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -ms-border-radius:50%;
+        -o-border-radius:50%;
+        background-color:#dfdfdf;border:1px solid #202020
+    }
+    &__checktxt{
+        color:#202020;padding-left:16px;font-size:18px;line-height:1.2;
+    }
+}

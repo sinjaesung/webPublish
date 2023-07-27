@@ -10,15 +10,23 @@
     <script src="./common/jquery-latest.min.js"></script>
 	<script src="./common/jquery.easing.min.js"></script>
     <script src="./common/jquery.counterup.min.js"></script>
+    <style>
+       
+    </style>
 </head>
 <body class="mo">
 <div class="mobile">
     <div class="mobilewrap">
         <div class="mo-content">
             <div class="mobox">
-                <div class="boxs"><!--boxs autoHeight container구조물-->
-                   
-                    <div class="topmenuwrap" id="topmenuwrap">
+                <div class="boxs">
+                    <div class="filterbg"id='filterbg'></div>
+                    <div class="filterpopupwrap"id='filterpopupwrap'>
+                        <div class="filterpopupwrap__filter"id='filterTarget'style='bottom:-100%'>
+                            <img src="img/common/popupArea.png"/>
+                        </div>
+                    </div>
+                    <div class="topmenuwrap" id="topemnuwrap">
                         <div id="topElementWrapping" style="position:relative;left:0;top:0">
                             <header id='header'class="header">
                                 <div class="header__inner">
@@ -84,7 +92,7 @@
                                 </div>
                             </header>
                         </div>
-                    </div><!--gnb관련 덩어리-->
+                    </div><!--topmenu gnb관련덩어리-->
                     <div class="rightNavBg"id='rightNavBg'style='display:none'></div>
                     <div class="rightNavMenuWrap" id="rightNavMenuWrap"style='width:0'>
                         <nav class="rightnavi" id="rightnavi"style='right:-150%'>
@@ -327,302 +335,189 @@
                             </div>
                         </nav>
                     </div>
-                    <section class="KVsection">
-                        <div class="KVSection__swiperArea swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
-                                    </div>
+                    <section class="pageWrap">
+                        <div class="pageWrap__inner">                        
+                            <div class="cartPage">
+                                <div class="cartPage__titarea">
+                                    Shopping bag (3items)
                                 </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title">
-                                            <img src="./img/main/mainvisual_title.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message">
-                                            <img src="./img/main/mainvisual_message.png">
-                                        </h3>
-                                        <a class="KVsection__link">
-                                            <img src="./img/main/mainvisual_link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide KVsection__inner"style='background-image:url("./img/main/mainvisualImgNew2_.png")'>
-                                    <div class="KVsection__titArea">
-                                        <h2 class="KVsection__title--style2">
-                                            <img src="./img/main/mainvisual_title2.png"/>
-                                        </h2>
-                                        <h3 class="KVsection__message--style2">
-                                            <img src="./img/main/mainvisual_message2.png">
-                                        </h3>
-                                        <a class="KVsection__link--style2">
-                                            <img src="./img/main/mainvisual_link2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination swiper-pagination-basicstyle">
-                                    
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section01">
-                        <div class="section01__inner">
-                            <div class="section01__headTop">
-                                <div class="section01__tit">
-                                    <span>SHOP</span><span style="font-weight:700">BESTSELLER</span>
-                                </div> 
-                            </div>
-                            <div class="section01__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 01.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 02.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 03.png"/>
-                                    </div>
-                                    <div class="swiper-slide section01__swiperslide">
-                                        <img src="./img/main/prd 04.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section01__seeallBtn">
-                                <a href='./productList.html'><img src="img/main/seeall.png"/></a>
-                            </div>
-                         </div>
-                    </section>
-                    <section class="section02">
-                        <div class="section02__inner">
-                            <div class="section02__headTop">
-                                <div class="section02__tit">
-                                    <div class="sectiontit">
-                                        <span>SHOP</span><span style="font-weight:700">RITUALS</span>
-                                    </div> 
-                                </div>
-                                <p class="section02__description">
-                                   <img src="img/main/indulgeImg.png"/>
-                                </p>
-                            </div>
-                            <div class="section02__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem3new.png");'>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem2new.png");'>
-                                          
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section02__swiperslide">
-                                        <div class="ritualItems ritualItems--imgFramestyle"style='background-image:url("./img/main/ritualItem1new.png");'>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section03">
-                        <div class="section03__inner">
-                            <!--<img src="img/main/findYourRitual1.png" class="section03__bannerbg"/>-->
-                            <div class="findRitualFrame">
-                                <div class="section03__bannerbg" style="background-image:url('./img/main/section3Fullimg.png');"></div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section04">
-                        <div class="section04__inner">
-                            <div class="section04__headTop">
-                                <div class="section04__tit">
-                                    <div class="sectiontit">
-                                        <img src="img/main/EXPLORERIMAN.png"/>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="section04__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide section04__swiperslide">
-                                        <div class="fullwideSlideItem">
-                                            <div class="fullwideSlideItem__imgframe">
-                                                <video src="img/common/video.mp4" autoplay muted loop/>
-                                            </div>
-                                            <div class="fullwideSlideItem__ingredientTxt">
-                                                <img src="img/main/ingredients.png"/>
+                                <div class="pageWrap__sepLine--style1"></div>
+                                <div class="cartPage__allCond">
+                                    <div class="checkListcond">
+                                        <input type="checkbox" value="all" id="checkall"/>
+                                        <label for="checkall" class="checkListcond__checklabel">
+
+                                        </label>
+                                        <span class="checkListcond__txt">Select all</span>
+                                        <div class="flexfullflexend">
+                                            <div class="checkListcond__delicon">
+                                                <span class="svgframe">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+                                                    <path d="M11 7.22222L10.7 13.4444M7.3 13.4444L7 7.22222M3 3.66667L3.86122 15.1496C3.93949 16.1932 4.80907 17 5.85562 17H12.1444C13.1909 17 14.0605 16.1932 14.1388 15.1496L15 3.66667M3 3.66667H6M3 3.66667H1M15 3.66667H17M15 3.66667H12M12 3.66667V3C12 1.89543 11.1046 1 10 1H8C6.89543 1 6 1.89543 6 3V3.66667M12 3.66667H6" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span> 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination swiper-pagination-bulletStyle">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section05">
-                        <div class="section05__inner">
-                            <div class="section05__headTop">
-                                <div class="section05__tit">
-                                    <div class="sectiontit">
-                                        <span>DIVE</span><span style="font-weight:700">IN</span>
-                                    </div> 
-                                </div>
-                                <p class="section05__description">
-                                    Let’s get to know each other! Join the BYoungPool and get personalized ritual secrets
-                                </p>
-                            </div>
-                            <div class="section05__swiperArea swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/CuQ4xoxPpfW/?igshid=Y212MzMwZWM3ZA%3D%3D"target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein1.png" alt="관련재료이미지" class="IMG"/>
+                                <div class="pageWrap__sepLine--style2"></div>
+                                <div id="cartItemList">
+                                    <div class="cartItemcheck">
+                                        <div class="checkListcond">
+                                            <input type="checkbox" value="item1" id="item1" name="cartitem"/>
+                                            <label for="item1" class="checkListcond__checklabel--size1"></label>
+                                            <span class="checkListcond__txt--size1">DERMATOLOGY FIRST PACKAGE EX</span>
+                                            <div class="flexfullflexend">
+                                                <div class="checkListcond__delicon--size1">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                                        <path d="M2.5 4L3.32758 12.6896C3.42534 13.7161 4.28746 14.5 5.31857 14.5H8.68143C9.71254 14.5 10.5747 13.7161 10.6724 12.6896L11.5 4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M1 4H4.5M13 4H9.5M9.5 4H4.5M9.5 4V3C9.5 2.17157 8.82843 1.5 8 1.5H6C5.17157 1.5 4.5 2.17157 4.5 3V4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8.5 6.5L8.25 12M5.75 12L5.5 6.5" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
                                             </div>
-                                            </a>
+                                        </div>
+                                        <div class="cartItemcheck__itemwrap">
+                                            <div class="cartItemcheck__itemimg"></div>
+                                            <div class="cartItemcheck__iteminfocond">
+                                                <p class="cartItemcheck__itemoptiontxt">
+                                                    0.68 oz.
+                                                </p>
+                                                <div class="cartItemcheck__countcond">
+                                                    <div class="qtycond">
+                                                        <span class="qtycond__minus">-</span>
+                                                        <span class="qtycond__val">1</span>
+                                                        <span class="qtycond__plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <p class="cartItemcheck__itemprice">
+                                                    $ 
+                                                    <span class="cartItemcheck__itempriceval">20</span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/CuGlouWvREc/"target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein2.png" alt="관련재료이미지" class="IMG"/>
+                                    <div class="cartItemcheck">
+                                        <div class="checkListcond">
+                                            <input type="checkbox" value="item2" id="item2" name="cartitem"/>
+                                            <label for="item2" class="checkListcond__checklabel--size1"></label>
+                                            <span class="checkListcond__txt--size1">DERMATOLOGY FIRST PACKAGE EX</span>
+                                            <div class="flexfullflexend">
+                                                <div class="checkListcond__delicon--size1">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                                        <path d="M2.5 4L3.32758 12.6896C3.42534 13.7161 4.28746 14.5 5.31857 14.5H8.68143C9.71254 14.5 10.5747 13.7161 10.6724 12.6896L11.5 4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M1 4H4.5M13 4H9.5M9.5 4H4.5M9.5 4V3C9.5 2.17157 8.82843 1.5 8 1.5H6C5.17157 1.5 4.5 2.17157 4.5 3V4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8.5 6.5L8.25 12M5.75 12L5.5 6.5" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                                        <div class="cartItemcheck__itemwrap">
+                                            <div class="cartItemcheck__itemimg"></div>
+                                            <div class="cartItemcheck__iteminfocond">
+                                                <p class="cartItemcheck__itemoptiontxt">
+                                                    0.68 oz.
+                                                </p>
+                                                <div class="cartItemcheck__countcond">
+                                                    <div class="qtycond">
+                                                        <span class="qtycond__minus">-</span>
+                                                        <span class="qtycond__val">1</span>
+                                                        <span class="qtycond__plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <p class="cartItemcheck__itemprice">
+                                                    $ 
+                                                    <span class="cartItemcheck__itempriceval">20</span>
+                                                </p>
                                             </div>
-                                            </a>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide section05__swiperslide">
-                                        <div class="onlyImgSlideItem">
-                                            <a href="https://www.instagram.com/p/Cui5-kkP68D/" target="_blank">
-                                            <div class="onlyImgSlideItem__imgframe">
-                                                <img src="img/common/instaicon.png" alt="인스타아이콘"class="instaicon"/>
-                                                <img src="img/main/divein3.png" alt="관련재료이미지" class="IMG"/>
+                                    <div class="cartItemcheck">
+                                        <div class="checkListcond">
+                                            <input type="checkbox" value="item3" id="item3" name="cartitem"/>
+                                            <label for="item3" class="checkListcond__checklabel--size1"></label>
+                                            <span class="checkListcond__txt--size1">DERMATOLOGY FIRST PACKAGE EX</span>
+                                            <div class="flexfullflexend">
+                                                <div class="checkListcond__delicon--size1">
+                                                    <span class="svgframe">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                                        <path d="M2.5 4L3.32758 12.6896C3.42534 13.7161 4.28746 14.5 5.31857 14.5H8.68143C9.71254 14.5 10.5747 13.7161 10.6724 12.6896L11.5 4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M1 4H4.5M13 4H9.5M9.5 4H4.5M9.5 4V3C9.5 2.17157 8.82843 1.5 8 1.5H6C5.17157 1.5 4.5 2.17157 4.5 3V4" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8.5 6.5L8.25 12M5.75 12L5.5 6.5" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="cartItemcheck__itemwrap">
+                                            <div class="cartItemcheck__itemimg"></div>
+                                            <div class="cartItemcheck__iteminfocond">
+                                                <p class="cartItemcheck__itemoptiontxt">
+                                                    0.68 oz.
+                                                </p>
+                                                <div class="cartItemcheck__countcond">
+                                                    <div class="qtycond">
+                                                        <span class="qtycond__minus">-</span>
+                                                        <span class="qtycond__val">1</span>
+                                                        <span class="qtycond__plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <p class="cartItemcheck__itemprice">
+                                                    $ 
+                                                    <span class="cartItemcheck__itempriceval">20</span>
+                                                </p>
                                             </div>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="section06">
-                        <div class="section06__inner">
-                            <div class="section06__headTop">
-                                <div class="section06__tit">
-                                    <div class="sectiontit">
-                                        <span>OUR</span><span style="font-weight:700">BLOG</span>
-                                    </div> 
+                                <div class="pageWrap__sepLine--style2"></div>
+                                <div class="priceinfo">
+                                    <div class="priceinfo__tit">
+                                        Subtotal
+                                    </div>
+                                    <div class="priceinfo__price">
+                                        $ <span class="priceinfo__priceval">40</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="section06__columnList">
-                                <ul class="columnList">
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blogImg1.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Korean Skincare
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unlock the flawless beauty of Korean skincare and unveil your skin's true ...
+                                <div class="pageWrap__sepLine--style1"></div>
+                                <div class="cartPage__guide">
+                                    <p class='cartPage__guiderow'>
+                                        Items registered in the shopping cart are stored for 90 days.
+                                        <span class="cartPage__guiderowdot"></span>
+                                    </p>
+                                    <p class='cartPage__guiderow'>
+                                        Coupons and points are applied on the order/payment page.
+                                        <span class="cartPage__guiderowdot"></span>
+                                    </p>
+                                    <p class='cartPage__guiderow'>
+                                        The product in the shopping cart is not a product that has been paid for, so it will not be exposed if it is out of stock depending on the stock situation
+                                        <span class="cartPage__guiderowdot"></span>
+                                    </p>
+                                </div>
+                                <div class="cartPage__button">
+                                    Proceed to checkout
+                                </div>
+                                <div class="cartpopup">
+                                    <div class="cartpopup__fade"></div>
+                                    <div class="cartpopup__content">
+                                        <p>
+                                            Are you sure you want to<br/>
+                                            delete this product?
                                         </p>
-                                        <a class="columnList__itemlink" href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog2item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Innovation
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Experience the future of skincare with RIMAN Innovation. Our cutting Ex
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog3item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            RIMAN Rituals
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Discover the power of innovation and embrace a new era of radiant
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                    <li class="columnList__item">
-                                        <a href='blogDetail.html'><div class="columnList__itemimg"style='background-image:url("./img/main/blog4item.png");'>
-                                        </div></a>
-                                        <h3 class="columnList__itemtitle">
-                                            Giant BYoungPool
-                                        </h3>
-                                        <p class="columnList__itemstory">
-                                            Unleash the power of Giant Byungpool. Our revolution skincare ease
-                                        </p>
-                                        <a class="columnList__itemlink"href="blogDetail.html">
-                                            Read More
-                                        </a>
-                                    </li>
-                                </ul>
+                                        <div class="cartpopup__cond">
+                                            <a href="#" class="cartpopup__cancel">Cancel</a>
+                                            <a href="#" class="cartpopup__delete">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
+                
                     <footer class="footer">
                         <div class="footer__inner">
                             <h2 class="footer__logo">
@@ -656,7 +551,7 @@
                                     </form>
                                 </div>
                             </div>
-                    
+                
                             <div class="footer__explorelink">
                                 <div class="explorelink">
                                     <span class="explorelink__txt--colorwhite">
@@ -711,7 +606,7 @@
                         </div>
                     </footer>
                     <div class="botmenuwrap">
-                        <div class="botmenuwrap__whitebackground"id='whitebackground'></div>
+                        <div class="botmenuwrap__whitebackground" id="whitebackground"></div>
                         <div class="botmenu" id="botmenu"></div>
                     </div>
                 </div>
@@ -719,73 +614,7 @@
         </div>
     </div>
 </div>
-
 <script>
-//메인페이지 swiper관련 종속성들.
-var KVSection__swiperArea=new Swiper(".KVSection__swiperArea",{
-    slidesPerView:'auto',
-    autoResize:true,
-    pagination:{
-        el : '.swiper-pagination-basicstyle_navi',
-        type: 'bullets'
-    }
-});
-//우측메뉴 배너스와이퍼 관련 
-var rightmenubanner=new Swiper(".rightmenuSwiper",{
-    slidesPervView:'auto',
-    autoResize:true,
-    pagination:{
-        el : '.swiper-pagination-basicstyle',
-        type: 'bullets'
-    }
-})
-
-var section01__swiperArea=new Swiper('.section01__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-var section02__swiperArea=new Swiper('.section02__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-   /* pagination:{
-        el :'.swiper-pagination2',
-        type :'progressbar'
-    }
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
-var section04__swiperArea=new Swiper('.section04__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    pagination:{
-        el :'.swiper-pagination-bulletStyle', //볼렛 스타일 ingredients관련
-        type :'bullets'
-    },
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-var section05__swiperArea=new Swiper('.section05__swiperArea',{
-    slidesPerView:'auto',
-    autoResize: true,
-    loop:true
-    /*
-    navigation:{
-        nextEl : '.swiper-button-next2',
-        prevEl : '.swiper-button-prev2'
-    },*/
-})
-
 /*로컬 관련 제어 스크립트 */
 $(function(){
      let botmenu=document.getElementById("botmenu");
@@ -1033,9 +862,5 @@ rightNavOpen.onclick=function(event){
 
 <script src="https://sinjaesung.github.io/SINJAweb/js/common_function$p.js"></script>
 <script src="https://sinjaesung.github.io/SINJAweb/js/transformanimate$p.js"></script>
-
-<script>
-    update_allHtmlElements_toOriginId(document.body);
-</script>
 </body>
 </html>
